@@ -1,0 +1,31 @@
+.title {
+  color: var(--background);
+
+  font-family: 'Aclonica', sans-serif;
+    font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.sub-title {
+  color: var(--title);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.para-content {
+  color: var(--text);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cube-logo{
+    position:absolute;
+    top:-25px;
+    left:0;
+}

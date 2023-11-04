@@ -1,0 +1,45 @@
+.navbar {
+  background-color: var(--background);
+  height: 54px;
+  width: 100%;
+  z-index:999;
+}
+ul {
+  list-style: none;
+  color: white;
+  display:flex;
+  
+}
+ul li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; 
+  letter-spacing: -0.304px;
+}
+.nav-list{
+    gap:2.5rem;
+}
+.social-nav{
+    gap:1.5rem;
+}
+.social-icons{
+    background-color:var(--title);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+.social-icons a{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:.3rem;
+    font-size:1rem;
+    
+}
