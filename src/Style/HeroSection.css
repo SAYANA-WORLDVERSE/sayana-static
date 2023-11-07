@@ -1,5 +1,23 @@
+
+.hero-section{
+  position:relative;
+  padding:1rem;
+  
+}
+.wave-hero{
+  position:absolute;
+  left:0;
+  z-index:-1
+}
+
+
+
+
+
+
+
 .title {
-  color: var(--background);
+  color: white;
 
   font-family: 'Aclonica', sans-serif;
     font-size: 40px;
@@ -7,25 +25,32 @@
   font-weight: 600;
   line-height: normal;
 }
+
+.linear-text{
+  font-family: 'Aclonica', sans-serif;
+  background: linear-gradient(to right, #602bfe, #dbc4ff);
+  -webkit-background-clip: text; /* For older browsers */
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* For older browsers */
+  text-fill-color: transparent;
+
+
+}
 .sub-title {
-  color: var(--title);
-  font-family: "Poppins", sans-serif;
+  color: white;;
+  font-family: 'Aclonica', sans-serif;
   font-size: 30px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
 }
 .para-content {
   color: var(--text);
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
 
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.cube-logo{
-    position:absolute;
-    top:-25px;
-    left:0;
-}
+

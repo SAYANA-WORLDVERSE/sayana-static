@@ -1,59 +1,130 @@
 /* media query for 1080px to 1400px */
 
-@media  screen and (min-width: 1000px) and (max-width:1300px){
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  ul li a {
+    font-size: 13px;
+  }
+  .hero-img {
+    width: 500px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+  .para-content {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  ul li a {
+    font-size: 12px;
+  }
+  .nav-list {
+    gap: 1.5rem;
+  }
+  .social-icons a {
+    padding: 0.2rem;
+    font-size: 0.9rem;
+  }
+  .logo img {
+    width: 80px;
+  }
 
-    ul li a{
-        font-size:13px;
+  .hero-img {
+    width: 380px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+  .para-content {
+    font-size: 12px;
+  }
+  button {
+    padding: 6px 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 25px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+  .para-content {
+    font-size: 12px;
+  }
+
+  .hero-img {
+    width: 400px;
+  }
+  .nav-bar-inner {
+    justify-content: space-between;
+  }
+
+  ul li a {
+    font-size: 15px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    transition: display ease 0.8s;
+  }
+  .logo img {
+    width: 80px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .nav-list.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 85px;
+    background-color: #171b3e;
+    height: 100vh;
+    align-items: center;
+    padding: 1rem;
+    transition: display ease 0.8s;
+  }
+}
+
+@media screen and (max-width: 510px){
+
+    .main-heading {
+        font-size: 1.5rem;
     }
+    .main-sub-heading {
+        font-size: .9rem;
+    }
+    .main-paracontent{
+        font-size:.8rem;
+    }
+
+
+
     .hero-img{
-        width:500px;
+        width:300px;
     }
     .title{
-        font-size:30px;
+        font-size:23px;
     }
     .sub-title{
-        font-size:20px;
+        font-size:18px;
     }
     .para-content{
-        font-size:15px;
-    }
-
-
-
-}
-@media  screen and (min-width: 768px) and (max-width:1000px){
-
-    ul li a{
         font-size:10px;
     }
-    .nav-list {
-        gap: 1.5rem;
-    }
-.social-icons a{
-    padding: 0.2rem;
-    font-size: .9rem;
-
-}
-.logo img {
-    width:80px;
-}
-
-.hero-img{
-    width:380px;
-}
-.title{
-    font-size:22px;
-}
-.sub-title{
-    font-size:15px;
-}
-.para-content{
-    font-size:10px;
-}
-button{
-    padding:6px 25px;
-}
-
-
-
 }
