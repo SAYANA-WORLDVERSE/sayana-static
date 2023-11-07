@@ -1,10 +1,11 @@
 footer {
-  height: 423px;
   border-radius: 30px 30px 0px 0px;
-  background: #194185;
+  border-top:2px solid #eee;
+  padding:2rem;
+  margin-top:2rem;
 }
 .footer-title h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -12,11 +13,25 @@ footer {
   color:white
 }
 .footer-list li {
-  color: #fffafabf;
+  color:var(--text);
   font-family: "Poppins", sans-serif;
 
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+}
+
+.footer-logo{
+  width:100px;
+}
+.footer-para{
+  color:var(--text);
+  font-size: 14px;
+  text-align:justify;
+
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(5,200px);
 }
