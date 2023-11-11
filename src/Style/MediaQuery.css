@@ -17,7 +17,91 @@
     font-size: 15px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .partner-header img {
+    width: 130px;
+  }
+  .computer {
+    width: 250px;
+  }
+
+  .news-letter {
+    padding: 2rem;
+  }
+
+  .pen {
+    width: 50%;
+    position: absolute;
+    left: 130%;
+    bottom: 271px;
+  }
+  .news-para {
+    font-size: 0.8rem;
+  }
+  .news-input {
+    padding: 4px 10px;
+  }
+  .laptop {
+    width: 50%;
+    position: absolute;
+    right: -79%;
+    bottom: 0;
+  }
+
+  .news-rocket {
+    position: absolute;
+    right: 25px;
+    top: -73px;
+    width: 100%;
+  }
+
+  .rocket {
+    width: 45%;
+    position: absolute;
+    left: -55%;
+    bottom: 257px;
+  }
+  .mobile {
+    width: 50%;
+    position: absolute;
+    left: -70%;
+    bottom: 0;
+  }
+
+  .main-heading .color-title {
+    font-size: 2rem;
+  }
+
+  .ring-icon {
+    position: absolute;
+    left: 40%;
+    top: -33px;
+  }
+  .ring {
+    width: 50px;
+  }
+
+  .card-content p {
+    font-size: 10px;
+  }
+  .contact-card {
+    padding: 2rem;
+  }
+  .icons {
+    padding: 5px;
+    font-size: 13px;
+  }
+  button {
+    padding: 3px 15px;
+    font-size: 0.9rem;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+  }
+  .cards .number {
+    font-size: 2rem;
+  }
   ul li a {
     font-size: 12px;
   }
@@ -30,6 +114,9 @@
   }
   .logo img {
     width: 80px;
+  }
+  .excellence {
+    font-size: 2.5rem;
   }
 
   .hero-img {
@@ -47,9 +134,177 @@
   button {
     padding: 6px 25px;
   }
+
+  .footer-title h4 {
+    font-size: 12px;
+  }
+  .footer-logo {
+    width: 70px;
+  }
+  .footer-para {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .social-icons li {
+    padding: 5px;
+  }
+
+  .footer-list li {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .career-form form {
+    padding: 1rem 0rem;
+}
+  .partner-header img {
+    width: 130px;
+  }
+  .computer {
+    width: 250px;
+  }
+
+  .news-letter {
+    padding: 2rem;
+  }
+
+  .pen {
+    width: 50%;
+    position: absolute;
+    left: 101%;
+    bottom: 159px;
+  }
+  .news-para {
+    font-size: 0.8rem;
+  }
+  .news-input {
+    padding: 4px 10px;
+  }
+  .laptop {
+    width: 50%;
+    position: absolute;
+    right: -55%;
+    bottom: 0;
+  }
+  .setting {
+    width: 50%;
+    position: absolute;
+    left: 74px;
+    bottom: 256px;
+  }
+
+  .news-rocket {
+    position: absolute;
+    right: 25px;
+    top: -73px;
+    width: 100%;
+  }
+
+  .rocket {
+    width: 40%;
+    position: absolute;
+    left: -37%;
+    bottom: 159px;
+  }
+  .mobile {
+    width: 45%;
+    position: absolute;
+    left: -44%;
+    bottom: 0;
+  }
+
+  .main-heading .color-title {
+    font-size: 1.8rem;
+  }
+
+  .crafted-solution p {
+    font-size: 1.5rem;
+  }
+
+  .ring-icon {
+    position: absolute;
+    left: 40%;
+    top: -33px;
+  }
+  .ring {
+    width: 50px;
+  }
+
+  .card-content p {
+    font-size: 10px;
+  }
+  .contact-card {
+    padding: 2rem;
+  }
+  .icons {
+    padding: 5px;
+    font-size: 13px;
+  }
+  button {
+    padding: 3px 15px;
+    font-size: 0.9rem;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+  .cards .number {
+    font-size: 2rem;
+  }
+  ul li a {
+    font-size: 12px;
+  }
+  .nav-list {
+    gap: 1.5rem;
+  }
+  .social-icons a {
+    padding: 0.2rem;
+    font-size: 0.9rem;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .excellence {
+    font-size: 2rem;
+  }
+
+  .hero-img {
+    width: 380px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+  .para-content {
+    font-size: 12px;
+  }
+  button {
+    padding: 6px 25px;
+  }
+
+  .footer-title h4 {
+    font-size: 12px;
+  }
+  .footer-logo {
+    width: 70px;
+  }
+  .footer-para {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .social-icons li {
+    padding: 5px;
+  }
+
+  .footer-list li {
+    font-size: 10px;
+  }
+
   .title {
     font-size: 25px;
   }
@@ -99,32 +354,165 @@
     padding: 1rem;
     transition: display ease 0.8s;
   }
+
+  .footer-title h4 {
+    font-size: 12px;
+  }
+  .footer-logo {
+    width: 70px;
+  }
+  .footer-para {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .social-icons li {
+    padding: 5px;
+  }
+
+  .footer-list li {
+    font-size: 10px;
+  }
+
+  .computer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .gradiant-bg {
+    width: 300px;
+  }
+
+  .learn-more {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .client-card {
+    padding: 1rem;
+  }
+  .news {
+    height: 300px;
+  }
+
+  .news-title {
+    font-size: 1rem;
+  }
+
+  .news-rocket {
+    position: absolute;
+    right: -15px;
+    top: -247px;
+    width: 300px;
+  }
+
+
+  .services-title{
+    font-size:2rem;
+  }
+
+  .services-para-content{
+    font-size:1rem;
+  }
+  .web-img{
+    width:55%;
+  }
+  .footer-bottom p {
+    color: var(--text);
+    font-size:10px;
+}
 }
 
-@media screen and (max-width: 510px){
+@media screen and (max-width: 510px) {
 
-    .main-heading {
-        font-size: 1.5rem;
-    }
-    .main-sub-heading {
-        font-size: .9rem;
-    }
-    .main-paracontent{
-        font-size:.8rem;
-    }
+  .services-title{
+    font-size:1.5rem;
+  }
+  .location p{
+    font-size:.8rem;
+
+  }
+
+  .contact-title{
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  
+  .contactus-form{
+    padding:20px;
+  }
 
 
+  footer {
+    padding: 1rem;
+  }
+  .mt-sm-2 {
+    margin-top: 1rem;
+  }
 
-    .hero-img{
-        width:300px;
-    }
-    .title{
-        font-size:23px;
-    }
-    .sub-title{
-        font-size:18px;
-    }
-    .para-content{
-        font-size:10px;
-    }
+  .news-rocket {
+    position: absolute;
+    right: -15px;
+    top: -199px;
+    width: 200px;
+  }
+
+  .news-letter {
+    padding: 1rem;
+  }
+
+  .client:after {
+    top: 69px;
+  }
+
+  .slick-slide div {
+    margin: 0rem 0rem;
+  }
+
+  .gradiant-bg {
+    width: 300px;
+    top: 0;
+    left: 0;
+  }
+
+  .computer {
+    width: 150px;
+    height: 150px;
+  }
+
+  .blog-cards img {
+    width: 300px;
+  }
+
+  .main-heading .color-title {
+    font-size: 1rem;
+  }
+
+  .crafted-solution p {
+    font-size: 1rem;
+  }
+  .main-heading {
+    font-size: 1.5rem;
+  }
+  .main-sub-heading {
+    font-size: 0.9rem;
+  }
+  .main-paracontent {
+    font-size: 0.8rem;
+  }
+
+  .hero-img {
+    width: 300px;
+  }
+  .title {
+    font-size: 23px;
+  }
+  .sub-title {
+    font-size: 18px;
+  }
+  .para-content {
+    font-size: 10px;
+  }
 }

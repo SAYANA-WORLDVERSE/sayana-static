@@ -20,6 +20,8 @@ import rocket2 from "../assets/kite.png";
 import note from "../assets/note.png";
 import video from "../assets/video.png";
 import phone from "../assets/phone.png";
+import dev from "../assets/setting-assets.png";
+
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
@@ -29,7 +31,7 @@ import client3 from "../assets/Layer03.png";
 import client4 from "../assets/Layer04.png";
 import client5 from "../assets/Layer05.png";
 import testmonial from "../assets/testmonial.jpg";
-import newsRocket from "../assets/new-rocket.png"
+import newsRocket from "../assets/new-rocket.png";
 
 const Home = () => {
   const settings = {
@@ -39,6 +41,30 @@ const Home = () => {
     slidesToScroll: 1,
     arrows: false,
     dots: true,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+
+        }
+      }
+    ]
   };
 
   const setting = {
@@ -46,7 +72,29 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+
+        }
+      },
+    ]
   };
   return (
     <Fragment>
@@ -77,11 +125,11 @@ const Home = () => {
             <img src={gradiant} alt="" className="gradiant-bg" />
             <div className="bg-inner">
               <img src={computer} alt="" className="computer" />
-              <img src={mobile} alt="" className="mobile" />
-              <img src={rocket} alt="" className="rocket" />
-              <img src={setting} alt="" className="setting" />
-              <img src={pen} alt="" className="pen" />
-              <img src={laptop} alt="" className="laptop" />
+              <img src={mobile} alt="" className="mobile" data-aos="fade-right" />
+              <img src={rocket} alt="" className="rocket" data-aos="fade-right"/>
+              <img src={dev} alt="" className="setting" data-aos="fade-top" />
+              <img src={pen} alt="" className="pen" data-aos="fade-left"/>
+              <img src={laptop} alt="" className="laptop" data-aos="fade-left"/>
             </div>
           </div>
 
@@ -94,7 +142,7 @@ const Home = () => {
 
       <section className="digital-excellence d-flex align-items-center flex-column">
         <img src={web2} alt="" className="digital-wave" />
-        <div className="container d-md-flex  align-items-center justify-content-between">
+        <div className="container mt-5 d-md-flex  align-items-center justify-content-between">
           <div className="col-md-6  ">
             <img src={boy} alt="" className="boy-setting" />
           </div>
@@ -111,7 +159,7 @@ const Home = () => {
             <button>Read More</button>
           </div>
         </div>
-        <div className="container d-md-flex  align-items-center">
+        <div className="container mt-5 d-md-flex  align-items-center">
           <div className="col-md-6">
             <h1 className="excellence">Why Choose Us</h1>
             <p className="ex-para">
@@ -168,23 +216,53 @@ const Home = () => {
           <div className="col-md-6  ">
             <img src={designComputer} alt="" className="boy-setting" />
           </div>
-          <div className="col-md-4">
-            <h1 className="excellence">
-              Decades <br /> in Digital
-              <br />
-              Excellence
-            </h1>
-            <p className="ex-para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse
-              aliquid possimus, sapiente ipsa explicabo.
-            </p>
-            <button>Read More</button>
+          <div className="col-md-4 d-flex flex-column gap-3 " >
+           <div className="implements d-flex  align-items-center gap-3" data-aos="fade-left">
+            <div className="num">
+              <span>1</span>
+            </div>
+            <div className="text">
+              <h4 className="mb-0">Implement</h4>
+              <p>Turn Vidion Into Reality</p>
+            </div>
+
+           </div>
+           <div className="implements d-flex  align-items-center gap-3" data-aos="fade-left">
+            <div className="num">
+              <span>2</span>
+            </div>
+            <div className="text">
+              <h4 className="mb-0">Implement</h4>
+              <p>Turn Vidion Into Reality</p>
+            </div>
+
+           </div>
+           <div className="implements d-flex  align-items-center gap-3" data-aos="fade-left">
+            <div className="num">
+              <span>3</span>
+            </div>
+            <div className="text">
+              <h4 className="mb-0">Implement</h4>
+              <p>Turn Vidion Into Reality</p>
+            </div>
+
+           </div>
+           <div className="implements d-flex  align-items-center gap-3" data-aos="fade-left">
+            <div className="num">
+              <span>4</span>
+            </div>
+            <div className="text">
+              <h4 className="mb-0">Implement</h4>
+              <p>Turn Vidion Into Reality</p>
+            </div>
+
+           </div>
           </div>
         </div>
       </section>
 
-      <section className="about-us mt-5 p-5">
-        <div className="container about-us-content col-md-8 p-5">
+      <section className="about-us mt-5 py-md-5">
+        <div className="container about-us-content col-md-8 ">
           <h1 className="main-heading">
             <span className="color-title">Our Solutions is Blog</span>
           </h1>
@@ -196,9 +274,9 @@ const Home = () => {
         </div>
 
         <div className="container">
-          <section className="d-flex justify-content-center align-items-center mt-5">
-            <div className="col-md-10  d-md-flex justify-content-center blog-container">
-              <div className="col-md-3 d-flex justify-content-center ">
+          <section className="d-flex  flex-column justify-content-center align-items-center mt-5 ">
+            <div className="col-md-12  d-md-flex justify-content-center blog-container">
+              <div className="col-md-3 col-sm-12 ">
                 <div className="blog-cards">
                   <img src={seo} alt="" />
 
@@ -243,58 +321,18 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 d-flex justify-content-center">
-                <div className="blog-cards">
-                  <img src={seo} alt="" />
+             
+            </div>
+            <div>
+            <button className="mt-5">View All</button>
 
-                  <div className="blog-cards_content">
-                    <p className="blog-cards__title">Card Title</p>
-                    <p className="blog-cards__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 d-flex justify-content-center">
-                <div className="blog-cards">
-                  <img src={rocket2} alt="" />
-
-                  <div className="blog-cards_content">
-                    <p className="blog-cards__title">Card Title</p>
-                    <p className="blog-cards__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 d-flex justify-content-center">
-                <div className="blog-cards">
-                  <img src={rocket2} alt="" />
-
-                  <div className="blog-cards_content">
-                    <p className="blog-cards__title">Card Title</p>
-                    <p className="blog-cards__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
         </div>
       </section>
 
       <section>
-        <div className="container about-us-content col-md-8 mt-5 p-5">
+        <div className="container about-us-content col-md-10 mt-5 py-5">
           <h1 className="main-heading">
             <span className="color-title">Today To Schedule a discussion</span>
           </h1>
@@ -316,7 +354,7 @@ const Home = () => {
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
-                  <p>questions or remarks? Just write us a messagel</p>
+                  <p className="text-center">questions or remarks? Just write us a messagel</p>
                   <div className="list">
                     <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -351,7 +389,7 @@ const Home = () => {
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
-                  <p>questions or remarks? Just write us a messagel</p>
+                  <p className="text-center">questions or remarks? Just write us a messagel</p>
                   <div className="list">
                     <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -386,7 +424,7 @@ const Home = () => {
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
-                  <p>questions or remarks? Just write us a messagel</p>
+                  <p className="text-center">questions or remarks? Just write us a messagel</p>
                   <div className="list">
                     <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -476,7 +514,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className=" about-us-content  mt-5 p-5">
+        <div className=" about-us-content  mt-5 py-5">
           <h4 className=" clients">
             <span className="client-title">Our Spaciality</span>
           </h4>
@@ -630,7 +668,7 @@ const Home = () => {
 
       <section className="news">
         <div className="container mt-5">
-          <div className="news-letter mt-5 d-md-flex align-items-center">
+          <div className="news-letter  d-md-flex align-items-center">
             <div className="col-md-6 news-content">
               <h1 className="news-title">News Letter</h1>
               <p className="news-para">

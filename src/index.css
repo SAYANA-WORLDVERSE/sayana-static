@@ -28,4 +28,21 @@ button{
 }
 
 
+/*   Scroll Bar start */
+::-webkit-scrollbar-track {
+    background: #70505029;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(43deg, #dac3ff 0%, #9e79fe 46%, #602bfe 100%);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/*   Scroll Bar  End*/
+
+
 

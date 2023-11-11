@@ -84,7 +84,7 @@
   bottom: 257px;
 }
 .setting {
-  width: 150px;
+  width: 140px;
   position: absolute;
   left: 130px;
   bottom: 370px;
@@ -200,32 +200,33 @@
   line-height: 1.4;
 }
 
-.blog-container{
-  display:flex;
-  flex-wrap:wrap;
-gap:5rem;
+.blog-container {
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .contact-card {
   border-radius: 20px;
-  border:2px solid #a9a7a7a8;
+  border: 2px solid #a9a7a7a8;
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 2.5rem;
+  padding: 3.5rem;
+  margin: 1rem 0rem;
 }
 
-.number{
-  margin:.5rem;
+.number {
+  margin: 0.5rem 0rem;
 }
 .icons {
   background-color: rgba(217, 217, 217, 0.4);
   color: #fff;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,8 +237,8 @@ gap:5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom:0px;
-  font-size:1rem;
+  margin-bottom: 0px;
+  font-size: 1rem;
 }
 .ring {
   width: 80px;
@@ -262,37 +263,36 @@ gap:5rem;
   top: -36px;
 }
 
-.card-content p{
-  color:white;
+.card-content p {
+  color: var(--text);
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
-.client{
-  background: linear-gradient(to right  , #070a29, #51495f);
-  padding:.5rem;
-  border-radius:30px;
-  box-shadow:1px 1px 19px 3px #3e3e3ed9;
-
+.client {
+  background: linear-gradient(to right, #070a29, #51495f);
+  padding: 0.5rem;
+  border-radius: 30px;
+  box-shadow: 1px 1px 19px 3px #3e3e3ed9;
 }
-.clients{
-  background: linear-gradient(to right  , #070a29, #51495f);
-  padding:8px;
-  border-radius:30px;
-  box-shadow:1px 1px 19px 3px #3e3e3ed9;
-
+.clients {
+  background: linear-gradient(to right, #070a29, #51495f);
+  padding: 8px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 19px 3px #3e3e3ed9;
 }
-.about-us-content{
-  position:relative;
+.about-us-content {
+  position: relative;
 }
-.client:after{
+.client:after {
   content: "";
   position: absolute;
   left: 0;
-  top:83px;
+  top: 83px;
   width: 100%;
   height: 3px;
   background: linear-gradient(to right, #602bfe, #dbc4ff);
-  z-index:-1;
+  z-index: -1;
 }
 
 .slider-header {
@@ -323,11 +323,10 @@ gap:5rem;
   font-weight: 500;
   line-height: normal;
 }
-.slick-track{
-  display:flex;
-  align-items:center;
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
 }
-
 
 .client-title {
   font-family: var(--font);
@@ -337,26 +336,24 @@ gap:5rem;
   color: transparent;
   -webkit-text-fill-color: transparent; /* For older browsers */
   text-fill-color: transparent;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
-
-.client-card{
-  background:linear-gradient(to top, #070a29, #51495f);
-  padding:2rem;
-  border-radius:20px;
-  position:relative;
-  height:470px;
+.client-card {
+  background: linear-gradient(to top, #070a29, #51495f);
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+  height: 470px;
 }
-.client-card-content{
-
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
+.client-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.client-name{
+.client-name {
   font-family: var(--font);
   background: linear-gradient(to right, #602bfe, #dbc4ff);
   -webkit-background-clip: text; /* For older browsers */
@@ -364,87 +361,114 @@ gap:5rem;
   color: transparent;
   -webkit-text-fill-color: transparent; /* For older browsers */
   text-fill-color: transparent;
-  font-size:2rem;
-  margin-top:1rem;
-
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
-.client-card-content p{
-  margin-bottom:.3rem !important;
+.client-card-content p {
+  margin-bottom: 0.3rem !important;
 }
-.client-company{
-  color:white;
-  font-size:1rem;
+.client-company {
+  color: white;
+  font-size: 1rem;
 }
-.client-review{
-  color:white;
-  text-align:center;
-  font-size:.9rem;
-  margin-top:2rem;
+.client-review {
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
-.test-monial{
-  width:120px;
-  height:120px;
-  border-radius:50%;
+.test-monial {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   border: 3px solid #602bfe;
-  padding:.3rem;
-
-  
-
+  padding: 0.3rem;
 }
-.slick-slide div{
-  margin:0rem 1rem;
+.slick-slide div {
+  margin: 0rem 1rem;
 }
-.news-letter{
+.news-letter {
   background: linear-gradient(to right, #602bfe, #dbc4ff);
-  padding:4rem;
-  border-radius:20px;
+  padding: 4rem;
+  border-radius: 20px;
 }
-.news-title{
-  color:white;
-  font-family:var(--font);
-  font-size:3rem;
+.news-title {
+  color: white;
+  font-family: var(--font);
+  font-size: 2.5rem;
 }
-.news{
-  height:600px;
-  display:flex;
+.news {
+  height: 600px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.news-para{
-  color:white;
-  font-size:1.2rem;
+.news-para {
+  color: white;
+  font-size: 1.2rem;
 }
-.news-input{
+.news-input {
   padding: 8px 15px;
-  outline:none;
-  border:none;
-  border-radius:20px;
-  width:55%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  width: 55%;
 }
-.subscribe-btn{
+.subscribe-btn {
   background: linear-gradient(to right, #ff7e05, #ffca51) !important;
-    color: white;
-    padding: 5px 10px;
-    font-family: "Poppins", sans-serif ;
-    border: 3px solid #9c7ef7;
-    border-radius: 20px !important;
-    outline: none;
-    margin:0rem .2rem;
+  color: white;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  border: 3px solid #9c7ef7;
+  border-radius: 20px !important;
+  outline: none;
+  margin: 0rem 0.2rem;
 }
 
-.new-gradiant{
-  width:250px;
+.new-gradiant {
+  width: 250px;
 }
-.right-col{
+.right-col {
   position: relative;
 }
-.news-rocket{
-  position:absolute;
-  right:0;
-  top:-155px;
-  width:900px;
+.news-rocket {
+  position: absolute;
+  right: 0;
+  top: -155px;
+  width: 900px;
 }
 
+.implements{
+  color:white;
+  background:linear-gradient(to left, #070a29, #51495f);
+  border-radius:30px;
+  padding:10px;
+  display:flex;
+  align-items: center;
+}
+.num {
+  border:1px solid white;
+  font-size:2.5rem;
+  width:65px;
+  height:65px;
+  border-radius:50%;
+  display:flex;
+  justify-content: center;
+}
+.text h4{
+  background: linear-gradient(to right, #926eff, #dbc4ff);
+  -webkit-background-clip: text; /* For older browsers */
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* For older browsers */
+  text-fill-color: transparent;
+  font-weight:bold;
+  font-size:2rem;
 
+}
+.text p{
+  font-size:1rem;
+  margin-bottom: .5rem;;
+}

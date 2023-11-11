@@ -13,6 +13,9 @@ ul {
   justify-content: space-evenly;
   
 }
+li{
+  position:relative;
+}
 ul li a {
   text-decoration: none;
   font-family: 'Aclonica', sans-serif;
@@ -110,4 +113,70 @@ ul li a {
     transform: rotate(-45deg);
    
   }
+
+
+  /* hover dropdown */
+
+
+  .sub-menu {
+    position: absolute;
+    width:250px;
+    top: 10px;
+    left: 0;
+    z-index: 99;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(35px);
+    -moz-transform: translateY(35px);
+    -ms-transform: translateY(35px);
+    -o-transform: translateY(35px);
+    transform: translateY(35px);
+    background: linear-gradient(to top , #070a29, #51495f);
+    box-shadow: 0 0 1.25rem #000;
+    flex-direction:column;
+ }
+  .sub-menu li {
+    padding: 15px 20px;
+    position: relative;
+ }
+  .sub-menu li:last-child {
+    border: none;
+ }
+  .sub-menu li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background:#5c27fe;
+    transition: width 0.3s ease-in-out;
+ }
+  .sub-menu li:hover::before, .sub-menu li.current-item::before {
+    width: 100%;
+ }
+  .sub-menu li a {
+    color: #fff;
+    font-size: 14px;
+ }
+  .sub-menu li a::before, .sub-menu li a::after {
+    display: none;
+ }
+  
+  .sub-menu li.current-item > a {
+    color: #5c27fe;
+ }
+  .list-items:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(26px);
+ }
+  
   

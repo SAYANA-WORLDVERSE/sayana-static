@@ -1,0 +1,62 @@
+.career-heroimg {
+  width: 40%;
+}
+.career-para {
+  color: var(--text);
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.career-title {
+  color: white;
+  font-family: "Aclonica", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  margin: .5rem 0rem;
+}
+.career-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 70px;
+  bottom: -10px;
+  background: linear-gradient(to right, #602bfe, #dbc4ff);
+}
+.accordion-item {
+  background-color: transparent !important ;
+  color: var(--text) !important;
+  border: none !important;
+  margin: 1rem 0rem;
+}
+
+.accordion-button {
+  color: var(--text) !important;
+  font-family: var(--font);
+  background: linear-gradient(to left, #02052b, #291663);
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion {
+  border: none !important;
+}
+
+.career-form {
+  padding: 1rem;
+  border-radius: 30px;
+  background: linear-gradient(to top, #02052b, #291663);
+
+}
+.career-form form {
+    padding:1rem 2rem;
+}
+
+.career-container {
+  border-radius: 20px;
+}
+

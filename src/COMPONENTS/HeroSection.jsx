@@ -13,7 +13,7 @@ const HeroSection = () => {
             <img src={wave} alt=""  className='wave-hero'/>
 
                 <div className="col-md-6 d-flex align-items-center">
-                    <div className="hero-content">
+                    <div className="hero-content" data-aos="fade-right">
                         <h3 className='title'>Next-gen <span className='linear-text'>Enter Prise</span></h3>
                         <h4 className='sub-title'>Software development <br/> company</h4>
                         <p className='para-content'>As your digital enablement partner, we apply our talent-first approach to accelerate your digital journey, helping you unleash your potential and unlock unseen opportunities.</p>
@@ -22,7 +22,7 @@ const HeroSection = () => {
 
                 </div>
                 <div className="col-md-6 d-flex justify-content-center">
-                    <img src={heroimg} alt="" className='hero-img'/>
+                    <img src={heroimg} alt="" className='hero-img' data-aos="fade-left"/>
                     
 
                 </div>
