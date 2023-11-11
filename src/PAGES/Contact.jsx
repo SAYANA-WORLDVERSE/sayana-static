@@ -4,10 +4,13 @@ import heroimg from "../assets/contact-hero.png";
 import location from "../assets/location.png";
 import mail from "../assets/mail.png";
 import call from "../assets/call.png";
+import Header from "../COMPONENTS/Header";
 
 const Contact = () => {
   return (
     <Fragment>
+            <Header title="Contact Us" link="Contact Us" />
+
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container d-flex justify-content-center">

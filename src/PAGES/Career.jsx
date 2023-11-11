@@ -1,10 +1,13 @@
 import React, { Fragment } from "react";
 import heroimg from "../assets/career-hero.png";
 import "../Style/Career.css";
+import Header from "../COMPONENTS/Header";
 
 const Career = () => {
   return (
     <Fragment>
+                  <Header title="Career" link="Career " />
+
       <section className="career-hero">
         <div className="container-fluid hero-section">
           <div className="container d-flex justify-content-center">

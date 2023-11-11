@@ -318,7 +318,6 @@ const GraphicsDesign = () => {
               slidesPerView={4}
               breakpoints={breakpoint}
               navigation={true}
-              // scrollbar={{ draggable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
             >

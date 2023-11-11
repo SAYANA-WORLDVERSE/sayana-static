@@ -1,10 +1,13 @@
 import React, { Fragment } from "react";
 import seo from "../assets/seo.png";
 import rocket2 from "../assets/kite.png";
+import Header from "../COMPONENTS/Header";
 
 const Blogs = () => {
   return (
     <Fragment>
+      <Header title="Blogs" link="Blog" />
+
       <section className="about-us mt-5 py-5">
         <div className="container about-us-content col-md-8 p-5">
           <h1 className="main-heading">

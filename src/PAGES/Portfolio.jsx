@@ -3,6 +3,7 @@ import heroimg from "../assets/about-hero.png";
 import "../Style/Portfolio.css";
 import { Tabs, Tab } from "@mui/material";
 import portfolio from "../assets/about-us.png";
+import Header from "../COMPONENTS/Header";
 
 const Portfolio = () => {
   const [value, setValue] = useState(0);
@@ -12,6 +13,8 @@ const Portfolio = () => {
   };
   return (
     <Fragment>
+            <Header title="Portfolio" link="Portfolio"/>
+
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">

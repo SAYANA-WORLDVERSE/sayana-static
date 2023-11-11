@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import team from "../assets/team.png";
+import Header from "../COMPONENTS/Header";
 
 const AboutUs = () => {
 
@@ -51,6 +52,7 @@ const AboutUs = () => {
 
   return (
     <Fragment>
+      <Header title="About Us" link="About Us"/>
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">
