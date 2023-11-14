@@ -8,7 +8,7 @@
 }
 
 .contact-title {
-  color: white;
+  color: white !important;
   font-family: var(--font);
   font-size: 1.5rem;
 }

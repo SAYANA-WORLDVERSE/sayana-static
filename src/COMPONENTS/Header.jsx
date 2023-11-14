@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = ({title, link}) => {
   return <Fragment>
 
-<section className="page-title p-5">
+<section className="page-title p-md-5">
         <div className="shape"></div>
         <div className="shape right s3"></div>
         <div className="container">

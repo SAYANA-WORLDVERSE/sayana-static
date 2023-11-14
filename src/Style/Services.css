@@ -18,6 +18,10 @@
 .web-img{
     width:75%;
 }
+
+.tools-container{
+    justify-content: center;
+}
 .tools-card{
     background:linear-gradient(60deg, #070a29, #51495f);
     width:150px;

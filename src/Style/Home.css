@@ -30,7 +30,7 @@
 }
 
 .crafted-solution {
-  padding: 2rem;
+  padding: 2rem 0rem;
 }
 .crafted-solution p {
   font-family: var(--font);
@@ -226,7 +226,7 @@
   background-color: rgba(217, 217, 217, 0.4);
   color: #fff;
   border-radius: 50%;
-
+padding:.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,7 +458,7 @@
   justify-content: center;
 }
 .text h4{
-  background: linear-gradient(to right, #926eff, #dbc4ff);
+  background: linear-gradient(to right, #5c26ff, #dbc4ff);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
   color: transparent;

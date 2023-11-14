@@ -289,7 +289,7 @@ const AppDevelopment = () => {
               </div>
             </section>
 
-            <div className=" d-flex flex-wrap">
+            <div className=" d-flex flex-wrap tools-container">
               <div className=" tools-card"></div>
               <div className=" tools-card"></div>
               <div className=" tools-card"></div>

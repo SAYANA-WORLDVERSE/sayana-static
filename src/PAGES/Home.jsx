@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import React, { Fragment,lazy } from "react";
+
 import HeroSection from "../COMPONENTS/HeroSection";
 import Slider from "react-slick";
 
@@ -32,8 +33,21 @@ import client4 from "../assets/Layer04.png";
 import client5 from "../assets/Layer05.png";
 import testmonial from "../assets/testmonial.jpg";
 import newsRocket from "../assets/new-rocket.png";
+import partner1 from "../assets/partner-1.png";
+import partner2 from "../assets/partner-2.png";
+import partner3 from "../assets/partner-3.png";
+import partner4 from "../assets/partner-4.png";
+import partner5 from "../assets/partner-5.png";
+
+import { useTheme } from "../COMPONENTS/Context";
 
 const Home = () => {
+
+  const {isDark}=useTheme();
+
+
+
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -476,35 +490,35 @@ const Home = () => {
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={client1} alt="" />
+                    <img src={isDark? client1 :partner1} alt="" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={client2} alt="" />
+                    <img src={isDark? client2 :partner2} alt="" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={client3} alt="" />
+                    <img src={isDark? client3 :partner3} alt="" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={client5} alt="" />
+                    <img src={isDark? client4 :partner4} alt="" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={client4} alt="" />
+                    <img src={isDark? client5 :partner5} alt="" />
                   </div>
                 </div>
               </div>
@@ -670,7 +684,7 @@ const Home = () => {
         <div className="container mt-5">
           <div className="news-letter  d-md-flex align-items-center">
             <div className="col-md-6 news-content">
-              <h1 className="news-title">News Letter</h1>
+              <h2 className="news-title">News Letter</h2>
               <p className="news-para">
                 Subscribe To Our Newsletter and Stay Updated
               </p>

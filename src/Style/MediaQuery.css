@@ -156,6 +156,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+
+  .switch{
+    margin-left:-7rem;
+  }
   .career-form form {
     padding: 1rem 0rem;
 }
@@ -191,10 +196,9 @@
   .setting {
     width: 50%;
     position: absolute;
-    left: 74px;
-    bottom: 256px;
-  }
-
+    left: 54px;
+    bottom: 196px;
+}
   .news-rocket {
     position: absolute;
     right: 25px;
@@ -340,6 +344,8 @@
     display: flex;
     align-items: center;
     justify-content: end;
+    width:95% !important;
+    padding:0px 17px;
   }
   .nav-list.open {
     display: flex;
@@ -353,6 +359,7 @@
     align-items: center;
     padding: 1rem;
     transition: display ease 0.8s;
+    overflow-x: scroll;
   }
 
   .footer-title h4 {
@@ -373,6 +380,7 @@
   .footer-list li {
     font-size: 10px;
   }
+  
 
   .computer {
     width: 200px;
@@ -491,7 +499,7 @@
   }
 
   .crafted-solution p {
-    font-size: 1rem;
+    font-size: .9rem;
   }
   .main-heading {
     font-size: 1.5rem;

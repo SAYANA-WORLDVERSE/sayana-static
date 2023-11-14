@@ -1,0 +1,103 @@
+
+.light-theme a {
+    color: var(--light-theme-title);
+  }
+  .light-theme .sub-title,
+  .light-theme .main-sub-heading,
+  .light-theme footer h4 {
+    color: var(--light-theme-title);
+  }
+  .light-theme h1 {
+    color: var(--light-theme-color) ;
+  }
+  .light-theme .excellence {
+    font-family: var(--font);
+    background: linear-gradient(to right, #602bfe, #dbc4ff);
+    -webkit-background-clip: text; /* For older browsers */
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* For older browsers */
+    text-fill-color: transparent;
+  }
+  
+  .light-theme .career-form h1{
+    color:white;
+  }
+  .light-theme .footer-bottom p{
+    color:var(--text)
+  }
+  
+  .light-theme .about{
+    background: linear-gradient(to top, #ffffff, #e9e9e9);
+  }
+  
+  .light-theme .team-card{
+    background: linear-gradient(to right, #602bfe, #dbc4ff);
+  }
+  
+  .light-theme .roadmap__main.s1 .roadmap-box{
+    background: linear-gradient(to top, #ffffff, #e9e9e9);
+  }
+  .light-theme .roadmap-box .text{
+    color:var(--text)
+  }
+  
+  .light-theme .sub-menu{
+    background: linear-gradient(to top, #ffffff, #e9e9e9);
+    box-shadow: 0 0 1.25rem #0000;
+  }
+  
+  .light-theme .sub-menu li a{
+    color:var(--light-theme-title)
+  }
+  
+  
+  .light-theme .icons{
+  background: #5c27fe;}
+  
+  .light-theme .cards .number {
+    font-family: var(--font);
+    background: linear-gradient(to right, #602bfe, #dbc4ff);
+    -webkit-background-clip: text; /* For older browsers */
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* For older browsers */
+    text-fill-color: transparent;
+  }
+  .light-theme .cards-text,
+  .light-theme .title,
+  .light-theme .client-review {
+    color: var(--light-theme-color);
+  }
+  
+  .light-theme .client-company{
+      color:var(--light-theme-title)
+  }
+  
+  .light-theme .number .card-number {
+    color:var(--text);
+  }
+  
+  .light-theme .cards,
+  .light-theme .client-card,
+  .light-theme .client {
+    background: linear-gradient(to top, #ffffff, #e9e9e9);
+  }
+  .light-theme .client,.light-theme .clients, .light-theme .tools-card {
+    background: linear-gradient(to left, #ffffff, #e9e9e9);
+    box-shadow:1px 1px 19px 3px #e9e7e7d9;
+  }
+  
+  .light-theme {
+    background-color: var(--light-theme) !important;
+    color: var(--light-theme-title);
+  }
+  
+  .light-theme .implements {
+    background: linear-gradient(to right, #bba5ff, #ffffff);
+  }
+  
+  .light-theme .nav-list.open{
+    background:white;
+  }
+  

@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 import "../Style/Footer.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -39,13 +40,24 @@ const Footer = () => {
                 <div className="footer-title d-flex flex-column">
                   <h4>Quick Links</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
-                    <li>Company </li>
-                    <li>About us </li>
-                    <li>Portfolio</li>
-                    <li>Blogs</li>
-                    <li>Careers</li>
-
-                    <li> Contact Us</li>
+                    <Link>
+                      <li>Company </li>
+                    </Link>
+                    <Link>
+                      <li>About us </li>
+                    </Link>
+                    <Link>
+                      <li>Portfolio</li>
+                    </Link>
+                    <Link>
+                      <li>Blogs</li>
+                    </Link>
+                    <Link>
+                      <li>Careers</li>
+                    </Link>
+                    <Link>
+                      <li> Contact Us</li>
+                    </Link>
                   </ul>
                 </div>
               </div>
@@ -53,11 +65,21 @@ const Footer = () => {
                 <div className="footer-title d-flex flex-column">
                   <h4>Services</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
-                    <li>Web Design & Development </li>
-                    <li>Application Development</li>
-                    <li>Product Development</li>
-                    <li>Digital Marketing</li>
-                    <li>Graphics Design</li>
+                    <Link>
+                      <li>Web Design & Development </li>
+                    </Link>
+                    <Link>
+                      <li>Application Development</li>
+                    </Link>
+                    <Link>
+                      <li>Product Development</li>
+                    </Link>
+                    <Link>
+                      <li>Digital Marketing</li>
+                    </Link>
+                    <Link>
+                      <li>Graphics Design</li>
+                    </Link>
                   </ul>
                 </div>
               </div>
@@ -96,9 +118,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-bottom w-100 d-flex justify-content-between">
-            <p>	&#169; 2023 SAYANA | All Rights Reserved</p>
-            <p>	Privacy Policy | Term & Condition</p>
-
+            <p className="mb-0"> &#169; 2023 SAYANA | All Rights Reserved</p>
+            <p className="mb-0"> Privacy Policy | Term & Condition</p>
           </div>
         </div>
       </footer>

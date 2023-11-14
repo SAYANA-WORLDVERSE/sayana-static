@@ -15,14 +15,20 @@ import AppDevelopment from "./PAGES/AppDevelopment";
 import Productdevelopment from "./PAGES/ProductDevelopment";
 import DigitalMarketing from "./PAGES/DigitalMarketing";
 import GraphicsDesign from "./PAGES/GraphicsDesign";
+import { useTheme } from "./COMPONENTS/Context";
+import "./index.css"
 
 const App = () => {
+  const { isDark} = useTheme();
 
   useEffect(() => {
     AOS.init();
   }, [])
   return (
     <Fragment>
+      <div className={isDark? 'dark-theme':'light-theme'}>
+
+     
       <Router>
         <Navbar />
         <Routes>
@@ -41,6 +47,7 @@ const App = () => {
         </Routes>
         <Footer/>
       </Router>
+      </div>
     </Fragment>
   );
 };

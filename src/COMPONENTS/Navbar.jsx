@@ -1,11 +1,14 @@
 import React, { Fragment, useState } from "react";
 import "../Style/Navbar.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import { Link } from "react-router-dom";
 import { BsChevronDown } from "react-icons/bs";
+import ToggleButton from "./ToggleButton";
+import { useTheme } from "./Context";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { isDark } = useTheme();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -13,14 +16,14 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <div className="container-fluid navbar">
+      <div className={`container-fluid navbar ${isDark ? 'dark-theme':'light-theme'}`}>
         <div className="container h-sm-100">
-          <div className="d-flex w-100 justify-content-md-center justify-content-sm-between align-items-center nav-bar-inner">
-            <div className="logo col-md-2 col-sm-6">
+          <div className="d-flex w-100 justify-content-md-between justify-content-sm-between align-items-center nav-bar-inner">
+            <div className="logo ">
               <img src={logo} alt="logo" />
             </div>
-            <div className="col-md-10  d-flex align-items-center  col-sm-6 h-sm-100">
-              <nav className="w-100">
+            <div className="d-flex col-10  ">
+              <nav  className="d-flex justify-content-md-between   w-100">
                 <div
                   className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}
                   onClick={toggleMobileMenu}
@@ -31,12 +34,12 @@ const Navbar = () => {
                 </div>
 
                 <ul
-                  className={`nav-list mt-0 mb-0  ${
+                  className={`nav-list mt-0 mb-0 w-100  ${
                     mobileMenuOpen ? "open" : ""
                   }`}
                 >
                   <li className="list-items">
-                    <Link
+                    <Link 
                       to="/"
                       className="list-link"
                       onClick={toggleMobileMenu}
@@ -119,6 +122,8 @@ const Navbar = () => {
                   </li>
                 </ul>
               </nav>
+              <ToggleButton/>
+
             </div>
           </div>
         </div>

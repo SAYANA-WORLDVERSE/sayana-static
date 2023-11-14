@@ -8,5 +8,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./Style/MediaQuery.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ThemeProvider from "./COMPONENTS/Context.jsx";
+import "./Style/LightTheme.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
+ReactDOM.createRoot(document.getElementById("root")).render(<ThemeProvider><App /></ThemeProvider>);
