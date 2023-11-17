@@ -14,7 +14,7 @@ const Career = () => {
             <div className="row">
               <div className="col-md-6 d-flex align-items-center">
                 <div className="hero-content">
-                  <h3 className="title">Career</h3>
+                  <h3 className="main-title">Career</h3>
                   <p className="para-content">
                     As your digital enablement partner, we apply our
                     talent-first approach to accelerate your digital journey,

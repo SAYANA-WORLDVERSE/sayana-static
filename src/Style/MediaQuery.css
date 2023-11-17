@@ -156,6 +156,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .linear-text{
+    font-size:28px ;
+  }
+  .hero-content span{
+    font-size:1.3rem;
+  }
 
 
   .switch{
@@ -278,7 +284,7 @@
     width: 380px;
   }
   .title {
-    font-size: 28px;
+    font-size: 28px !important;
   }
   .sub-title {
     font-size: 20px;

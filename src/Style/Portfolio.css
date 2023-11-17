@@ -1,77 +1,103 @@
-.portfolio-img{
-    width:50%;
+.portfolio-img {
+  width: 50%;
 }
-.tab{
-    color:white !important;
+.tab {
+  color: white !important;
 }
-.tabs div div{
-    justify-content: space-evenly;
-    flex-wrap:wrap;
-    gap:1rem;
+.tabs div div {
+  /*justify-content: space-evenly;*/
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.Portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
 
-  .portfolio-card {
-    height: 200px;
-    perspective: 1000px;
-    margin:1rem 0rem;
-  }
-  
-  .portfolio-card-inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.999s;
-  }
-  
-  .portfolio-card:hover .portfolio-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .portfolio-card-front,
-  .portfolio-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .portfolio-card-front {
-    background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%), #fff;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    border-radius: 16px;
-    border: 10px solid rgba(255, 255, 255, 0.1);    border-radius: 10px;
-    justify-content: center;
-    font-size: 24px;
-    transform: rotateY(0deg);
-  }
-  
-  .portfolio-card-back {
-    background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%), #fff;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    border-radius: 16px;
-    border: 10px solid rgba(255, 255, 255, 0.1); 
-    justify-content: center;
-    font-size: 24px;
-    transform: rotateY(180deg);
-  }
+.portfolio-card {
+  border-radius: 20px;
+  background: linear-gradient(60deg, #070a29, #51495f);
+  position: relative;
+  padding: 1rem;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin: 1rem 0rem;
+}
 
-  .Mui-selected{
-    background:white !important;
-    color:#5c27fe !important;
-  }
+.portfolio-card-details p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.4rem 1rem;
+  font-weight: 600;
+  color:white;
+}
+.port-img {
+  width: 100%;
+}
 
-  .css-1aquho2-MuiTabs-indicator{
-    height:0px !important;
-  }
+.card-button {
+  transform: translate(-50%, 125%);
   
+  border-radius: 1rem;
+  border: none;
+  color: #fff !important;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  background: linear-gradient(to right, #602bfe, #dbc4ff);
+
+  font-family: var(--font) !important;
+  outline: none;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.portfolio-card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+.Mui-selected {
+  background: white !important;
+  color: #5c27fe !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  height: 0px !important;
+}
+
+.react-photo-gallery--gallery div{
+  gap:2rem;
+  justify-content: center;
+ 
+}
+.react-photo-gallery--gallery div img{
+  box-shadow: 1px 1px 19px 3px #e9e7e7d9;
+  width:30%;
+
+ 
+}
+

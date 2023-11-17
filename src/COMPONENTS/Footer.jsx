@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import "../Style/Footer.css";
 import logo from "../assets/logo.webp";
-import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube ,BsLinkedin} from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
 import { Link } from "react-router-dom";
@@ -30,7 +30,7 @@ const Footer = () => {
                     <BsTwitter />
                   </li>
                   <li>
-                    <BsYoutube />
+                    <BsLinkedin />
                   </li>
                 </ul>
               </div>
@@ -100,7 +100,7 @@ const Footer = () => {
                   <h4>Our Location</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
                     <li>
-                      <FaLocationDot />{" "}
+                      <FaLocationDot />
                       <span>
                         C9RM+9HJ Abhi's Ganga, Vittal Rao Nagar, Madhapur,
                         Hyderabad, Telangana 500081

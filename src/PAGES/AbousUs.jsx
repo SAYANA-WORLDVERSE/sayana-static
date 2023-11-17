@@ -59,7 +59,7 @@ const AboutUs = () => {
             <div className="row">
               <div className="col-md-6 d-flex align-items-center">
                 <div className="hero-content">
-                  <h3 className="title">About Us</h3>
+                  <h3 className="main-title">About Us</h3>
                   <p className="para-content">
                     As your digital enablement partner, we apply our
                     talent-first approach to accelerate your digital journey,
@@ -120,8 +120,8 @@ const AboutUs = () => {
         </section>
 
         <section>
-          <div className="container about-us-content  mt-5 p-5">
-            <h1 className="main-heading about">
+          <div className="container about-us-content  mt-5 p-2">
+            <h1 className="title about">
               <span className="color-title">Our History</span>
             </h1>
 
@@ -476,8 +476,8 @@ const AboutUs = () => {
       </section>
 
       <section className="our-team">
-        <div className=" about-us-content  mt-5 p-5">
-          <h1 className="main-heading client">
+        <div className=" about-us-content  mt-3 p-2">
+          <h1 className="title client">
             Our<span className="color-title">Team</span>
           </h1>
         </div>
@@ -590,15 +590,15 @@ const AboutUs = () => {
 
       <section className="our-vision">
 
-      <div className=" about-us-content  mt-5 p-5">
-          <h1 className="main-heading client">
+      <div className=" about-us-content  mt-5 p-2">
+          <h1 className="title client">
             Our<span className="color-title">Vision</span>
           </h1>
         </div>
 
         <div className="container">
-          <div className="row">
-          <div className="client-card col-md-3 offset-md-1 ">
+          <div className="row justify-content-around"> 
+          <div className="client-card col-md-3  ">
               <div className="client-card-content">
                 
                 <p className="client-review " >
@@ -608,7 +608,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-          <div className="client-card  col-md-3 offset-md-1">
+          <div className="client-card  col-md-3 ">
               <div className="client-card-content">
                 
                 <p className="client-review">
@@ -618,7 +618,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-          <div className="client-card  col-md-3 offset-md-1 ">
+          <div className="client-card  col-md-3  ">
               <div className="client-card-content">
                 
                 <p className="client-review">

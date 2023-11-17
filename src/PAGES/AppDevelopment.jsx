@@ -32,7 +32,7 @@ const AppDevelopment = () => {
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">
-            <div className="row p-md-5">
+            <div className="row p-md-2">
               <div className="col-md-12 d-flex align-items-center justify-content-center">
                 <div className="hero-content text-center">
                   <h1 className="services-title">Application Development</h1>
@@ -46,7 +46,7 @@ const AppDevelopment = () => {
               </div>
             </div>
 
-            <div className="row p-md-5 mt-5 justify-content-center align-items-center ">
+            <div className="row p-md-5  justify-content-center align-items-center ">
               <div className="col-md-6  d-flex justify-content-center ">
                 <img src={web3} alt="" className="web-img" />
               </div>
@@ -60,7 +60,7 @@ const AppDevelopment = () => {
                 </p>
               </div>
             </div>
-            <div className="row p-md-5 mt-5 justify-content-center align-items-center">
+            <div className="row p-md-5  justify-content-center align-items-center">
               <div className="col-md-6">
                 <h1 className="services-title">Web Development</h1>
                 <p className="ex-para">
@@ -75,7 +75,7 @@ const AppDevelopment = () => {
               </div>
             </div>
 
-            <div className="row p-md-5 mt-5 justify-content-center align-items-center">
+            <div className="row p-md-5  justify-content-center align-items-center">
               <div className="col-md-6   d-flex justify-content-center ">
                 <img src={web2} alt="" className="web-img" />
               </div>
@@ -282,8 +282,8 @@ const AppDevelopment = () => {
             </div>
 
             <section>
-              <div className="container about-us-content  mt-5 p-5">
-                <h1 className="main-heading about">
+              <div className="container about-us-content   p-5">
+                <h1 className="title about">
                   <span className="color-title">Tools We Use</span>
                 </h1>
               </div>
@@ -295,7 +295,7 @@ const AppDevelopment = () => {
               <div className=" tools-card"></div>
               <div className=" tools-card"></div>
               <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
+              <div className=" tools-card"></div> 
               <div className=" tools-card"></div>
               <div className=" tools-card"></div>
               <div className=" tools-card"></div>
@@ -304,7 +304,7 @@ const AppDevelopment = () => {
 
             <section>
               <div className="container about-us-content  mt-5 p-5">
-                <h1 className="main-heading about">
+                <h1 className="title about">
                   <span className="color-title">Our Projects</span>
                 </h1>
               </div>

@@ -8,9 +8,9 @@ const Blogs = () => {
     <Fragment>
       <Header title="Blogs" link="Blog" />
 
-      <section className="about-us mt-5 py-5">
+      <section className="about-us mt-1">
         <div className="container about-us-content col-md-8 p-5">
-          <h1 className="main-heading">
+          <h1 className="title">
             <span className="color-title">Our Solutions is Blog</span>
           </h1>
 

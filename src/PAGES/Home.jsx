@@ -38,6 +38,9 @@ import partner2 from "../assets/partner-2.png";
 import partner3 from "../assets/partner-3.png";
 import partner4 from "../assets/partner-4.png";
 import partner5 from "../assets/partner-5.png";
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
+
 
 import { useTheme } from "../COMPONENTS/Context";
 
@@ -45,12 +48,10 @@ const Home = () => {
 
   const {isDark}=useTheme();
 
-
-
-
   const settings = {
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
@@ -84,7 +85,8 @@ const Home = () => {
   const setting = {
     dots: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive:[
@@ -94,7 +96,7 @@ const Home = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: true,
         }
       },
       {
@@ -116,8 +118,8 @@ const Home = () => {
 
       <section className="about-us">
         <div className="container about-us-content col-md-8 ">
-          <h1 className="main-heading">
-            Next-Gen <span className="color-title">EnterPrice</span>
+          <h1 className="main-title ">
+            Next-Gen <span className="linear-text">EnterPrice</span>
           </h1>
           <p className="main-sub-heading">Software development company</p>
           <p className="main-paracontent ">
@@ -156,7 +158,7 @@ const Home = () => {
 
       <section className="digital-excellence d-flex align-items-center flex-column">
         <img src={web2} alt="" className="digital-wave" />
-        <div className="container mt-5 d-md-flex  align-items-center justify-content-between">
+        <div className="container mt-1 d-md-flex  align-items-center justify-content-between">
           <div className="col-md-6  ">
             <img src={boy} alt="" className="boy-setting" />
           </div>
@@ -173,7 +175,7 @@ const Home = () => {
             <button>Read More</button>
           </div>
         </div>
-        <div className="container mt-5 d-md-flex  align-items-center">
+        <div className="container mt-1 d-md-flex  align-items-center">
           <div className="col-md-6">
             <h1 className="excellence">Why Choose Us</h1>
             <p className="ex-para">
@@ -191,19 +193,66 @@ const Home = () => {
         <div className="container mt-5">
           <div className="row justify-content-evenly">
             <div className="cards col-md-2 p-2">
-              <p className="number mb-0 ">5+</p>
+              <p className="number mb-0 ">
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <CountUp
+                    start={0}
+                    end={5}
+                    duration={40}
+                    
+                    isVisible={isVisible}
+                  />
+                )}
+              </VisibilitySensor> <span>+</span>
+                </p>
               <p className="cards-text">Years of Experience</p>
             </div>
             <div className="cards col-md-2 p-2">
-              <p className="number mb-0 ">50+</p>
+              <p className="number mb-0 "> <VisibilitySensor>
+                {({ isVisible }) => (
+                  <CountUp
+                    start={0}
+                    end={50}
+                    duration={30}
+                    
+                    isVisible={isVisible}
+                  />
+                )}
+              </VisibilitySensor> <span>+</span> </p>
               <p className="cards-text">Projects</p>
             </div>
             <div className="cards col-md-2 p-2">
-              <p className="number mb-0 ">60+</p>
+              <p className="number mb-0 ">
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <CountUp
+                    start={0}
+                    end={60}
+                    duration={30}
+                   
+                    isVisible={isVisible}
+                  />
+                )}
+              </VisibilitySensor> <span>+</span>
+              </p>
               <p className="cards-text">Satisfied Clients</p>
             </div>
             <div className="cards col-md-2 p-2">
-              <p className="number mb-0 ">99%</p>
+              <p className="number mb-0 ">
+
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <CountUp
+                    start={0}
+                    end={99}
+                    duration={30}
+                  
+                    isVisible={isVisible}
+                  />
+                )}
+              </VisibilitySensor> <span>%</span>
+              </p>
               <p className="cards-text"> Clients Satisfication</p>
             </div>
           </div>
@@ -212,10 +261,10 @@ const Home = () => {
 
       <section className="about-us mt-5">
         <div className="container about-us-content col-md-8 ">
-          <h1 className="main-heading">
-            <span className="color-title">Streamedlined Processes</span>
+          <h1 className="main-title">
+            <span className="linear-text">Streamedlined Processes</span>
           </h1>
-          <h1 className="main-heading">
+          <h1 className="title">
             <span className="color-title">Maximum Impact</span>
           </h1>
           <p className="main-paracontent ">
@@ -277,8 +326,8 @@ const Home = () => {
 
       <section className="about-us mt-5 py-md-5">
         <div className="container about-us-content col-md-8 ">
-          <h1 className="main-heading">
-            <span className="color-title">Our Solutions is Blog</span>
+          <h1 className="main-title">
+            <span className="linear-text">Our Solutions is Blog</span>
           </h1>
 
           <p className="main-paracontent ">
@@ -346,9 +395,9 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="container about-us-content col-md-10 mt-5 py-5">
-          <h1 className="main-heading">
-            <span className="color-title">Today To Schedule a discussion</span>
+        <div className="container about-us-content col-md-10  py-5">
+          <h1 className="main-title">
+            <span className="linear-text">Today To Schedule a discussion</span>
           </h1>
 
           <p className="main-paracontent ">
@@ -471,8 +520,8 @@ const Home = () => {
       </section>
 
       <section>
-        <div className=" about-us-content  mt-5 p-5">
-          <h1 className="main-heading client">
+        <div className=" about-us-content   p-5">
+          <h1 className="title client">
             <span className="color-title">Clients We Worked With</span>
           </h1>
 
@@ -681,7 +730,7 @@ const Home = () => {
       </section>
 
       <section className="news">
-        <div className="container mt-5">
+        <div className="container ">
           <div className="news-letter  d-md-flex align-items-center">
             <div className="col-md-6 news-content">
               <h2 className="news-title">News Letter</h2>

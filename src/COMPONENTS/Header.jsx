@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = ({title, link}) => {
   return <Fragment>
 
-<section className="page-title p-md-5">
+<section className="page-title p-md-2">
         <div className="shape"></div>
         <div className="shape right s3"></div>
         <div className="container">
@@ -12,7 +12,7 @@ const Header = ({title, link}) => {
                 <div className="col-12">
                     <div className="page-title__body">
                         <div className="page-title__main">
-                            <h4 className="title">{title}</h4>
+                            <h4 className="main-title">{title}</h4>
     
                             <ul className="breacrumb">
                                 <li><Link to="/">Home</Link></li>

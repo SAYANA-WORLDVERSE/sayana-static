@@ -35,11 +35,11 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="contact-form py-5 mt-5">
+      <section className="contact-form py-2 ">
         <div className="container ">
-          <h1 className="excellence text-center m-5">How Can We Help?</h1>
+          <h1 className="excellence text-center m-3">How Can We Help?</h1>
 
-          <div className="row contactus-form p-md-5 p-sm-3">
+          <div className="row contactus-form py-md-2 p-sm-3">
             <div className="col-md-6 d-flex flex-column justify-content-center">
               <h1 className="contact-title text-sm-center">Contact Information</h1>
               <div className="contact-details">
@@ -140,7 +140,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="py-5 mt-5 ">
+      <section className="py-2 mt-5 ">
         <div className="container map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3919903695214!2d78.38136257597682!3d17.440942601258538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9397e1ea583b%3A0x306709daf631d7b4!2sSayana%20Worldverse!5e0!3m2!1sen!2sin!4v1699512629699!5m2!1sen!2sin"

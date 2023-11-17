@@ -283,7 +283,7 @@ const GraphicsDesign = () => {
 
             <section>
               <div className="container about-us-content  mt-5 p-5">
-                <h1 className="main-heading about">
+                <h1 className="title about">
                   <span className="color-title">Tools We Use</span>
                 </h1>
               </div>
@@ -304,7 +304,7 @@ const GraphicsDesign = () => {
 
             <section>
               <div className="container about-us-content  mt-5 p-5">
-                <h1 className="main-heading about">
+                <h1 className="title about">
                   <span className="color-title">Our Projects</span>
                 </h1>
               </div>

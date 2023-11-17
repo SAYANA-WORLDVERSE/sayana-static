@@ -54,8 +54,14 @@ label {
 textarea {
   height: 170px;
 }
-.map{
+/* .map{
   border:2px solid #291663;
-  padding:2rem 3rem;
+  padding:0.5rem 3rem;
   border-radius:20px;
-}
+} */
+
+ /* remove map css & apply same css to iframe removing padding to border */
+  iframe{
+    border: 4px groove  #602bfe !important;
+    border-radius: 20px;
+  }
