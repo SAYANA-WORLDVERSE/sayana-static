@@ -27,3 +27,21 @@ export const photos = [
     src: "../src/assets/slide9.png",
   },
 ];
+export const photos2 = [
+  {
+    src: "../src/assets/c-1.png",
+  },
+  {
+    src: "../src/assets/client-2.png",
+  },
+  {
+    src: "../src/assets/client-3.png",
+  },
+  {
+    src: "../src/assets/client-4.png",
+  },
+  {
+    src: "../src/assets/client-5.png",
+  },
+  
+];

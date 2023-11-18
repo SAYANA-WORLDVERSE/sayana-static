@@ -14,7 +14,12 @@ import care from "../assets/careofcareers.png";
 import { Link } from "react-router-dom";
 import hpe from "../assets/hpe.png";
 import ImageCarousel from "../COMPONENTS/ImageCarousel";
-
+import {frame} from "../COMPONENTS/Logo";
+import {frame2} from "../COMPONENTS/Logo";
+import {frame3} from "../COMPONENTS/Logo";
+import MobileFrameCarousel from "../COMPONENTS/MobileFrameCarousel";
+import {photos} from "../COMPONENTS/Photo"
+import LogoCarousel from "../COMPONENTS/LogoCarousel";
 const Portfolio = () => {
   const [value, setValue] = useState(0);
 
@@ -169,116 +174,33 @@ const Portfolio = () => {
           </div>
           <div hidden={value !== 1}>
             <div className="row col-md-12 portfolio-container py-5">
-              <ImageCarousel/>
+              <ImageCarousel photos={photos}/>
            
             </div>
           </div>
           <div hidden={value !== 2}>
-            <div className="row col-md-12 portfolio-container py-5">
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
-              </div>
+            <div className=" col-md-12 portfolio-container py-5 logo-slide">
+          
+
+          <LogoCarousel/>
+             
             </div>
           </div>
           <div hidden={value !== 3}>
             <div className="row col-md-12 portfolio-container py-5">
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
+            <div className="col-md-3">
+              <MobileFrameCarousel images={frame}/>
+
               </div>
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
+              <div className="col-md-3">
+              <MobileFrameCarousel images={frame2}/>
+
               </div>
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
+              <div className="col-md-3">
+              <MobileFrameCarousel images={frame3}/>
+
               </div>
-              <div class="col-md-3 portfolio-card">
-                <div class="portfolio-card-inner">
-                  <div class="portfolio-card-front">
-                    <p>Project img</p>
-                  </div>
-                  <div class="portfolio-card-back">
-                    <p>Project Description</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
