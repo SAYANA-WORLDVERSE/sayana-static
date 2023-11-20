@@ -37,16 +37,16 @@ const Contact = () => {
       </section>
       <section className="contact-form py-2 ">
         <div className="container ">
-          <h1 className="excellence text-center m-3">How Can We Help?</h1>
+          <h1 className=" linear-text text-center m-3">How Can We Help?</h1>
 
-          <div className="row contactus-form py-md-2 p-sm-3">
+          <div className="row contactus-form py-md-5 p-sm-4">
             <div className="col-md-6 d-flex flex-column justify-content-center">
               <h1 className="contact-title text-sm-center">Contact Information</h1>
               <div className="contact-details">
                 <div className="location d-flex align-items-center ">
                   <img src={location} alt="" className="contact-icons" />
                   <p className="contact-para">
-                    {" "}
+                    
                     C9RM+9HJ Abhi's Ganga,
                     <br /> Vittal Rao Nagar, Madhapur, <br />
                     Hyderabad, Telangana 500081
@@ -55,14 +55,14 @@ const Contact = () => {
                 <div className="location d-flex align-items-center ">
                   <img src={call} alt="" className="contact-icons" />
                   <p className="contact-para">
-                    {" "}
-                    +91-5724173925, <br />
-                    +91-5724173925
+                 
+                    +91-8096826999, <br />
+                   
                   </p>
                 </div>
                 <div className="location d-flex align-items-center ">
                   <img src={mail} alt="" className="contact-icons" />
-                  <p className="contact-para"> Test@Sayana.com</p>
+                  <p className="contact-para"> info@sayanaworldverse.com, <br/>support@sayanaworldverse.com</p>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Contact = () => {
               <form class="row g-3">
                 <div class="col-md-6">
                   <label  class="form-label">
-                    Full name
+                    Full Name
                   </label>
                   <input type="email" className="form-control" placeholder="Full Name" />
                 </div>
@@ -99,9 +99,13 @@ const Contact = () => {
                   <label for="inputAddress2" class="form-label">
                  Services
                   </label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-select">
                     <option selected>Choose...</option>
-                    <option>...</option>
+                    <option value="Web Design & Development">Web Design & Development</option>
+                    <option value="Application Development">Application Development</option>
+                    <option value="Product Development">Product Development</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Graphics Designing">Graphics Designing</option>
                   </select>
                 </div>
                 <div class="col-md-12">

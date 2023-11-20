@@ -15,7 +15,7 @@
   color: white;
 
   font-family: "Aclonica", sans-serif;
-  font-size: 2.5rem !important;
+  font-size:var(--heading);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -26,7 +26,7 @@
   color: white;
 
   font-family: "Aclonica", sans-serif;
-  font-size: 1.7rem !important;
+  font-size: var(--heading);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -40,6 +40,7 @@
   color: transparent;
   -webkit-text-fill-color: transparent; /* For older browsers */
   text-fill-color: transparent;
+  font-size: var(--heading);
 }
 
 .hero-content span {
@@ -50,12 +51,12 @@
   color: transparent;
   -webkit-text-fill-color: transparent; /* For older browsers */
   text-fill-color: transparent;
-  font-size: 2.5rem;
+font-size:var(--heading);
 }
 .sub-title {
   color: white;
   font-family: "Aclonica", sans-serif;
-  font-size: 2.5rem;
+  font-size: var(--heading);
   font-style: normal;
   line-height: normal;
 }

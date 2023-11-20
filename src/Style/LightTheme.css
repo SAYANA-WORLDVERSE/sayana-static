@@ -71,16 +71,26 @@
     color: var(--light-theme-color);
   }
   .light-theme h4{
-    color:white !important;
+    color:white  !important;
+  }
+  .light-theme .footer-title h4{
+    color:var(--light-theme-title) !important;
+  }
+  .light-theme .contact-para{
+    color:white 
   }
   
   .light-theme .client-company{
       color:var(--light-theme-title)
   }
-  
-  .light-theme .number .card-number {
-    color:var(--text);
+  .light-theme p{
+    color:var(--light-theme-title)
   }
+  .light-theme .footer-list li{
+    color:var(--light-theme-title)
+  }
+  
+ 
   .light-theme .portfolio-card-details p{
     color:var(--light-theme-title);
   }

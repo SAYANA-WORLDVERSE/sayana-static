@@ -21,16 +21,17 @@ const Footer = () => {
               <div className="footer-title d-flex flex-column">
                 <ul className="footer-list social-icons m-0 justify-content-start gap-3 p-0">
                   <li>
-                    <BsFacebook />
+                    <Link to="https://www.facebook.com/people/Sayana-Worldverse/61552692923976/"><BsFacebook /></Link>
                   </li>
                   <li>
-                    <BsInstagram />
+                    <Link to="https://www.instagram.com/sayana_worldverse/"><BsInstagram /></Link>
                   </li>
                   <li>
                     <BsTwitter />
                   </li>
                   <li>
-                    <BsLinkedin />
+                    <Link to="https://www.linkedin.com/company/sayana-worldverse-pvt-ltd/ "><BsLinkedin /></Link>
+                    
                   </li>
                 </ul>
               </div>
@@ -40,19 +41,19 @@ const Footer = () => {
                 <div className="footer-title d-flex flex-column">
                   <h4>Quick Links</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
-                    <Link>
+                    <Link to="/">
                       <li>Company </li>
                     </Link>
-                    <Link>
+                    <Link to="/aboutus">
                       <li>About us </li>
                     </Link>
-                    <Link>
+                    <Link to="/portfolio">
                       <li>Portfolio</li>
                     </Link>
-                    <Link>
+                    <Link to="/blog">
                       <li>Blogs</li>
                     </Link>
-                    <Link>
+                    <Link to="">
                       <li>Careers</li>
                     </Link>
                     <Link>
@@ -107,10 +108,10 @@ const Footer = () => {
                       </span>
                     </li>
                     <li>
-                      <BiSolidPhoneCall /> <span> +91-5724173925</span>
+                      <BiSolidPhoneCall /> <span> +91-8096826999</span>
                     </li>
-                    <li>
-                      <BiLogoGmail /> <span> Test@gmail.com</span>
+                    <li className=" d-flex ">
+                      <BiLogoGmail /> <span>info@sayanaworldverse.com <br/>support@sayanaworldverse.com</span>
                     </li>
                   </ul>
                 </div>

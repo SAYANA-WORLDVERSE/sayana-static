@@ -9,11 +9,11 @@ footer {
 }
 .footer-title h4 {
   font-family: var(--font);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: white;cl
+  color: white;
 }
 a{
   text-decoration: none !important;
@@ -60,4 +60,5 @@ a{
 }
 .footer-bottom p{
   color:white;
+  font-size:.9rem;
 }

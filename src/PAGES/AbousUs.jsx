@@ -109,7 +109,7 @@ const AboutUs = () => {
           <div className="container mt-5">
             <div className="news-letter  d-md-flex align-items-center">
               <div className="col-md-6 news-content">
-                <h1 className="news-title">We Live By Powerful </h1>
+                <h2 className="news-title">We Live By Powerful </h2>
                 <p className="news-para">
                   Subscribe To Our Newsletter and Stay Updated
                 </p>
@@ -478,7 +478,7 @@ const AboutUs = () => {
       <section className="our-team">
         <div className=" about-us-content  mt-3 p-2">
           <h1 className="title client">
-            Our<span className="color-title">Team</span>
+            <span className="color-title">Our Team</span>
           </h1>
         </div>
         <div className="container">
@@ -592,7 +592,7 @@ const AboutUs = () => {
 
       <div className=" about-us-content  mt-5 p-2">
           <h1 className="title client">
-            Our<span className="color-title">Vision</span>
+            <span className="color-title">Our Vision</span>
           </h1>
         </div>
 

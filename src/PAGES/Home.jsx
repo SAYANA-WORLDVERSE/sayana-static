@@ -137,7 +137,7 @@ const Home = () => {
             <p>Crafted Solutions Real Results</p>
           </div>
 
-          <div className="services d-flex justify-content-center align-items-center">
+          <div className="services d-flex justify-content-center flex-column align-items-center">
             <img src={gradiant} alt="" className="gradiant-bg" />
             <div className="bg-inner">
               <img src={computer} alt="" className="computer" />
@@ -147,12 +147,13 @@ const Home = () => {
               <img src={pen} alt="" className="pen" data-aos="fade-left"/>
               <img src={laptop} alt="" className="laptop" data-aos="fade-left"/>
             </div>
-          </div>
-
-          <p className="learn-more">
+            <p className="learn-more mt-5">
             Delevering Unparalleled Services Tailored to Your Unique Need
           </p>
           <button>Learn More</button>
+          </div>
+
+         
         </div>
       </section>
 
@@ -521,8 +522,8 @@ const Home = () => {
 
       <section>
         <div className=" about-us-content   p-5">
-          <h1 className="title client">
-            <span className="color-title">Clients We Worked With</span>
+          <h1 className="client">
+            <span className="client-title">Clients We Worked With</span>
           </h1>
 
           <p className="main-paracontent ">
@@ -581,9 +582,9 @@ const Home = () => {
           <h4 className=" clients">
             <span className="client-title">Our Spaciality</span>
           </h4>
-          <h1 className="main-heading mt-5">
-            <span className="color-title">What Clients Say About Us</span>
-          </h1>
+          <h5 className=" mt-1">
+            <span className="">What Clients Say About Us</span>
+          </h5>
         </div>
       </section>
 

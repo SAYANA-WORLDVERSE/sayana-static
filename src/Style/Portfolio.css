@@ -30,7 +30,7 @@
 
 .portfolio-card-details p {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: .8rem;
   text-align: center;
   margin: 0.4rem 1rem;
   font-weight: 600;
@@ -113,7 +113,7 @@
  
 }
 
-/* code fro mobile frame carousel */
+/* code for mobile frame carousel */
 
 /* MobileFrameCarousel.css */
 .mobile-frame-carousel-container {
@@ -164,6 +164,13 @@
 
 .slick-next {
   right: 10px;
+}
+@media (min-width: 768px)
+{
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 23% !important;
+}
 }
 
 

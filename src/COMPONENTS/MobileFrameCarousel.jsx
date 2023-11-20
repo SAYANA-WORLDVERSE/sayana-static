@@ -12,9 +12,9 @@ const MobileFrameCarousel = ({ images }) => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
-    dots: true,
+    autoplay: true,
+    arrows: false,
+    dots: false,
     
   };
 

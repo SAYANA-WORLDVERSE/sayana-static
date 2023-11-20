@@ -7,10 +7,10 @@
 .main-heading {
   color: white;
   font-family: var(--font);
-  font-size: 1.5rem;
+  font-size: var(--heading);
   padding:.9rem   !important;
 }
-.title .color-title {
+ .color-title {
   font-family: var(--font);
   background: linear-gradient(to right, #602bfe, #dbc4ff);
   -webkit-background-clip: text; /* For older browsers */
@@ -18,12 +18,13 @@
   color: transparent;
   -webkit-text-fill-color: transparent; /* For older browsers */
   text-fill-color: transparent;
+  font-size: var(--title) !important;
 }
 
 .main-sub-heading {
   color: white;
   font-family: var(--font);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .main-paracontent {
   color: var(--text);
@@ -35,8 +36,7 @@
 }
 .crafted-solution p {
   font-family: var(--font);
-  font-size: 2rem;
-  font-weight: 600;
+font-size: var(--heading);  font-weight: 600;
   border: 1px solid white;
   padding: 0rem 1rem;
   border-radius: 30px;
@@ -53,7 +53,7 @@
   position: relative;
   background: url("../assets/service-bg.png");
   background-size: cover;
-  height: 700px;
+  height: 800px;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -104,11 +104,12 @@
   bottom: 0;
 }
 .learn-more {
-  color: white;
+  color: var(--text);
   font-size: 1.2rem;
 }
 .digital-excellence {
   position: relative;
+  margin-top: -4rem;
 }
 
 .digital-wave {
@@ -129,9 +130,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-.digital-excellence {
-  padding: 2rem 0rem;
+.ring:hover{
+  transform: scale(1.2);
+  transition: all .5s ease;
 }
+
+
 
 .cards {
   background: linear-gradient(to top, #070a29, #51495f);
@@ -242,6 +246,8 @@ padding:.5rem;
 }
 .ring {
   width: 80px;
+  transition: all .5s ease;
+
 }
 .ring-icon {
   position: absolute;
@@ -274,6 +280,7 @@ padding:.5rem;
   padding: 0.5rem;
   border-radius: 30px;
   box-shadow: 1px 1px 19px 3px #3e3e3ed9;
+  font-size: var(--heading);
 }
 .clients {
   background: linear-gradient(to right, #070a29, #51495f);
@@ -336,7 +343,7 @@ padding:.5rem;
   color: transparent;
   -webkit-text-fill-color: transparent; /* For older browsers */
   text-fill-color: transparent;
-  font-size: 1.2rem;
+  font-size: var(--heading);
 }
 
 .client-card {
@@ -394,7 +401,7 @@ padding:.5rem;
   border-radius: 20px;
 }
 .news-title {
-  color: white;
+  color: white !important;
   font-family: var(--font);
   font-size: 2.5rem;
 }
@@ -406,7 +413,7 @@ padding:.5rem;
 }
 
 .news-para {
-  color: white;
+  color: white !important;
   font-size: 1.2rem;
 }
 .news-input {
@@ -436,8 +443,8 @@ padding:.5rem;
 .news-rocket {
   position: absolute;
   right: 0;
-  top: -155px;
-  width: 900px;
+  top: -145px;
+  width: 670px;
 }
 
 .implements{
