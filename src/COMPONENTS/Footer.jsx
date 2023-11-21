@@ -1,7 +1,13 @@
 import React, { Fragment } from "react";
 import "../Style/Footer.css";
 import logo from "../assets/logo.webp";
-import { BsFacebook, BsInstagram, BsTwitter, BsYoutube ,BsLinkedin} from "react-icons/bs";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsTwitter,
+  BsYoutube,
+  BsLinkedin,
+} from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
 import { Link } from "react-router-dom";
@@ -21,81 +27,77 @@ const Footer = () => {
               <div className="footer-title d-flex flex-column">
                 <ul className="footer-list social-icons m-0 justify-content-start gap-3 p-0">
                   <li>
-                    <Link to="https://www.facebook.com/people/Sayana-Worldverse/61552692923976/"><BsFacebook /></Link>
+                    <Link to="https://www.facebook.com/people/Sayana-Worldverse/61552692923976/">
+                      <BsFacebook />
+                    </Link>
                   </li>
                   <li>
-                    <Link to="https://www.instagram.com/sayana_worldverse/"><BsInstagram /></Link>
+                    <Link to="https://www.instagram.com/sayana_worldverse/">
+                      <BsInstagram />
+                    </Link>
                   </li>
                   <li>
                     <BsTwitter />
                   </li>
                   <li>
-                    <Link to="https://www.linkedin.com/company/sayana-worldverse-pvt-ltd/ "><BsLinkedin /></Link>
-                    
+                    <Link to="https://www.linkedin.com/company/sayana-worldverse-pvt-ltd/ ">
+                      <BsLinkedin />
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-md-9 col-sm-12 d-md-flex flex-wrap justify-content-between mt-sm-2">
-              <div className="col-md-2 col-sm-6">
+              <div className="col-md-3 col-sm-6">
                 <div className="footer-title d-flex flex-column">
-                  <h4>Quick Links</h4>
+                  <h4>Company</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
                     <Link to="/">
-                      <li>Company </li>
+                      <li>Home</li>
                     </Link>
-                    <Link to="/aboutus">
-                      <li>About us </li>
+                    <Link to="/about">
+                      <li>About Us</li>
+                    </Link>
+                    <Link to="/blog">
+                      <li> Blog</li>
                     </Link>
                     <Link to="/portfolio">
                       <li>Portfolio</li>
                     </Link>
-                    <Link to="/blog">
-                      <li>Blogs</li>
-                    </Link>
-                    <Link to="">
+
+                    <Link to="/career">
                       <li>Careers</li>
                     </Link>
-                    <Link>
+                    <Link to="/contact">
                       <li> Contact Us</li>
                     </Link>
                   </ul>
                 </div>
               </div>
+
               <div className="col-md-3 col-sm-6">
                 <div className="footer-title d-flex flex-column">
                   <h4>Services</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
-                    <Link>
+                    <Link to="/webdesign">
                       <li>Web Design & Development </li>
                     </Link>
-                    <Link>
+                    <Link to="/applicationdevelopment">
                       <li>Application Development</li>
                     </Link>
-                    <Link>
+                    <Link to="/productdevelopment">
                       <li>Product Development</li>
                     </Link>
-                    <Link>
+                    <Link to="/Digitalmarketing">
                       <li>Digital Marketing</li>
                     </Link>
-                    <Link>
+                    <Link to="/graphicsdesign">
                       <li>Graphics Design</li>
                     </Link>
                   </ul>
                 </div>
               </div>
-              <div className="col-md-2 col-sm-6">
-                <div className="footer-title d-flex flex-column">
-                  <h4>Learn</h4>
-                  <ul className="footer-list flex-column p-0 mb-0">
-                    <li>Web Design & Development </li>
-                    <li>Application Development</li>
-                    <li>Product Development</li>
-                    <li>Digital Marketing</li>
-                    <li>Graphics Design</li>
-                  </ul>
-                </div>
-              </div>
+
               <div className="col-md-3 col-sm-6">
                 <div className="footer-title d--flex flex-column">
                   <h4>Our Location</h4>
@@ -111,7 +113,11 @@ const Footer = () => {
                       <BiSolidPhoneCall /> <span> +91-8096826999</span>
                     </li>
                     <li className=" d-flex ">
-                      <BiLogoGmail /> <span>info@sayanaworldverse.com <br/>support@sayanaworldverse.com</span>
+                      <BiLogoGmail />{" "}
+                      <span>
+                        info@sayanaworldverse.com <br />
+                        support@sayanaworldverse.com
+                      </span>
                     </li>
                   </ul>
                 </div>

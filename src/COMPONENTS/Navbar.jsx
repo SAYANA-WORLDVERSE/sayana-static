@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState,useEffect } from "react";
 import "../Style/Navbar.css";
 import logo from "../assets/logo.webp";
 import { Link } from "react-router-dom";
@@ -8,7 +8,29 @@ import { useTheme } from "./Context";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
   const { isDark } = useTheme();
+
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+
+    // Adjust this value based on when you want the navbar to become sticky
+    const triggerPoint = 100;
+
+    setIsSticky(scrollPosition > triggerPoint);
+  };
+
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -16,8 +38,8 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <div className={`container-fluid navbar ${isDark ? 'dark-theme':'light-theme'}`}>
-        <div className="container h-sm-100">
+      <div className={`container-fluid navbar ${isDark ? 'dark-theme':'light-theme'}  ${isSticky ? 'sticky' : ''}`}>
+        <div className="container h-sm-100 nav-container">
           <div className="d-flex w-100 justify-content-md-between justify-content-sm-between align-items-center nav-bar-inner">
             <div className="logo ">
               <img src={logo} alt="logo" />

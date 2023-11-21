@@ -12,7 +12,7 @@
 }
  .color-title {
   font-family: var(--font);
-  background: linear-gradient(to right, #602bfe, #dbc4ff);
+  background:  var(--text-gradiant);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
   color: transparent;
@@ -42,7 +42,7 @@ font-size: var(--heading);  font-weight: 600;
   border-radius: 30px;
 
   font-family: var(--font);
-  background: linear-gradient(to top, #602bfe, #dbc4ff);
+  background:  var(--text-gradiant);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
   color: transparent;
@@ -130,15 +130,12 @@ font-size: var(--heading);  font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 
-.ring:hover{
-  transform: scale(1.2);
-  transition: all .5s ease;
-}
+
 
 
 
 .cards {
-  background: linear-gradient(to top, #070a29, #51495f);
+  background: var(--card-gradiant);
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -193,14 +190,14 @@ font-size: var(--heading);  font-weight: 600;
 .blog-cards__title {
   margin: 0;
   font-size: 13px;
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
 }
 
 .blog-cards__description {
   margin: 10px 0 0;
   font-size: 14px;
-  color: white;
+  color: white !important;
   line-height: 1.4;
 }
 
@@ -246,7 +243,7 @@ padding:.5rem;
 }
 .ring {
   width: 80px;
-  transition: all .5s ease;
+  animation: Zoom 3s linear infinite;
 
 }
 .ring-icon {
@@ -276,14 +273,14 @@ padding:.5rem;
 }
 
 .client {
-  background: linear-gradient(to right, #070a29, #51495f);
+  background: var(--card-gradiant);
   padding: 0.5rem;
   border-radius: 30px;
   box-shadow: 1px 1px 19px 3px #3e3e3ed9;
   font-size: var(--heading);
 }
 .clients {
-  background: linear-gradient(to right, #070a29, #51495f);
+  background:  var(--card-gradiant);
   padding: 8px;
   border-radius: 30px;
   box-shadow: 1px 1px 19px 3px #3e3e3ed9;
@@ -298,7 +295,7 @@ padding:.5rem;
   top: 83px;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to right, #602bfe, #dbc4ff);
+  background:  var(--text-gradiant);
   z-index: -1;
 }
 
@@ -337,7 +334,7 @@ padding:.5rem;
 
 .client-title {
   font-family: var(--font);
-  background: linear-gradient(to right, #602bfe, #dbc4ff);
+  background: var(--text-gradiant);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
   color: transparent;
@@ -347,7 +344,7 @@ padding:.5rem;
 }
 
 .client-card {
-  background: linear-gradient(to top, #070a29, #51495f);
+  background:  var(--card-gradiant);
   padding: 2rem;
   border-radius: 20px;
   position: relative;
@@ -362,7 +359,7 @@ padding:.5rem;
 
 .client-name {
   font-family: var(--font);
-  background: linear-gradient(to right, #602bfe, #dbc4ff);
+  background: var(--text-gradiant);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
   color: transparent;
@@ -396,7 +393,7 @@ padding:.5rem;
   margin: 0rem 1rem;
 }
 .news-letter {
-  background: linear-gradient(to right, #602bfe, #dbc4ff);
+  background: var(--text-gradiant);
   padding: 4rem;
   border-radius: 20px;
 }
@@ -406,7 +403,7 @@ padding:.5rem;
   font-size: 2.5rem;
 }
 .news {
-  height: 600px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -449,7 +446,7 @@ padding:.5rem;
 
 .implements{
   color:white;
-  background:linear-gradient(to left, #070a29, #51495f);
+  background:var(--card-gradiant);
   border-radius:30px;
   padding:10px;
   display:flex;
@@ -465,7 +462,7 @@ padding:.5rem;
   justify-content: center;
 }
 .text h4{
-  background: linear-gradient(to right, #5c26ff, #dbc4ff);
+  background: var(--text-gradiant);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
   color: transparent;
@@ -497,6 +494,22 @@ padding:.5rem;
 }
 .hero-img{
   animation:side 3s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes Zoom{
+  0% {
+    transform: scale(1);
+
+  }
+  50% {
+    transform: scale(1.2);
+
+  }
+  100% {
+    transform: scale(1);
+
+  }
+
 }
 
 

@@ -34,7 +34,7 @@
 
 .linear-text {
   font-family: "Aclonica", sans-serif;
-  background: linear-gradient(to right, #602bfe, #dbc4ff);
+  background:var(--text-gradiant);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
   color: transparent;
@@ -45,7 +45,7 @@
 
 .hero-content span {
   font-family: "Aclonica", sans-serif;
-  background: linear-gradient(to right, #602bfe, #dbc4ff);
+  background: var(--text-gradiant);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
   color: transparent;

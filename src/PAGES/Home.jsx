@@ -40,11 +40,15 @@ import partner4 from "../assets/partner-4.png";
 import partner5 from "../assets/partner-5.png";
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+import { useNavigate } from "react-router";
 
 
 import { useTheme } from "../COMPONENTS/Context";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate=useNavigate();
 
   const {isDark}=useTheme();
 
@@ -119,7 +123,7 @@ const Home = () => {
       <section className="about-us">
         <div className="container about-us-content col-md-8 ">
           <h1 className="main-title ">
-            Next-Gen <span className="linear-text">EnterPrice</span>
+            Next-Gen <span className="linear-text">EnterPrise</span>
           </h1>
           <p className="main-sub-heading">Software development company</p>
           <p className="main-paracontent ">
@@ -424,13 +428,13 @@ const Home = () => {
                       <div className="icons">
                         <FiPhoneCall />
                       </div>
-                      <p className="card-number mt-0 ">123-456-7890</p>
+                      <p className="card-number mt-0 ">+91-8096826999</p>
                     </div>
-                    <div className="number d-flex align-items-center gap-2">
+                    {/* <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
                         <AiOutlineMail />
                       </div>
-                      <p className="card-number mt-0 ">sayana123@gmail.com</p>
+                      <p className="card-number mt-0 ">support@sayanaworldverse.com</p>
                     </div>
                     <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -440,9 +444,11 @@ const Home = () => {
                         Madhapur,Hyderabad, Telangana
                         <br /> 500072
                       </p>
-                    </div>
+                    </div> */}
                   </div>
-                  <button>Call Now</button>
+                 <Link to="tel:+91-8096826999">
+                 <button >Call Now</button>
+                 </Link> 
                 </div>
               </div>
             </div>
@@ -455,17 +461,11 @@ const Home = () => {
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
                   <p className="text-center">questions or remarks? Just write us a messagel</p>
                   <div className="list">
-                    <div className="number d-flex align-items-center gap-2">
+                    {/* <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
                         <FiPhoneCall />
                       </div>
-                      <p className="card-number mt-0 ">123-456-7890</p>
-                    </div>
-                    <div className="number d-flex align-items-center gap-2">
-                      <div className="icons">
-                        <AiOutlineMail />
-                      </div>
-                      <p className="card-number mt-0 ">sayana123@gmail.com</p>
+                      <p className="card-number mt-0 ">+91-8096826999</p>
                     </div>
                     <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -475,9 +475,16 @@ const Home = () => {
                         Madhapur,Hyderabad, Telangana
                         <br /> 500072
                       </p>
+                    </div> */}
+                    <div className="number d-flex align-items-center gap-2">
+                      <div className="icons">
+                        <AiOutlineMail />
+                      </div>
+                      <p className="card-number mt-0 ">support@sayanaworldverse.com</p>
                     </div>
+                   
                   </div>
-                  <button>Call Now</button>
+                  <button onClick={()=>navigate("/contact")}>Contact Us</button>
                 </div>
               </div>
             </div>
@@ -490,17 +497,11 @@ const Home = () => {
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
                   <p className="text-center">questions or remarks? Just write us a messagel</p>
                   <div className="list">
-                    <div className="number d-flex align-items-center gap-2">
+                    {/* <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
                         <FiPhoneCall />
                       </div>
                       <p className="card-number mt-0 ">123-456-7890</p>
-                    </div>
-                    <div className="number d-flex align-items-center gap-2">
-                      <div className="icons">
-                        <AiOutlineMail />
-                      </div>
-                      <p className="card-number mt-0 ">sayana123@gmail.com</p>
                     </div>
                     <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -510,9 +511,16 @@ const Home = () => {
                         Madhapur,Hyderabad, Telangana
                         <br /> 500072
                       </p>
+                    </div> */}
+                    <div className="number d-flex align-items-center gap-2">
+                      <div className="icons">
+                        <AiOutlineMail />
+                      </div>
+                      <p className="card-number mt-0 ">info@sayanaworldverse.com</p>
                     </div>
+                
                   </div>
-                  <button>Call Now</button>
+                  <button>Connect</button>
                 </div>
               </div>
             </div>
@@ -582,9 +590,12 @@ const Home = () => {
           <h4 className=" clients">
             <span className="client-title">Our Spaciality</span>
           </h4>
-          <h5 className=" mt-1">
-            <span className="">What Clients Say About Us</span>
-          </h5>
+          
+            
+          <p className="main-paracontent ">
+          What Clients Say About Us
+          </p>
+         
         </div>
       </section>
 

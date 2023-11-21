@@ -17,9 +17,9 @@ import ImageCarousel from "../COMPONENTS/ImageCarousel";
 import {frame} from "../COMPONENTS/Logo";
 import {frame2} from "../COMPONENTS/Logo";
 import {frame3} from "../COMPONENTS/Logo";
-import MobileFrameCarousel from "../COMPONENTS/MobileFrameCarousel";
 import {photos} from "../COMPONENTS/Photo"
 import LogoCarousel from "../COMPONENTS/LogoCarousel";
+import MobileFrameCarousel from "../COMPONENTS/MobileFrameCarousel";
 const Portfolio = () => {
   const [value, setValue] = useState(0);
 
@@ -187,17 +187,23 @@ const Portfolio = () => {
             </div>
           </div>
           <div hidden={value !== 3}>
-            <div className="row col-md-12 portfolio-container py-5">
-            <div className="col-md-3">
+            <div className="  d-flex col-md-12 portfolio-container flex-wrap py-5">
+            <div className="">
               <MobileFrameCarousel images={frame}/>
+           
 
               </div>
-              <div className="col-md-3">
+              <div className="">
               <MobileFrameCarousel images={frame2}/>
 
+                              
+                         
+
               </div>
-              <div className="col-md-3">
+              <div className="">
               <MobileFrameCarousel images={frame3}/>
+
+           
 
               </div>
               

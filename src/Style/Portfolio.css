@@ -30,11 +30,11 @@
 
 .portfolio-card-details p {
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
   margin: 0.4rem 1rem;
   font-weight: 600;
-  color:white;
+  color: white;
 }
 .port-img {
   width: 100%;
@@ -42,7 +42,7 @@
 
 .card-button {
   transform: translate(-50%, 125%);
-  
+
   border-radius: 1rem;
   border: none;
   color: #fff !important;
@@ -89,88 +89,51 @@
   height: 0px !important;
 }
 
-.react-photo-gallery--gallery div{
-  gap:2rem;
+.react-photo-gallery--gallery div {
+  gap: 2rem;
   justify-content: center;
-
- 
 }
-.react-photo-gallery--gallery div img{
-  width:30%;
-
- 
+.react-photo-gallery--gallery div img {
+  width: 30%;
 }
 
-
- .logo-slide .react-photo-gallery--gallery div img{
+.logo-slide .react-photo-gallery--gallery div img {
   background: linear-gradient(to top, #ffffff, #e9e9e9);
-  padding: .5rem;
+  padding: 0.5rem;
 
   height: 150px;
   width: 20%;
   border-radius: 10px;
-
- 
 }
 
 /* code for mobile frame carousel */
 
-/* MobileFrameCarousel.css */
-.mobile-frame-carousel-container {
+.banner_slider {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Set your desired background color */
+  position: relative;
+}
+.banner_slider .slick-slide div {
+  margin: 0rem 0rem !important;
 }
 
-.mobile-frame {
-  position: relative;
-  width: 360px; /* Set the width of the mobile frame */
-  height: 640px; /* Set the height of the mobile frame */
-  overflow: hidden;
- 
+/* hero slider mobile frame */
+.banner_slider .slider_frame{
+  position: absolute;
+  z-index: 999;
+  width: 226px;
+  
 }
-.mobile-img{
-  position:absolute;
-  top:0;
-  left:0;
+
+.slider_img img{
   width:100%;
-}
-
-.carousel-slide {
-  width: 100%;
-  height: 430px;
- 
-}
-.carousel-slide img {
-  width: 75%;
-  height:420px;
-  position: relative;
-  top: 5vh;
-  left: .7vw;
-  z-index: -1;
-}
-
-.slick-prev,
-.slick-next {
-  font-size: 24px;
-  color: #fff;
-  z-index: 1;
-}
-
-.slick-prev {
-  left: 10px;
-}
-
-.slick-next {
-  right: 10px;
-}
-@media (min-width: 768px)
-{
-.col-md-3 {
-    flex: 0 0 auto;
-    width: 23% !important;
-}
+  border-radius: 30px;
 }
 
 
+
+
+
+
+.banner_slider #frmae_slider {
+  width: 220px;
+}

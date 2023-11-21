@@ -32,6 +32,9 @@ a{
   flex-direction: column;
   justify-content: space-evenly;
 }
+.social-icons li a{
+  color: white !important;
+}
 
 .footer-logo {
   width: 100px;

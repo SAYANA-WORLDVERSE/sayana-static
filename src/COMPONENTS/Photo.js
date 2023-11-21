@@ -1,3 +1,5 @@
+
+
 export const photos = [
   {
     src: "../src/assets/slide1.jpeg",
