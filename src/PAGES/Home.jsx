@@ -392,7 +392,7 @@ const Home = () => {
              
             </div>
             <div>
-            <button className="mt-5">View All</button>
+            <button className="mt-5" onClick={()=>navigate("/blog")}>View All</button>
 
             </div>
           </section>
@@ -750,7 +750,7 @@ const Home = () => {
                 Subscribe To Our Newsletter and Stay Updated
               </p>
               <div className="form-group">
-                <input type="text" className="news-input" placeholder="Enter Your Email" />
+                <input type="text" className="news-input" placeholder="Enter Your Email"  aria-labelledby="email"/>
                 <button className="subscribe-btn">Subscribe</button>
               </div>
             </div>

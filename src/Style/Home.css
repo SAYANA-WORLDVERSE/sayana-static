@@ -274,7 +274,7 @@ padding:.5rem;
 
 .client {
   background: var(--card-gradiant);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 30px;
   box-shadow: 1px 1px 19px 3px #3e3e3ed9;
   font-size: var(--heading);

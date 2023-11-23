@@ -1,17 +1,18 @@
-import React, { Fragment, useState,useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "../Style/Navbar.css";
 import logo from "../assets/logo.webp";
+import whitelogo from "../assets/white-logo.png";
 import { Link } from "react-router-dom";
 import { BsChevronDown } from "react-icons/bs";
 import ToggleButton from "./ToggleButton";
 import { useTheme } from "./Context";
+
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   const { isDark } = useTheme();
-
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -22,13 +23,12 @@ const Navbar = () => {
     setIsSticky(scrollPosition > triggerPoint);
   };
 
-  
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup the event listener when the component is unmounted
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -38,14 +38,18 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <div className={`container-fluid navbar ${isDark ? 'dark-theme':'light-theme'}  ${isSticky ? 'sticky' : ''}`}>
+      <div
+        className={`container-fluid navbar ${
+          isDark ? "dark-theme" : "light-theme"
+        }  ${isSticky ? "sticky" : ""}`}
+      >
         <div className="container h-sm-100 nav-container">
           <div className="d-flex w-100 justify-content-md-between justify-content-sm-between align-items-center nav-bar-inner">
             <div className="logo ">
-              <img src={logo} alt="logo" />
+              <img src={isDark ? whitelogo:logo} alt="logo" />
             </div>
             <div className="d-flex col-10  ">
-              <nav  className="d-flex justify-content-md-between   w-100">
+              <nav className="d-flex justify-content-md-between   w-100">
                 <div
                   className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}
                   onClick={toggleMobileMenu}
@@ -61,7 +65,7 @@ const Navbar = () => {
                   }`}
                 >
                   <li className="list-items">
-                    <Link 
+                    <Link
                       to="/"
                       className="list-link"
                       onClick={toggleMobileMenu}
@@ -79,31 +83,45 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="list-items">
-                    <Link
-                      to="/"
-                      className="list-link"
-                   
-                    >
-                      Services <span><BsChevronDown/></span>
+                    <Link to="/" className="list-link">
+                      Services{" "}
+                      <span>
+                        <BsChevronDown />
+                      </span>
                     </Link>
 
                     <ul class="sub-menu p-0">
                       <li class="menu-item">
-                        <Link to="/webdesign" onClick={toggleMobileMenu}>Web Design & Development</Link>
+                        <Link to="/webdesign" onClick={toggleMobileMenu}>
+                          Web Design & Development
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <Link to="/applicationdevelopment" onClick={toggleMobileMenu}>Application Development</Link>
+                        <Link
+                          to="/applicationdevelopment"
+                          onClick={toggleMobileMenu}
+                        >
+                          Application Development
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <Link to="/productdevelopment" onClick={toggleMobileMenu}>Product Development</Link>
+                        <Link
+                          to="/productdevelopment"
+                          onClick={toggleMobileMenu}
+                        >
+                          Product Development
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <Link to="/Digitalmarketing" onClick={toggleMobileMenu}>Digital Marketing</Link>
+                        <Link to="/Digitalmarketing" onClick={toggleMobileMenu}>
+                          Digital Marketing
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <Link to="/graphicsdesign" onClick={toggleMobileMenu}>Graphics Design</Link>
+                        <Link to="/graphicsdesign" onClick={toggleMobileMenu}>
+                          Graphics Design
+                        </Link>
                       </li>
-                     
                     </ul>
                   </li>
                   <li className="list-items">
@@ -144,8 +162,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </nav>
-              <ToggleButton/>
-
+              <ToggleButton />
             </div>
           </div>
         </div>

@@ -13,7 +13,6 @@ import team from "../assets/team.png";
 import Header from "../COMPONENTS/Header";
 
 const AboutUs = () => {
-
   const breakpoints = {
     310: {
       slidesPerView: 1,
@@ -27,11 +26,10 @@ const AboutUs = () => {
       slidesPerView: 3,
       spaceBetween: 40,
     },
-    1400:{
+    1400: {
       slidesPerView: 5,
       spaceBetween: 40,
-
-    }
+    },
   };
 
   const breakpoint = {
@@ -47,12 +45,11 @@ const AboutUs = () => {
       slidesPerView: 3,
       spaceBetween: 40,
     },
-   
   };
 
   return (
     <Fragment>
-      <Header title="About Us" link="About Us"/>
+      <Header title="About Us" link="About Us" />
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">
@@ -121,7 +118,7 @@ const AboutUs = () => {
 
         <section>
           <div className="container about-us-content  mt-5 p-2">
-            <h1 className="title about">
+            <h1 className="title about mb-4">
               <span className="color-title">Our History</span>
             </h1>
 
@@ -148,9 +145,8 @@ const AboutUs = () => {
                     spaceBetween={30}
                     breakpoints={breakpoints}
                     slidesPerView={5}
-                    // scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log("slide change")}
+                    Autoplay={true}
+                    scrollbar={{ draggable: true }}
                   >
                     <SwiperSlide>
                       <div className="roadmap-box">
@@ -167,7 +163,6 @@ const AboutUs = () => {
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                      {" "}
                       <div className="swiper-slide">
                         <div className="roadmap-box">
                           <div className="time">February 01, 2022</div>
@@ -182,7 +177,6 @@ const AboutUs = () => {
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                      {" "}
                       <div className="swiper-slide">
                         <div className="roadmap-box">
                           <div className="time">February 01, 2022</div>
@@ -477,22 +471,18 @@ const AboutUs = () => {
 
       <section className="our-team">
         <div className=" about-us-content  mt-3 p-2">
-          <h1 className="title client">
+          <h1 className="title client mb-4">
             <span className="color-title">Our Team</span>
           </h1>
         </div>
         <div className="container">
           <Swiper
-            // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={20}
             slidesPerView={3}
             breakpoints={breakpoint}
-
             navigation={true}
-            // scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
+        
           >
             <SwiperSlide>
               <div className="team-card d-flex justify-content-center">
@@ -589,28 +579,25 @@ const AboutUs = () => {
       </section>
 
       <section className="our-vision">
-
-      <div className=" about-us-content  mt-5 p-2">
-          <h1 className="title client">
+        <div className=" about-us-content  mt-5 p-2">
+          <h1 className="title client mb-4">
             <span className="color-title">Our Vision</span>
           </h1>
         </div>
 
         <div className="container">
-          <div className="row justify-content-around"> 
-          <div className="client-card col-md-3  ">
+          <div className="row justify-content-around">
+            <div className="client-card col-md-3  ">
               <div className="client-card-content">
-                
-                <p className="client-review " >
+                <p className="client-review ">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat neque modi necessitatibus molestiae nesciunt at
                   asperiores vitae aspernatur rem cum.
                 </p>
               </div>
             </div>
-          <div className="client-card  col-md-3 ">
+            <div className="client-card  col-md-3 ">
               <div className="client-card-content">
-                
                 <p className="client-review">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat neque modi necessitatibus molestiae nesciunt at
@@ -618,9 +605,8 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-          <div className="client-card  col-md-3  ">
+            <div className="client-card  col-md-3  ">
               <div className="client-card-content">
-                
                 <p className="client-review">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Fugiat neque modi necessitatibus molestiae nesciunt at
@@ -629,14 +615,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-
-
-
-        
         </div>
-
-
-
       </section>
     </Fragment>
   );

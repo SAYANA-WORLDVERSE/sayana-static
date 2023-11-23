@@ -17,6 +17,8 @@ import DigitalMarketing from "./PAGES/DigitalMarketing";
 import GraphicsDesign from "./PAGES/GraphicsDesign";
 import { useTheme } from "./COMPONENTS/Context";
 import "./index.css"
+import ErrorPage from "./COMPONENTS/ErrorPage";
+import BlogDetails from "./PAGES/BlogDetails";
 
 const App = () => {
   const { isDark} = useTheme();
@@ -43,6 +45,8 @@ const App = () => {
           <Route path="/productdevelopment" element={<Productdevelopment/>} />
           <Route path="/Digitalmarketing" element={<DigitalMarketing/>} />
           <Route path="/graphicsdesign" element={<GraphicsDesign/>} />
+          <Route path="/blogdetails" element={<BlogDetails/>}/>
+          <Route path="*" element={<ErrorPage/>}/>
 
         </Routes>
         <Footer/>

@@ -157,6 +157,17 @@
 
 @media screen and (max-width: 768px) {
 
+  #container svg{
+    width:200px;
+    height:200px;
+  }
+  .msg-name h1{
+    font-size:2rem !important;
+  }
+  .message p{
+    font-size:.9rem;
+  }
+
   .client-title{
     font-size:1rem;
 

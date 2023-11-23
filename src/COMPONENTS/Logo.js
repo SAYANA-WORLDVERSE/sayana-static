@@ -1,8 +1,4 @@
-
-
-
 export const frame = [
-
   {
     src: "/images/mob-frame2.webp",
   },
@@ -12,10 +8,8 @@ export const frame = [
   {
     src: "/images/mob-frame4.webp",
   },
-  
 ];
 export const frame2 = [
-
   {
     src: "/images/mob-frame6.webp",
   },
@@ -25,10 +19,8 @@ export const frame2 = [
   {
     src: "/images/web-frame8.webp",
   },
-  
 ];
 export const frame3 = [
-
   {
     src: "/images/mob-frame10.webp",
   },
@@ -38,8 +30,4 @@ export const frame3 = [
   {
     src: "/images/web-frame12.webp",
   },
-  
 ];
-
-
-

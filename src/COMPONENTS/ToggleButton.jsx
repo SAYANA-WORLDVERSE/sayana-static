@@ -30,7 +30,7 @@ const ToggleButton = () => {
             </span>
           </>
         )}
-        <input type="checkbox" class="input" onChange={toggleTheme} />
+        <input type="checkbox" class="input" onChange={toggleTheme} area-aria-labelledby="toggle"/>
         <span class="slider"></span>
       </label>
     </Fragment>

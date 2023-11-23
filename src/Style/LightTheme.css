@@ -118,5 +118,9 @@
     background:white;
   }
 
-  .light-theme .roadmap-box .time{}
+  .dark-theme .msg-name, .dark-theme .message,.dark-theme path#XMLID_11_ ,.dark-theme path#XMLID_2_ ,.dark-theme #container svg{
+    color:white;
+    fill:#fff;
+
+  }
   

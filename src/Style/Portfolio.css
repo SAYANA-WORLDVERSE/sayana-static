@@ -98,10 +98,6 @@
 }
 
 .logo-slide .react-photo-gallery--gallery div img {
-  background: linear-gradient(to top, #ffffff, #e9e9e9);
-  padding: 0.5rem;
-
-  height: 150px;
   width: 20%;
   border-radius: 10px;
 }
@@ -117,23 +113,20 @@
 }
 
 /* hero slider mobile frame */
-.banner_slider .slider_frame{
+.banner_slider .slider_frame {
   position: absolute;
   z-index: 999;
   width: 226px;
-  
 }
 
-.slider_img img{
-  width:100%;
+.slider_img img {
+  width: 100%;
   border-radius: 30px;
 }
 
-
-
-
-
-
 .banner_slider #frmae_slider {
   width: 220px;
+}
+.banner_slider .slick-list {
+  border-radius: 30px;
 }

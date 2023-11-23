@@ -1,6 +1,10 @@
 import React, { Fragment } from "react";
 import "../Style/Footer.css";
 import logo from "../assets/logo.webp";
+import whitelogo from "../assets/white-logo.png";
+import { useTheme } from "./Context";
+
+
 import {
   BsFacebook,
   BsInstagram,
@@ -13,13 +17,14 @@ import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const {isDark}=useTheme();
   return (
     <Fragment>
       <footer>
         <div className="container h-100 d-flex flex-column align-items-center justify-content-center">
           <div className="footer-top w-100 d-md-flex justify-content-between  ">
             <div className="col-md-2 footer-col">
-              <img src={logo} alt="" className="footer-logo" />
+              <img src={isDark ? whitelogo:logo} alt="" className="footer-logo" />
               <p className="footer-para">
                 As your digital enablement partner, we apply our talent-first
                 approach to accelerate your digital journey.
@@ -37,7 +42,10 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link>
                     <BsTwitter />
+
+                    </Link>
                   </li>
                   <li>
                     <Link to="https://www.linkedin.com/company/sayana-worldverse-pvt-ltd/ ">

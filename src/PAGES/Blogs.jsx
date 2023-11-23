@@ -2,8 +2,10 @@ import React, { Fragment } from "react";
 import seo from "../assets/seo.png";
 import rocket2 from "../assets/kite.png";
 import Header from "../COMPONENTS/Header";
+import { useNavigate } from "react-router";
 
 const Blogs = () => {
+  const Navigate=useNavigate();
   return (
     <Fragment>
       <Header title="Blogs" link="Blog" />
@@ -22,8 +24,8 @@ const Blogs = () => {
 
         <div className="container">
           <div className="col-md-12   justify-content-center blog-container">
-            <div className="col-md-3 d-flex justify-content-center ">
-              <div className="blog-cards">
+            <div className="col-md-3 d-flex justify-content-center " onClick={()=>Navigate("/blogdetails")}>
+              <div className="blog-cards" >
                 <img src={seo} alt="" />
 
                 <div className="blog-cards_content">
