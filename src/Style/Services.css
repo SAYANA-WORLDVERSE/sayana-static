@@ -18,6 +18,9 @@
 .web-img{
     width:75%;
 }
+.portfolio-card-details img{
+    border-radius: 20px;
+}
 
 .tools-container{
     justify-content: center;

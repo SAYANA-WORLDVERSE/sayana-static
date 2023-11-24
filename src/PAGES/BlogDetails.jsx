@@ -10,80 +10,115 @@ const BlogDetails = () => {
         <div className="container">
           <div className="row bloglist__main">
             <div className=" col-md-8 list details">
-              <h4 className="color-title mb-3">
-                NFT owners have zero ownership of their digital arts: report
+              <h4 className="color-title ">
+                What is the difference between Traditional marketing and Digital
+                marketing
               </h4>
-              <p>February 18, 2022</p>
+              <p>March 15, 2023</p>
 
               <div className="line"></div>
 
               <div className="content-d">
                 <div className="main">
                   <p className="boild">
-                    The non-fungible tokens (NFTs) owners have zero intellectual
-                    property ownership of their content and only one NFT
-                    collection in the top 25 platforms by market capitalisation
-                    has attempted to confer intellectual property rights to the
-                    purchasers of digital arts, says a report.
+                    In the current, growing world, marketing has been a crucial
+                    component for the success of any business. It plays an
+                    important role in reaching customers and boosting sales. In
+                    the past, traditional marketing was employed by businesses
+                    to reach their target audience. Some of the traditional
+                    marketing methods are billboards,printed ads, radio ads, TV
+                    ads, direct mail, telemarketing, etc. As the technology gave
+                    path to various options to market the business , digital
+                    marketing has gained more attention through its advanced
+                    technology and innovative strategies. It uses various social
+                    media networks, search engines, websites , emails etc to
+                    reach target audience and gain brand visibility. Although
+                    these two types of marketing are used for the same purposes
+                    yet they differ in several aspects. In this blog let’s look
+                    into some differentiation factors between traditional and
+                    digital marketing.
                   </p>
                   <div className="image">
                     <img
                       src="https://cyfoniireact-eb8gshhgc-themesflat.vercel.app/static/media/blog-detail.9df446ba0172b70b0ad4.png"
                       alt=""
                     />
-                    <p className="mt-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
                   </div>
+
+                  <h4 className="mt-3 color-title">Target audience</h4>
+
                   <p className="mb-15">
-                    Most NFT operators "appear to have misled NFT purchasers"
-                    about the extent of their rights.
+                    Traditional marketing focuses on a large audience, whereas
+                    digital marketing helps businesses target a specific
+                    audience based on their location,interests, age, etc. by
+                    targeting specific audiences in digital marketing business
+                    can reach the right audience and can get better ROI.
+                  </p>
+
+                  <h4 className="mt-3 color-title">Cost</h4>
+
+                  <p className="mb-15">
+                    Traditional marketing is so expensive when compared to
+                    digital marketing. Traditional advertising involves TV ads
+                    and billboards which are of high cost. But contrary to this
+                    digital marketing helps all scales of business to engage and
+                    reach their target audience in a cost effective way by just
+                    utilizing social platforms and other digital ways.
+                  </p>
+                  <h4 className="mt-3 color-title">Analytics</h4>
+
+                  <p className="mb-15">
+                    Measuring the analytics in traditional marketing is so
+                    difficult. It consumes time and effort to know how many
+                    people have seen your ads and sometimes it seems hard to
+                    know even that. But in digital marketing it is so easy to
+                    measure the analytics and also the count of conversion
+                    aiding the business to customize their strategies according
+                    to these analytical reports.
+                  </p>
+                  <h4 className="mt-3 color-title">
+                    Engagement or interaction
+                  </h4>
+
+                  <p className="mb-15">
+                    We see one way communication in traditional marketing where
+                    the businesses send a text to customers without any
+                    interactions and feedback. Whereas digital marketing gives
+                    various options to interact with the audience and also keep
+                    them engaging at all times with frequent feedback and
+                    opinions.
+                  </p>
+                  <h4 className="mt-3 color-title">Reach</h4>
+
+                  <p className="mb-15">
+                    Traditional marketing has low reach where the TV ads and
+                    billboards are only seen by the audience in certain specific
+                    locations. But through digital marketing ads businesses can
+                    reach a global audience and increase their brand awareness
+                    across the world.
+                  </p>
+                  <h4 className="mt-3 color-title">Personalization</h4>
+                  <p className="mb-15">
+                    Digital marketing enables businesses to customize their
+                    marketing content based on the interest,location etc of the
+                    target audience. This can help to keep the audience engaging
+                    and retain them back which may lead to increased conversion
+                    rate and boost sales and brand loyalty.
                   </p>
                   <p className="mb-15">
-                    The Creative Commons license, seen as a solution to the
-                    restrictive licenses used by most projects, "renders NFT
-                    ownership obsolete from a legal perspective as it moves the
-                    intellectual property fully into the public domain, making
-                    it impossible for NFT holders to defend their ownership
-                    rights in court," according to the report by Galaxy Digital
-                    Research.
-                  </p>
-                  <p className="mb-15">
-                    The report mentioned that without improvements in the
-                    on-chain representation and transfer of intellectual
-                    property rights from NFT issuers to NFT token holders, the
-                    expansive vision of Web3 will remain unrealised.
-                  </p>
-                  <p className="mb-15">
-                    The report analysed major NFT projects, like the Yuga Labs
-                    project Bored Ape Yacht Club (BAYC), Gary Vaynerchuk's
-                    VeeFriends, World of Women, and social platforms
-                    Decentraland and Sandbox.
-                  </p>
-                  <p className="mb-15">
-                    It found that only the 'World of Women' (WoW) NFT collection
-                    differentiates itself from all the other top 25 NFT projects
-                    by being the only to attempt to transfer full IP rights to
-                    NFT holders.
-                  </p>
-                  <p className="mb-15">
-                    'World of Women' attempts this through the provision of a
-                    novel copyright assignment agreement.
-                  </p>
-                  <p className="mb-15">
-                    "Under this copyright assignment agreement, WoW attempts to
-                    create a governance structure in which the copyright of each
-                    WoW NFT 'runs with' the NFT, such that whoever owns the NFT
-                    owns the copyright," the report mentioned.
-                  </p>
-                  <p className="mb-15">
-                    NFT holders should fight for their IP rights.
-                  </p>
-                  <p>
-                    "As NFTs are still in their infancy stage, it is critical
-                    for the NFT community to begin working on a framework to
-                    properly give out IP rights to users before mass adoption,"
-                    the findings showed.
+                    So now , Have you heard of the best digital marketing agency
+                    in Hyderabad ? Our HPE Solutions is an advertising agency
+                    which aims to assist brands to ascend to the digital throne
+                    with our digital marketing services. Here we offer various
+                    services like social media marketing, SEO,email marketing,
+                    content writing,graphic designing, logo designing, branding,
+                    web designing, promotions,campaigns, brand revitalization
+                    etc. Our team stays up to date and studies the competitors
+                    to offer the best services to our clients. With our
+                    narrowcasting strategies we focus on taking the businesses
+                    to the next level and boost sales and brand visibility.
+                    Pause and perceive that we offer all digital marketing
+                    services at HPE Solutions.
                   </p>
 
                   <div className="line"></div>
@@ -92,16 +127,16 @@ const BlogDetails = () => {
                     <p className="mb-0">Tags:</p>
                     <ul className="list-tag mb-0">
                       <li>
-                        <p>nfts</p>
+                        <p className="m-0">Digital Marketing</p>
                       </li>
                       <li>
-                        <p>crypto</p>
+                        <p>Cost</p>
                       </li>
                       <li>
-                        <p>cyfonii</p>
+                        <p>Analytics</p>
                       </li>
                       <li>
-                        <p>collection</p>
+                        <p>Personalization</p>
                       </li>
                     </ul>
                   </div>
@@ -231,22 +266,22 @@ const BlogDetails = () => {
                 <h5 className="color-title mb-3">Popular Tags</h5>
                 <ul>
                   <li>
-                    <a href="blog-details.html">NFTs</a>
+                    <a href="#">NFTs</a>
                   </li>
                   <li>
-                    <a href="blog-details.html">Blockchain</a>
+                    <a href="#">Blockchain</a>
                   </li>
                   <li>
-                    <a href="blog-details.html">Coin</a>
+                    <a href="#">Coin</a>
                   </li>
                   <li>
-                    <a href="blog-details.html">ICO</a>
+                    <a href="#">ICO</a>
                   </li>
                   <li>
-                    <a href="blog-details.html">cryptocurrency</a>
+                    <a href="#">cryptocurrency</a>
                   </li>
                   <li>
-                    <a href="blog-details.html">Ttoken</a>
+                    <a href="#">Token</a>
                   </li>
                 </ul>
               </div>

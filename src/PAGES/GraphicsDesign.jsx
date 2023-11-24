@@ -4,8 +4,10 @@ import web3 from "../assets/web3.png";
 import web4 from "../assets/web4.png";
 import web2 from "../assets/web2.png";
 import web1 from "../assets/web1.png";
+import {photos2} from "../COMPONENTS/Photo";
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -311,40 +313,32 @@ const GraphicsDesign = () => {
             </section>
           </div>
           <section className="our-Project">
-            <Swiper
+          <Swiper
               // install Swiper modules
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
               spaceBetween={10}
               slidesPerView={4}
               breakpoints={breakpoint}
-              navigation={true}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
+              loop={true}
+              autoplay={{
+                delay: 10,
+              }}
+              speed={2500}
+           
             >
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
+
+              {
+                photos2.map((photos, index) =>{
+                  return  <SwiperSlide key={index}>
+                  <div className=" portfolio-card">
+                    <div className="portfolio-card-details">
+                      <img src={photos.src} alt="" className="port-img" />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                })
+              }
+             
             </Swiper>
           </section>
 

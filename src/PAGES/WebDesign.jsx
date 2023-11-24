@@ -4,14 +4,20 @@ import web3 from "../assets/web3.png";
 import web4 from "../assets/web4.png";
 import web2 from "../assets/web2.png";
 import web1 from "../assets/web1.png";
+import laptop from "../assets/adithya.png";
+import soudha from "../assets/soudha.png";
+import srinivasa from "../assets/srinivasa.png";
+import ortho from "../assets/ortho.png";
+import haripriya from "../assets/haripriya-project.png";
+import meshler from "../assets/meshler.png";
+import care from "../assets/careofcareers.png";
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import team from "../assets/team.png";
 
 const WebDesign = () => {
   const breakpoint = {
@@ -314,39 +320,84 @@ const WebDesign = () => {
           <section className="our-Project">
             <Swiper
               // install Swiper modules
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
               spaceBetween={10}
               slidesPerView={4}
               breakpoints={breakpoint}
-              navigation={true}
-              // scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
+              loop={true}
+              autoplay={{
+                delay: 10,
+              }}
+              speed={2500}
+            onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
+              <div className=" portfolio-card">
+                <div className="portfolio-card-details">
+                  <img src={laptop} alt="" className="port-img" />
+                </div>
+             
+           
+           
+            
+            </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
+              <div className=" portfolio-card">
+                <div className="portfolio-card-details">
+                  <img src={soudha} alt="" className="port-img" />
+                </div>
+               
+               
+              </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
+              <div className=" portfolio-card">
+                <div className="portfolio-card-details">
+                  <img src={srinivasa} alt="" className="port-img" />
+                </div>
+               
+               
+              </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
+              <div className=" portfolio-card">
+                <div className="portfolio-card-details">
+                  <img src={ortho} alt="" className="port-img" />
+                </div>
+               
+               
+              </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
+              <div className=" portfolio-card">
+                <div className="portfolio-card-details">
+                  <img src={haripriya} alt="" className="port-img" />
+                </div>
+               
+               
+              </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
+              <div className=" portfolio-card">
+                <div className="portfolio-card-details">
+                  <img src={meshler} alt="" className="port-img" />
+                </div>
+               
+               
+              </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
+              <div className=" portfolio-card">
+                <div className="portfolio-card-details">
+                  <img src={care} alt="" className="port-img" />
+                </div>
+               
+               
+              </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
+             
             </Swiper>
           </section>
 

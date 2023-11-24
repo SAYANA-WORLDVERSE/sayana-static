@@ -17,6 +17,10 @@
   gap: 1rem;
   justify-content: center;
 }
+ .swiper-slide {
+  width:300px !important
+}
+
 
 .portfolio-card {
   border-radius: 20px;
@@ -26,6 +30,7 @@
   transition: 0.5s ease-out;
   overflow: visible;
   margin: 1rem 0rem;
+  width:350px;
 }
 
 .portfolio-card-details p {
@@ -95,6 +100,7 @@
 }
 .react-photo-gallery--gallery div img {
   width: 30%;
+  border-radius: 10px;
 }
 
 .logo-slide .react-photo-gallery--gallery div img {

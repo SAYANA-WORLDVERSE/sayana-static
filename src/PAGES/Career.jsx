@@ -33,13 +33,13 @@ const Career = () => {
 
       <section className="career-content py-5 m-md-5">
         <div className="container">
-          <p className="career-para">
+          {/* <p className="career-para">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
             nisi iure aut natus quod dolores in est eveniet? Consectetur dolor
             quam iusto aspernatur nesciunt eveniet delectus asperiores aut quo
             corporis, cumque incidunt eum, quidem optio illo dolore, ducimus
             earum tenetur?
-          </p>
+          </p> */}
           <div className="row py-5 career-container mt-5">
             <div className="col-md-7">
               <div className="d-flex justify-content-center">

@@ -4,14 +4,20 @@ import web3 from "../assets/web3.png";
 import web4 from "../assets/web4.png";
 import web2 from "../assets/web2.png";
 import web1 from "../assets/web1.png";
+import {photos} from "../COMPONENTS/Photo";
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import team from "../assets/team.png";
 
 const DigitalMarketing = () => {
   const breakpoint = {
@@ -314,39 +320,30 @@ const DigitalMarketing = () => {
           <section className="our-Project">
             <Swiper
               // install Swiper modules
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={10}
+              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+              spaceBetween={0}
               slidesPerView={4}
               breakpoints={breakpoint}
-              navigation={true}
-              // scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
+              // loop={true}
+              autoplay={{
+                delay: 1000,
+              }}
+              speed={2000}
+           
             >
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="team-card d-flex justify-content-center"></div>
-              </SwiperSlide>
+
+              {
+                photos.map((photos, index) =>{
+                  return  <SwiperSlide key={index}>
+                  <div className=" portfolio-card">
+                    <div className="portfolio-card-details">
+                      <img src={photos.src} alt="" className="port-img" />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                })
+              }
+             
             </Swiper>
           </section>
 
@@ -411,26 +408,21 @@ const DigitalMarketing = () => {
             </div>
 
             <section className="">
-          <div className="container mt-5">
-            <div className="news-letter  d-md-flex align-items-center justify-content-between">
-              <div className="col-md-6 news-content">
-              <p className="news-para">
-                Lets Create a Measurable Impact On
-                </p>
-                <h1 className="news-title">Your Bussiness </h1>
-                <button className="subscribe-btn">Design A Quote</button>
-
-
-               
+              <div className="container mt-5">
+                <div className="news-letter  d-md-flex align-items-center justify-content-between">
+                  <div className="col-md-6 news-content">
+                    <p className="news-para">
+                      Lets Create a Measurable Impact On
+                    </p>
+                    <h1 className="news-title">Your Bussiness </h1>
+                    <button className="subscribe-btn">Design A Quote</button>
+                  </div>
+                  <div className="col-md-6 right-col d-flex justify-content-center">
+                    <img src={web1} alt="" className="web1" />
+                  </div>
+                </div>
               </div>
-              <div className="col-md-6 right-col d-flex justify-content-center">
-                <img src={web1} alt="" className="web1"/>
-
-
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
           </div>
         </div>
       </section>

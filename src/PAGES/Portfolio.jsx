@@ -55,14 +55,14 @@ const Portfolio = () => {
 
       <section className="contact-content">
         <div className="container py-5">
-          <p className=" career-para">
+          {/* <p className=" career-para">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
             dolorem perspiciatis numquam, voluptatum blanditiis pariatur ipsa
             dolore sed dolor facilis similique, obcaecati impedit saepe
             aspernatur. Nemo esse tempore pariatur vero culpa eos nam, expedita
             aliquam nesciunt beatae quaerat, quod enim reprehenderit tempora
             placeat ad perspiciatis, error similique dolor soluta ipsam!
-          </p>
+          </p> */}
         </div>
 
         <div className="container">
