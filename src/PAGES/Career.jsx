@@ -1,12 +1,112 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import heroimg from "../assets/career-hero.png";
 import "../Style/Career.css";
 import Header from "../COMPONENTS/Header";
+import Swal from 'sweetalert2';
+
 
 const Career = () => {
+  const [formData, setFormData] = useState({
+    full_name: "",
+    mobile: "",
+    email: "",
+    file: "",
+    position: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
+  const [buttonText, setButtonText] = useState("Submit");
+
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    // Example validation - Add your own validation logic
+    if (!formData.full_name) {
+      newErrors.full_name = "Full name is required";
+    }
+
+    if (!formData.phone) {
+      newErrors.phone = "Phone is required";
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+    }
+
+    if (!formData.designation) {
+      newErrors.designation = "Designation is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("Submiting...");
+
+   
+      // Prepare form data for submission
+      const data = new FormData();
+      data.append("full_name", formData.full_name);
+      data.append("mobile", formData.mobile);
+      data.append("email", formData.email);
+      data.append("file", formData.file);
+      data.append("position", formData.position);
+      data.append("message", formData.message);
+
+      // Submit the form data
+      try {
+        const response = await fetch("http://localhost:3000/submit-form", {
+          method: "POST",
+          body: data,
+        });
+
+        const result = await response.json();
+        Swal.fire({
+          icon: "success",
+          title: "Form Submitted Successfully!",
+          text: "Thank you for submitting the form.",
+        });
+        console.log(result);
+
+        setFormData({
+          full_name: "",
+          mobile: "",
+          email: "",
+          file:"",
+          position: "",
+          message: "",
+        });
+       
+    
+        setButtonText("Submit");
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        setButtonText("Submit");
+        Swal.fire({
+          icon: "error",
+          title: "Oops... Something went wrong!",
+          text: "There was an error submitting the form. Please try again.",
+        });
+      }
+    
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFileChange = (e) => {
+    setFormData({ ...formData, file: e.target.files[0] });
+  };
+
   return (
     <Fragment>
-                  <Header title="Career" link="Career " />
+      <Header title="Career" link="Career " />
 
       <section className="career-hero">
         <div className="container-fluid hero-section">
@@ -193,9 +293,12 @@ const Career = () => {
               <form class="row g-3">
                 <div class="col-md-12">
                   <input
-                    type="email"
+                    type="text"
                     className="form-control career-input"
                     placeholder="Full Name"
+                    name="full_name"
+                    value={formData.full_name}
+                    onChange={handleChange}
                   />
                 </div>
                 <div class="col-md-12">
@@ -203,28 +306,46 @@ const Career = () => {
                     type="number"
                     className="form-control spinner"
                     placeholder="Mobile"
+                    name="mobile"
+                    value={formData.mobile}
+                    onChange={handleChange}
                   />
+
                 </div>
                 <div class="col-md-12">
                   <input
-                    type="mail"
+                    type="email"
                     className="form-control"
                     id="email"
                     placeholder="Email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
+
                 </div>
                 <div class="col-md-12">
-                  <select id="inputState" class="form-control">
+                  <select
+                    id="inputState"
+                    class="form-control"
+                    name="position"
+                    value={formData.position}
+                    onChange={handleChange}
+                  >
                     <option selected>Choose Position</option>
-                    <option>...</option>
+                    <option value="Frontend Developer">
+                      Frontend Developer
+                    </option>
                   </select>
                 </div>
                 <div class="col-md-12">
                   <input
                     type="file"
                     className="form-control"
-                    id="subject"
-                    placeholder="Subject"
+                    name="file"
+                    accept=".pdf,.doc,.docx"
+                    
+                    onChange={handleFileChange}
                   />
                 </div>
 
@@ -234,12 +355,19 @@ const Career = () => {
                     className="form-control"
                     id="message"
                     placeholder="Message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
 
                 <div class="col-12">
-                  <button type="submit " className="float-end">
-                    Apply Now
+                  <button
+                    type="submit "
+                    className="float-end"
+                    onClick={handleSubmit}
+                  >
+                   {buttonText}
                   </button>
                 </div>
               </form>
