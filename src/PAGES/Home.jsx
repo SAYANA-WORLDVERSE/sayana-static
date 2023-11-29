@@ -131,7 +131,7 @@ const Home = () => {
             molestiae quaerat incidunt dolorem, deserunt libero quas recusandae
             cupiditate totam.
           </p>
-          <button>Contact Us</button>
+          <button onClick={()=>navigate("/contact")}>Contact Us</button>
         </div>
       </section>
 
@@ -154,7 +154,7 @@ const Home = () => {
             <p className="learn-more mt-5">
             Delevering Unparalleled Services Tailored to Your Unique Need
           </p>
-          <button>Learn More</button>
+          <button onClick={()=>navigate("/contact")}>Learn More</button>
           </div>
 
          
@@ -177,7 +177,7 @@ const Home = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse
               aliquid possimus, sapiente ipsa explicabo.
             </p>
-            <button>Read More</button>
+            <button onClick={()=>navigate("/about")}>Read More</button>
           </div>
         </div>
         <div className="container mt-1 d-md-flex  align-items-center">
@@ -187,7 +187,7 @@ const Home = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse
               aliquid possimus, sapiente ipsa explicabo.
             </p>
-            <button>Read More</button>
+            <button  onClick={()=>navigate("/about")}>Read More</button>
           </div>
 
           <div className="col-md-6  ">
@@ -588,7 +588,7 @@ const Home = () => {
       <section>
         <div className=" about-us-content  mt-5 py-5">
           <h4 className=" clients">
-            <span className="client-title">Our Spaciality</span>
+            <span className="client-title">Our Speciality</span>
           </h4>
           
             

@@ -1,12 +1,37 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useRef,useState } from "react";
 import "../Style/Contact.css";
 import heroimg from "../assets/contact-hero.png";
 import location from "../assets/location.png";
 import mail from "../assets/mail.png";
 import call from "../assets/call.png";
 import Header from "../COMPONENTS/Header";
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
+
 
 const Contact = () => {
+const [buttonText,setButtonText]=useState("Submit")
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setButtonText("Submiting...")
+
+
+    emailjs.sendForm('service_yqbwuyq', 'template_y5rxgv9', form.current, 'Jx4iBaGzWieX0UanH')
+      .then((result) => {
+        Swal.fire({
+          icon: "success",
+          title: "Form Submitted Successfully!",
+          text: "Thank you for submitting the form.",
+        });
+          form.current.reset()
+          setButtonText("Submit")
+      }, (error) => {
+          console.log(error);
+      });
+  };
   return (
     <Fragment>
             <Header title="Contact Us" link="Contact Us" />
@@ -67,12 +92,12 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-md-6   ">
-              <form class="row g-3">
+              <form class="row g-3" ref={form} onSubmit={sendEmail}>
                 <div class="col-md-6">
                   <label  class="form-label">
                     Full Name
                   </label>
-                  <input type="email" className="form-control" placeholder="Full Name" />
+                  <input type="text" className="form-control" placeholder="Full Name" name="user_name" required/>
                 </div>
                 <div class="col-md-6">
                   <label  class="form-label">
@@ -82,6 +107,8 @@ const Contact = () => {
                     type="number"
                     className="form-control spinner"
                     placeholder="Mobile"
+                    name="user_mobile"
+                    required
                   />
                 </div>
                 <div class="col-md-6">
@@ -93,13 +120,15 @@ const Contact = () => {
                     className="form-control"
                     id="email"
                     placeholder="Email"
+                    name="user_email"
+                    required
                   />
                 </div>
                 <div class="col-md-6">
                   <label for="inputAddress2" class="form-label">
                  Services
                   </label>
-                  <select id="inputState" class="form-select">
+                  <select id="inputState" class="form-select" name="position" required>
                     <option selected>Choose...</option>
                     <option value="Web Design & Development">Web Design & Development</option>
                     <option value="Application Development">Application Development</option>
@@ -117,6 +146,8 @@ const Contact = () => {
                     className="form-control"
                     id="subject"
                     placeholder="Subject"
+                    name="subject"
+                    required
                   />
                 </div>
 
@@ -129,6 +160,7 @@ const Contact = () => {
                     className="form-control"
                     id="message"
                     placeholder="Message"
+                    name="message"
                   ></textarea>
                 </div>
                
@@ -136,7 +168,7 @@ const Contact = () => {
                
 
                 <div class="col-12">
-                  <button type="submit " className="float-end">Submit</button>
+                  <button type="submit " className="float-end">{buttonText}</button>
                 </div>
               </form>
             </div>

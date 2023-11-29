@@ -179,9 +179,7 @@ const Blogs = () => {
                   </div>
 
                   <div className="content p-3 col-md-8 ">
-                    <div className="meta ">
-                      <p>February 18, 2022</p>
-                    </div>
+                    
                     <p className="color-title">
                       What is the difference between Traditional marketing and
                       Digital marketing
@@ -192,6 +190,9 @@ const Blogs = () => {
                       perferendis, voluptatem dicta harum obcaecati esse neque?
                       Deserunt sint reiciendis eum et aspernatur. Commodi!
                     </p>
+                    <div className="meta ">
+                      <p>February 18, 2022</p>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -208,9 +209,7 @@ const Blogs = () => {
                   </div>
 
                   <div className="content p-3 col-md-8 ">
-                    <div className="meta ">
-                      <p>February 18, 2022</p>
-                    </div>
+                  
                     <p className="color-title">
                       What are the core elements in digital marketing Online
                       marketing
@@ -221,6 +220,9 @@ const Blogs = () => {
                       perferendis, voluptatem dicta harum obcaecati esse neque?
                       Deserunt sint reiciendis eum et aspernatur. Commodi!
                     </p>
+                    <div className="meta ">
+                      <p>February 18, 2022</p>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -237,9 +239,7 @@ const Blogs = () => {
                   </div>
 
                   <div className="content p-3 col-md-8 ">
-                    <div className="meta ">
-                      <p>February 18, 2022</p>
-                    </div>
+                   
                     <p className="color-title">
                       Why does your brand require a strong social media presence
                     </p>
@@ -249,6 +249,9 @@ const Blogs = () => {
                       perferendis, voluptatem dicta harum obcaecati esse neque?
                       Deserunt sint reiciendis eum et aspernatur. Commodi!
                     </p>
+                    <div className="meta ">
+                      <p>February 18, 2022</p>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -265,9 +268,7 @@ const Blogs = () => {
                   </div>
 
                   <div className="content p-3 col-md-8 ">
-                    <div className="meta ">
-                      <p>February 18, 2022</p>
-                    </div>
+                  
                     <p className="color-title">
                       Driving customer engagement with personalized online
                       marketing strategies In the
@@ -278,6 +279,9 @@ const Blogs = () => {
                       perferendis, voluptatem dicta harum obcaecati esse neque?
                       Deserunt sint reiciendis eum et aspernatur. Commodi!
                     </p>
+                    <div className="meta ">
+                      <p>February 18, 2022</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -312,7 +316,7 @@ const Blogs = () => {
                       <a href="">Online Trading (81)</a>
                     </li>
                     <li>
-                      <a href="">Crypto Trade (42)</a>
+                      <a href="">Crypto Trade (42)</a>  
                     </li>
                   </ul>
                 </div>

@@ -18,16 +18,16 @@ const Career = () => {
   const [buttonText, setButtonText] = useState("Submit");
 
 
+  
   const validateForm = () => {
     const newErrors = {};
 
-    // Example validation - Add your own validation logic
     if (!formData.full_name) {
       newErrors.full_name = "Full name is required";
     }
 
-    if (!formData.phone) {
-      newErrors.phone = "Phone is required";
+    if (!formData.mobile) {
+      newErrors.mobile = "Mobile is required";
     }
 
     if (!formData.email) {
@@ -36,8 +36,12 @@ const Career = () => {
       newErrors.email = "Invalid email format";
     }
 
-    if (!formData.designation) {
-      newErrors.designation = "Designation is required";
+    if (!formData.position) {
+      newErrors.position = "Position is required";
+    }
+
+    if (!formData.file) {
+      newErrors.file = "File is required";
     }
 
     setErrors(newErrors);
