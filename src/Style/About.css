@@ -234,10 +234,10 @@
     rgba(255, 255, 255, 0.05) 99.96%
   );
   backdrop-filter: blur(4px);
-  padding: 12px;
+  padding: 16px;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  height: 335px;
+  height: 300px;
   width: 350px;
   border-radius: 20px;
   overflow: hidden;
@@ -265,15 +265,14 @@
   background: linear-gradient(to right, #6e44ee, #b39cd7);
   -webkit-background-clip: text; /* For older browsers */
   background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent; /* For older browsers */
+  color: white;
   text-fill-color: transparent;
   font-weight: bold;
   font-family: var(--font);
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 .designation {
-  color: #5c27fe;
+  color: #fff !important;
   font-size: 1rem;
 }
 

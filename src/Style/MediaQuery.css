@@ -18,12 +18,20 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1170px) {
+  .roadmap-box .title{
+    font-size:18px;
+
+  }
 
   .cards .number span{
     font-size:2rem;
   }
   .text h4{
     font-size:1.3rem
+  }
+
+  .roadmap-box .time{
+    left:26%;
   }
 
   .num {
@@ -173,6 +181,27 @@
 }
 
 @media screen and (max-width: 768px) {
+  .roadmap-box .time{
+    left:29%;
+  }
+  .roadmap-box .title{
+    font-size:18px;
+
+  }
+
+  
+  .step-container p, h4{
+    font-size:15px;
+  }
+  .step-container p span{
+    font-size:25px;
+  }
+  .css-144mdce{
+
+    min-width:90% !important;
+    min-height:500px;
+    padding:0px !important;
+  }
 
   .bloglist__main .sidebar .widget-sidebar.tag ul li a{
     padding:7px 10px;
@@ -190,7 +219,7 @@
   }
 
   .client-title{
-    font-size:1rem;
+    font-size:.9rem;
 
   }
   .linear-text{
@@ -479,6 +508,11 @@
 }
 
 @media screen and (max-width: 510px) {
+  .roadmap-box .time{
+    left:35%;
+  }
+
+ 
 
   .services-title{
     font-size:1.5rem;

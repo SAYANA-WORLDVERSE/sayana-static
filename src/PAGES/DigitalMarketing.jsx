@@ -44,10 +44,8 @@ const DigitalMarketing = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">Digital Marketing</h1>
                   <p className="services-para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                  Amplify your online presence and reach your target audience with our digital marketing strategies. From SEO to social media, we've got your digital marketing needs covered.
+
                   </p>
                 </div>
               </div>

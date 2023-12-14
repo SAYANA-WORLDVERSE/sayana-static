@@ -1,4 +1,4 @@
-import React, { Fragment,lazy } from "react";
+import React, { Fragment, lazy } from "react";
 
 import HeroSection from "../COMPONENTS/HeroSection";
 import Slider from "react-slick";
@@ -38,19 +38,17 @@ import partner2 from "../assets/partner-2.png";
 import partner3 from "../assets/partner-3.png";
 import partner4 from "../assets/partner-4.png";
 import partner5 from "../assets/partner-5.png";
-import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 import { useNavigate } from "react-router";
-
 
 import { useTheme } from "../COMPONENTS/Context";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
 
-  const navigate=useNavigate();
-
-  const {isDark}=useTheme();
+  const { isDark } = useTheme();
 
   const settings = {
     infinite: true,
@@ -60,7 +58,7 @@ const Home = () => {
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    responsive:[
+    responsive: [
       {
         breakpoint: 1024,
         settings: {
@@ -69,8 +67,7 @@ const Home = () => {
           infinite: true,
           dots: true,
           arrows: false,
-
-        }
+        },
       },
       {
         breakpoint: 768,
@@ -80,10 +77,9 @@ const Home = () => {
           infinite: true,
           dots: true,
           arrows: false,
-
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   const setting = {
@@ -93,7 +89,7 @@ const Home = () => {
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    responsive:[
+    responsive: [
       {
         breakpoint: 1024,
         settings: {
@@ -101,7 +97,7 @@ const Home = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-        }
+        },
       },
       {
         breakpoint: 768,
@@ -111,10 +107,9 @@ const Home = () => {
           infinite: true,
           dots: true,
           arrows: false,
-
-        }
+        },
       },
-    ]
+    ],
   };
   return (
     <Fragment>
@@ -123,41 +118,55 @@ const Home = () => {
       <section className="about-us">
         <div className="container about-us-content col-md-8 ">
           <h1 className="main-title ">
-            Next-Gen <span className="linear-text">EnterPrise</span>
+            About <span className="linear-text">Sayana Worldverse</span>
           </h1>
-          <p className="main-sub-heading">Software development company</p>
+          {/*<p className="main-sub-heading">Software development company</p>*/}
           <p className="main-paracontent ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maiores
-            molestiae quaerat incidunt dolorem, deserunt libero quas recusandae
-            cupiditate totam.
+            Sayana Worldverse is not just a software development company; we are
+            architects of digital success stories. With a commitment to
+            excellence, we specialize in providing custom software solutions and
+            creative design services that transcend expectations.
           </p>
-          <button onClick={()=>navigate("/contact")}>Contact Us</button>
+          <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
       </section>
 
       <section>
         <div className="container d-flex flex-column align-items-center justify-content-center">
           <div className="crafted-solution">
-            <p>Crafted Solutions Real Results</p>
+            <p>Our Services</p>
           </div>
 
           <div className="services d-flex justify-content-center flex-column align-items-center">
             <img src={gradiant} alt="" className="gradiant-bg" />
             <div className="bg-inner">
               <img src={computer} alt="" className="computer" />
-              <img src={mobile} alt="" className="mobile" data-aos="fade-right" />
-              <img src={rocket} alt="" className="rocket" data-aos="fade-right"/>
+              <img
+                src={mobile}
+                alt=""
+                className="mobile"
+                data-aos="fade-right"
+              />
+              <img
+                src={rocket}
+                alt=""
+                className="rocket"
+                data-aos="fade-right"
+              />
               <img src={dev} alt="" className="setting" data-aos="fade-top" />
-              <img src={pen} alt="" className="pen" data-aos="fade-left"/>
-              <img src={laptop} alt="" className="laptop" data-aos="fade-left"/>
+              <img src={pen} alt="" className="pen" data-aos="fade-left" />
+              <img
+                src={laptop}
+                alt=""
+                className="laptop"
+                data-aos="fade-left"
+              />
             </div>
             <p className="learn-more mt-5">
-            Delevering Unparalleled Services Tailored to Your Unique Need
-          </p>
-          <button onClick={()=>navigate("/contact")}>Learn More</button>
+              Delivering Unparalleled Services Tailored to Your Unique Need
+            </p>
+            <button onClick={() => navigate("/contact")}>Learn More</button>
           </div>
-
-         
         </div>
       </section>
 
@@ -168,26 +177,41 @@ const Home = () => {
             <img src={boy} alt="" className="boy-setting" />
           </div>
           <div className="col-md-4">
-            <h1 className="excellence">
-              Decades <br /> in Digital
-              <br />
-              Excellence
-            </h1>
+            <h1 className="excellence">Our Mission & Vision</h1>
             <p className="ex-para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse
-              aliquid possimus, sapiente ipsa explicabo.
+              <b>Our Mission : </b> At Sayana Worldverse, our mission is to
+              empower businesses with cutting-edge custom software solutions.
             </p>
-            <button onClick={()=>navigate("/about")}>Read More</button>
+            <p className="ex-para">
+              <b>Our Vision : </b> Our vision is to be a beacon of creativity
+              and technology, providing top-notch custom software development
+              services.
+            </p>
+            <button onClick={() => navigate("/about")}>Read More</button>
           </div>
         </div>
-        <div className="container mt-1 d-md-flex  align-items-center">
+        <div className="container mt-5 d-md-flex  align-items-center">
           <div className="col-md-6">
             <h1 className="excellence">Why Choose Us</h1>
             <p className="ex-para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse
-              aliquid possimus, sapiente ipsa explicabo.
+              <b>Expertise:</b> We bring years of expertise in custom software
+              development, web design, app design, product development, digital
+              marketing, and graphic design.
             </p>
-            <button  onClick={()=>navigate("/about")}>Read More</button>
+            <p className="ex-para">
+              <b> Innovation: </b>Our team thrives on innovation, crafting
+              unique solutions that cater to the distinct needs of each client.
+            </p>
+            <p className="ex-para">
+              <b>Client-Centric Approach:</b> We prioritize understanding your
+              vision and goals, ensuring every solution aligns perfectly with
+              your business objectives.
+            </p>
+            <p className="ex-para">
+              <b>Reliability:</b> Sayana Worldverse is your reliable partner on
+              the journey to digital transformation.
+            </p>
+            <button onClick={() => navigate("/about")}>Read More</button>
           </div>
 
           <div className="col-md-6  ">
@@ -199,64 +223,66 @@ const Home = () => {
           <div className="row justify-content-evenly">
             <div className="cards col-md-2 p-2">
               <p className="number mb-0 ">
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <CountUp
-                    start={0}
-                    end={5}
-                    duration={40}
-                    
-                    isVisible={isVisible}
-                  />
-                )}
-              </VisibilitySensor> <span>+</span>
-                </p>
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <CountUp
+                      start={0}
+                      end={5}
+                      duration={40}
+                      isVisible={isVisible}
+                    />
+                  )}
+                </VisibilitySensor>{" "}
+                <span>+</span>
+              </p>
               <p className="cards-text">Years of Experience</p>
             </div>
             <div className="cards col-md-2 p-2">
-              <p className="number mb-0 "> <VisibilitySensor>
-                {({ isVisible }) => (
-                  <CountUp
-                    start={0}
-                    end={50}
-                    duration={30}
-                    
-                    isVisible={isVisible}
-                  />
-                )}
-              </VisibilitySensor> <span>+</span> </p>
+              <p className="number mb-0 ">
+                {" "}
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <CountUp
+                      start={0}
+                      end={50}
+                      duration={30}
+                      isVisible={isVisible}
+                    />
+                  )}
+                </VisibilitySensor>{" "}
+                <span>+</span>{" "}
+              </p>
               <p className="cards-text">Projects</p>
             </div>
             <div className="cards col-md-2 p-2">
               <p className="number mb-0 ">
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <CountUp
-                    start={0}
-                    end={60}
-                    duration={30}
-                   
-                    isVisible={isVisible}
-                  />
-                )}
-              </VisibilitySensor> <span>+</span>
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <CountUp
+                      start={0}
+                      end={60}
+                      duration={30}
+                      isVisible={isVisible}
+                    />
+                  )}
+                </VisibilitySensor>{" "}
+                <span>+</span>
               </p>
               <p className="cards-text">Satisfied Clients</p>
             </div>
             <div className="cards col-md-2 p-2">
               <p className="number mb-0 ">
-
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <CountUp
-                    start={0}
-                    end={99}
-                    duration={30}
-                  
-                    isVisible={isVisible}
-                  />
-                )}
-              </VisibilitySensor> <span>%</span>
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <CountUp
+                      start={0}
+                      end={99}
+                      duration={30}
+                      isVisible={isVisible}
+                    />
+                  )}
+                </VisibilitySensor>{" "}
+                <span>%</span>
               </p>
               <p className="cards-text"> Clients Satisfication</p>
             </div>
@@ -273,8 +299,7 @@ const Home = () => {
             <span className="color-title">Maximum Impact</span>
           </h1>
           <p className="main-paracontent ">
-            Three Steps to Transform Your Digital Aspirations Into Tragible
-            Outcomes
+            Approach Your Project in 4 Simple Steps
           </p>
         </div>
       </section>
@@ -284,47 +309,58 @@ const Home = () => {
           <div className="col-md-6  ">
             <img src={designComputer} alt="" className="boy-setting" />
           </div>
-          <div className="col-md-4 d-flex flex-column gap-3 " >
-           <div className="implements d-flex  align-items-center gap-3" data-aos="fade-left">
-            <div className="num">
-              <span>1</span>
+          <div className="col-md-4 d-flex flex-column gap-3 ">
+            <div
+              className="implements d-flex  align-items-center gap-3"
+              data-aos="fade-left"
+            >
+              <div className="num">
+                <span>1</span>
+              </div>
+              <div className="text">
+                <h4 className="mb-0">Discovery</h4>
+                {/* <p>
+                  Start by sharing your ideas and goals with us. We'll listen,
+                  understand your needs, and lay the groundwork for success.
+                </p> */}
+              </div>
             </div>
-            <div className="text">
-              <h4 className="mb-0">Implement</h4>
-              <p>Turn Vidion Into Reality</p>
+            <div
+              className="implements d-flex  align-items-center gap-3"
+              data-aos="fade-left"
+            >
+              <div className="num">
+                <span>2</span>
+              </div>
+              <div className="text">
+                <h4 className="mb-0">Planning</h4>
+                {/* <p>Turn Vidion Into Reality</p> */}
+              </div>
             </div>
-
-           </div>
-           <div className="implements d-flex  align-items-center gap-3" data-aos="fade-left">
-            <div className="num">
-              <span>2</span>
+            <div
+              className="implements d-flex  align-items-center gap-3"
+              data-aos="fade-left"
+            >
+              <div className="num">
+                <span>3</span>
+              </div>
+              <div className="text">
+                <h4 className="mb-0">Development and Design</h4>
+                {/* <p>Turn Vidion Into Reality</p> */}
+              </div>
             </div>
-            <div className="text">
-              <h4 className="mb-0">Implement</h4>
-              <p>Turn Vidion Into Reality</p>
+            <div
+              className="implements d-flex  align-items-center gap-3"
+              data-aos="fade-left"
+            >
+              <div className="num">
+                <span>4</span>
+              </div>
+              <div className="text">
+                <h4 className="mb-0"> Receive Ongoing Support</h4>
+                {/* <p>Turn Vidion Into Reality</p> */}
+              </div>
             </div>
-
-           </div>
-           <div className="implements d-flex  align-items-center gap-3" data-aos="fade-left">
-            <div className="num">
-              <span>3</span>
-            </div>
-            <div className="text">
-              <h4 className="mb-0">Implement</h4>
-              <p>Turn Vidion Into Reality</p>
-            </div>
-
-           </div>
-           <div className="implements d-flex  align-items-center gap-3" data-aos="fade-left">
-            <div className="num">
-              <span>4</span>
-            </div>
-            <div className="text">
-              <h4 className="mb-0">Implement</h4>
-              <p>Turn Vidion Into Reality</p>
-            </div>
-
-           </div>
           </div>
         </div>
       </section>
@@ -332,12 +368,13 @@ const Home = () => {
       <section className="about-us mt-5 py-md-5">
         <div className="container about-us-content col-md-8 ">
           <h1 className="main-title">
-            <span className="linear-text">Our Solutions is Blog</span>
+            <span className="linear-text">Explore Our Insights</span>
           </h1>
 
           <p className="main-paracontent ">
-            Three Steps to Transform Your Digital Aspirations Into Tragible
-            Outcomes
+            Dive into the world of technology, creativity, and industry trends
+            through our blog. Stay updated with the latest articles, insights,
+            and tips that can propel your business forward.
           </p>
         </div>
 
@@ -389,11 +426,11 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-             
             </div>
             <div>
-            <button className="mt-5" onClick={()=>navigate("/blog")}>View All</button>
-
+              <button className="mt-5" onClick={() => navigate("/blog")}>
+                View All
+              </button>
             </div>
           </section>
         </div>
@@ -406,8 +443,8 @@ const Home = () => {
           </h1>
 
           <p className="main-paracontent ">
-            Three Steps to Transform Your Digital Aspirations Into Tragible
-            Outcomes
+            We are here to assist you on your journey to digital excellence.
+            Reach out to Sayana Worldverse today!
           </p>
         </div>
       </section>
@@ -422,7 +459,9 @@ const Home = () => {
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
-                  <p className="text-center">questions or remarks? Just write us a messagel</p>
+                  <p className="text-center">
+                    questions or remarks? Just write us a messagel
+                  </p>
                   <div className="list">
                     <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -446,9 +485,9 @@ const Home = () => {
                       </p>
                     </div> */}
                   </div>
-                 <Link to="tel:+91-8096826999">
-                 <button >Call Now</button>
-                 </Link> 
+                  <Link to="tel:+91-8096826999">
+                    <button>Call Now</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -459,7 +498,10 @@ const Home = () => {
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
-                  <p className="text-center">questions or remarks? Just write us a messagel</p>
+                  <p className="text-center">
+                    Our supoort team is spread across the globe to give you
+                    answers fast
+                  </p>
                   <div className="list">
                     {/* <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -480,11 +522,14 @@ const Home = () => {
                       <div className="icons">
                         <AiOutlineMail />
                       </div>
-                      <p className="card-number mt-0 ">support@sayanaworldverse.com</p>
+                      <p className="card-number mt-0 ">
+                        support@sayanaworldverse.com
+                      </p>
                     </div>
-                   
                   </div>
-                  <button onClick={()=>navigate("/contact")}>Contact Us</button>
+                  <button onClick={() => navigate("/contact")}>
+                    Contact Us
+                  </button>
                 </div>
               </div>
             </div>
@@ -495,7 +540,10 @@ const Home = () => {
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
-                  <p className="text-center">questions or remarks? Just write us a messagel</p>
+                  <p className="text-center">
+                    Join Our Online community to Learn, Netowrk & Grow your
+                    online business
+                  </p>
                   <div className="list">
                     {/* <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -516,9 +564,10 @@ const Home = () => {
                       <div className="icons">
                         <AiOutlineMail />
                       </div>
-                      <p className="card-number mt-0 ">info@sayanaworldverse.com</p>
+                      <p className="card-number mt-0 ">
+                        info@sayanaworldverse.com
+                      </p>
                     </div>
-                
                   </div>
                   <button>Connect</button>
                 </div>
@@ -535,8 +584,10 @@ const Home = () => {
           </h1>
 
           <p className="main-paracontent ">
-            Three Steps to Transform Your Digital Aspirations Into Tragible
-            Outcomes
+            These are a few of our clients that we've been fortunable to work
+            with, Come be victorious with us.
+            <br />
+            Our clients trust us to deliver exceptional services.
           </p>
         </div>
       </section>
@@ -548,35 +599,35 @@ const Home = () => {
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark? client1 :partner1} alt="" />
+                    <img src={isDark ? client1 : partner1} alt="" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark? client2 :partner2} alt="" />
+                    <img src={isDark ? client2 : partner2} alt="" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark? client3 :partner3} alt="" />
+                    <img src={isDark ? client3 : partner3} alt="" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark? client4 :partner4} alt="" />
+                    <img src={isDark ? client4 : partner4} alt="" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark? client5 :partner5} alt="" />
+                    <img src={isDark ? client5 : partner5} alt="" />
                   </div>
                 </div>
               </div>
@@ -588,14 +639,10 @@ const Home = () => {
       <section>
         <div className=" about-us-content  mt-5 py-5">
           <h4 className=" clients">
-            <span className="client-title">Our Speciality</span>
+            <span className="client-title">Reviews</span>
           </h4>
-          
-            
-          <p className="main-paracontent ">
-          What Clients Say About Us
-          </p>
-         
+
+          <p className="main-paracontent ">What Clients Say About Us</p>
         </div>
       </section>
 
@@ -750,15 +797,17 @@ const Home = () => {
                 Subscribe To Our Newsletter and Stay Updated
               </p>
               <div className="form-group">
-                <input type="text" className="news-input" placeholder="Enter Your Email"  aria-labelledby="email"/>
+                <input
+                  type="text"
+                  className="news-input"
+                  placeholder="Enter Your Email"
+                  aria-labelledby="email"
+                />
                 <button className="subscribe-btn">Subscribe</button>
               </div>
             </div>
             <div className="col-md-6 right-col">
-            
-                <img src={newsRocket} alt="" className="news-rocket"/>
-               
-  
+              <img src={newsRocket} alt="" className="news-rocket" />
             </div>
           </div>
         </div>

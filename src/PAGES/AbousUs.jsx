@@ -9,21 +9,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import team from "../assets/team.png";
+import team from "../assets/team.jpg";
 import Header from "../COMPONENTS/Header";
 
 const AboutUs = () => {
   const breakpoints = {
-    310: {
+    0: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    768: {
+    518: {
       slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 3,
       spaceBetween: 30,
     },
     1030: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 40,
     },
     1400: {
@@ -42,7 +46,7 @@ const AboutUs = () => {
       spaceBetween: 30,
     },
     1030: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 40,
     },
   };
@@ -58,10 +62,26 @@ const AboutUs = () => {
                 <div className="hero-content">
                   <h3 className="main-title">About Us</h3>
                   <p className="para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                    Four years ago, fueled by a passion for creativity and a
+                    vision for the digital future, SayanaWorldVerse came into
+                    existence. Founded by the dynamic duo, Muralidhar Sayana and
+                    Gangadhar Sayana, our journey has been nothing short of an
+                    exciting adventure.
+                  </p>
+                  <p className="para-content">
+                    <b>Our Mission : </b> At Sayana Worldverse, our mission is
+                    to empower businesses with cutting-edge custom software
+                    solutions. We strive to create innovative and tailored
+                    products that propel our clients to the forefront of their
+                    industries.
+                  </p>
+                  <p className="para-content">
+                    <b>Our Vision : </b> Our vision is to be a beacon of
+                    creativity and technology, providing top-notch custom
+                    software development services. We envision a future where
+                    businesses thrive through seamlessly integrated digital
+                    solutions that enhance efficiency and improve user
+                    experiences.
                   </p>
                 </div>
               </div>
@@ -74,14 +94,13 @@ const AboutUs = () => {
       </section>
       <section className="About-us">
         <div className="container">
-          {/* <p className=" career-para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-            dolorem perspiciatis numquam, voluptatum blanditiis pariatur ipsa
-            dolore sed dolor facilis similique, obcaecati impedit saepe
-            aspernatur. Nemo esse tempore pariatur vero culpa eos nam, expedita
-            aliquam nesciunt beatae quaerat, quod enim reprehenderit tempora
-            placeat ad perspiciatis, error similique dolor soluta ipsam!
-          </p> */}
+          <p className=" career-para">
+            <b> Meet Our CEO </b>: Muralidhar Sayna At the helm of
+            SayanaWorldVerse is our visionary CEO, Muralidhar Sayna. With a
+            profound understanding of the digital landscape, Muralidhar leads
+            our team towards new horizons, setting the pace for innovation and
+            excellence.
+          </p>
         </div>
 
         <div className="container mt-5 d-md-flex  align-items-center">
@@ -89,15 +108,19 @@ const AboutUs = () => {
             <img src={question} alt="" className="boy-setting" />
           </div>
           <div className="col-md-6">
-            <h1 className="excellence">Wherever Your Work</h1>
+            <h1 className="excellence">Why Choose SayanaWorldVerse ?</h1>
             <p className="ex-para">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-              consectetur aut ducimus porro consequatur dolor, quos ipsum quasi
-              debitis amet assumenda perspiciatis, sapiente cupiditate quaerat
-              animi. Doloremque harum accusamus saepe neque quibusdam odit
-              aperiam, officia veritatis voluptatibus provident iure quo
-              sapiente? Odio quia alias magnam officia, earum dicta cupiditate
-              eum.
+              We believe in simplicity and transparency. Our approach is rooted
+              in plain English – no tech jargon, just clear communication. Here,
+              innovation is not just a buzzword; it's a way of life. Every
+              project is a canvas, and we paint it with passion, precision, and
+              a touch of SayanaWorldVerse magic.
+            </p>
+            <p className="ex-para">
+              Join us on this digital expedition, where we blend creativity and
+              technology to redefine possibilities. Your journey to digital
+              excellence starts here. Welcome to SayanaWorldVerse – Where Your
+              Ideas Take Flight!
             </p>
           </div>
         </div>
@@ -475,20 +498,55 @@ const AboutUs = () => {
             <span className="color-title">Our Team</span>
           </h1>
         </div>
-        <div className="container">
+        <div className="container-fluid">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={20}
-            slidesPerView={3}
+            slidesPerView={4}
             breakpoints={breakpoint}
             navigation={true}
-        
           >
             <SwiperSlide>
               <div className="team-card d-flex justify-content-center">
                 <img src={team} alt="" />
                 <div className="team-content">
-                  <p className="name mb-0">Hi, i'm Bandan</p>
+                  <p className="name mb-0"> Gangadhara Rao Sayana</p>
+                  <p className="designation mb-0">Founder & CEO</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="team-card d-flex justify-content-center">
+                <img src={team} alt="" />
+                <div className="team-content">
+                  <p className="name mb-0">Muralidhar Sayana</p>
+                  <p className="designation mb-0">Co-Founder & CEO</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="team-card d-flex justify-content-center">
+                <img src={team} alt="" />
+                <div className="team-content">
+                  <p className="name mb-0">N.Gayathri</p>
+                  <p className="designation mb-0">COO</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="team-card d-flex justify-content-center">
+                <img src={team} alt="" />
+                <div className="team-content">
+                  <p className="name mb-0"> Solman Raju</p>
+                  <p className="designation mb-0">Team Lead</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="team-card d-flex justify-content-center">
+                <img src={team} alt="" />
+                <div className="team-content">
+                  <p className="name mb-0">Bandan Pradhan</p>
                   <p className="designation mb-0">Front-end Developer</p>
                 </div>
               </div>
@@ -497,43 +555,7 @@ const AboutUs = () => {
               <div className="team-card d-flex justify-content-center">
                 <img src={team} alt="" />
                 <div className="team-content">
-                  <p className="name mb-0">Hi, i'm Bandan</p>
-                  <p className="designation mb-0">Front-end Developer</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="team-card d-flex justify-content-center">
-                <img src={team} alt="" />
-                <div className="team-content">
-                  <p className="name mb-0">Hi, i'm Bandan</p>
-                  <p className="designation mb-0">Front-end Developer</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="team-card d-flex justify-content-center">
-                <img src={team} alt="" />
-                <div className="team-content">
-                  <p className="name mb-0">Hi, i'm Bandan</p>
-                  <p className="designation mb-0">Front-end Developer</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="team-card d-flex justify-content-center">
-                <img src={team} alt="" />
-                <div className="team-content">
-                  <p className="name mb-0">Hi, i'm Bandan</p>
-                  <p className="designation mb-0">Front-end Developer</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="team-card d-flex justify-content-center">
-                <img src={team} alt="" />
-                <div className="team-content">
-                  <p className="name mb-0">Hi, i'm Bandan</p>
+                  <p className="name mb-0">MD Shariff</p>
                   <p className="designation mb-0">Front-end Developer</p>
                 </div>
               </div>
@@ -578,7 +600,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="our-vision">
+      {/* <section className="our-vision">
         <div className=" about-us-content  mt-5 p-2">
           <h1 className="title client mb-4">
             <span className="color-title">Our Vision</span>
@@ -616,7 +638,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Fragment>
   );
 };

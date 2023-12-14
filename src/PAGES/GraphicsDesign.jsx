@@ -39,10 +39,7 @@ const GraphicsDesign = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">Graphics Design</h1>
                   <p className="services-para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                  Capture attention and communicate your brand story effectively with our creative graphic design solutions. We bring your brand to life through captivating visuals.
                   </p>
                 </div>
               </div>

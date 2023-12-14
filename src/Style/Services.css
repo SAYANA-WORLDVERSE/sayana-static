@@ -1,52 +1,56 @@
-.services-title{
-    background: linear-gradient(to right, #926eff, #dbc4ff);
-    -webkit-background-clip: text; /* For older browsers */
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent; /* For older browsers */
-    text-fill-color: transparent;
-    font-weight:bold;
-    font-size:3rem;
-    font-family: var(--font);
-
+.services-title {
+  background: linear-gradient(to right, #926eff, #dbc4ff);
+  -webkit-background-clip: text; /* For older browsers */
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* For older browsers */
+  text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: var(--font);
 }
 
-.services-para-content{
-    color:white;
-    font-size:1.2rem;
+.services-para-content {
+  color: white;
+  font-size: 1.2rem;
 }
-.web-img{
-    width:75%;
+.web-img {
+  width: 75%;
 }
-.portfolio-card-details img{
-    border-radius: 20px;
-}
-
-.tools-container{
-    justify-content: center;
-}
-.tools-card{
-    background:linear-gradient(60deg, #070a29, #51495f);
-    width:150px;
-    height:120px;
-    margin:10px;
-    border-radius:20px;
-
+.portfolio-card-details img {
+  border-radius: 20px;
 }
 
-.team-card{
-    background:linear-gradient(60deg, #070a29, #51495f);
-    backdrop-filter: blur(4px);
-    padding: 12px;
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    height: 335px;
-   
-    border-radius: 20px;
-    overflow: hidden;
-    border-radius:30px;
-    
+.tools-container {
+  justify-content: center;
 }
-.web1{
-    width:35%;
+.tools-card {
+  /* background:linear-gradient(60deg, #070a29, #51495f); */
+  justify-content: center;
+  align-items: center;
+  margin: 10px 25px;
+  border-radius: 20px;
+  
+}
+/* .next{
+    width:150px !important;
+} */
+.tools-card img {
+  width: 100px;
+}
+
+.team-card {
+  background: linear-gradient(60deg, #070a29, #51495f);
+  backdrop-filter: blur(4px);
+  padding: 6px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 250px;
+
+  border-radius: 20px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.web1 {
+  width: 35%;
 }

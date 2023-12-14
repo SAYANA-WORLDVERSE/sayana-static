@@ -4,6 +4,18 @@ import web3 from "../assets/web3.png";
 import web4 from "../assets/web4.png";
 import web2 from "../assets/web2.png";
 import web1 from "../assets/web1.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import javascript from "../assets/js.png";
+import bootstrap from "../assets/bootstrap.png"
+import mui from "../assets/mui.png"
+import react from "../assets/React.png";
+import node from "../assets/nodejs.png";
+import express from "../assets/expressjs.png";
+import mongo from "../assets/mongo.png";
+import sql from "../assets/sql.png";
+import php from "../assets/php.png";
+import next from "../assets/nexts.webp";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -11,7 +23,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import team from "../assets/team.png";
+import team from "../assets/team.jpg";
 
 const Productdevelopment = () => {
   const breakpoint = {
@@ -38,10 +50,7 @@ const Productdevelopment = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">Product Development</h1>
                   <p className="services-para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                  Transform your ideas into reality with our product development expertise. From concept to launch, we guide you through every step of the product lifecycle.
                   </p>
                 </div>
               </div>
@@ -285,22 +294,58 @@ const Productdevelopment = () => {
             <section>
               <div className="container about-us-content  mt-5 p-5">
                 <h1 className="title about">
-                  <span className="color-title">Tools We Use</span>
+                  <span className="color-title">Technologies  We Use</span>
                 </h1>
               </div>
             </section>
 
             <div className=" d-flex flex-wrap tools-container">
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={html} alt="" />
+                <p className="ex-para">HTML</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={css} alt="" />
+                <p className="ex-para">CSS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={javascript} alt="" />
+                <p className="ex-para">Java Script</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={bootstrap} alt="" />
+                <p className="ex-para">Bootstrap</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={mui} alt="" />
+                <p className="ex-para">Material UI</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={react} alt="" />
+                <p className="ex-para">React JS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={next} alt="" className="next"/>
+                <p className="ex-para">Next JS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={node} alt="" />
+                <p className="ex-para">Node JS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={express} alt="" />
+                <p className="ex-para">Express JS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={mongo} alt="" />
+                <p className="ex-para">Mongo DB</p>
+              </div>
+           
+              <div className=" tools-card d-flex flex-column ">
+                <img src={php} alt="" />
+                <p className="ex-para">PHP</p>
+              </div>
+             
             </div>
 
             <section>

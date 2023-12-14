@@ -3,7 +3,7 @@ import "../Style/HeroSection.css";
 import heroimg from "../assets/hero-image.png";
 import wave from "../assets/wave-hero.png";
 import { useTheme } from "./Context";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   const { isDark } = useTheme();
@@ -17,20 +17,20 @@ const HeroSection = () => {
             <div className="col-md-6 d-flex align-items-center">
               <div className="hero-content" data-aos="fade-right">
                 <h1
-                  className={`main-title ${isDark ? "dark-theme" : "light-theme"}`}
+                  className={`main-title ${
+                    isDark ? "dark-theme" : "light-theme"
+                  }`}
                 >
-                  Next-gen <span className="linear-text">Enterprise</span>
+                  Welcome to{" "}
+                  <span className="linear-text">Sayana Worldverse</span>
                 </h1>
-                <h3 className="sub-title">
-                 We Provide .
-                </h3>
+                <h3 className="sub-title">Your Partner in Innovation</h3>
                 <TypeAnimation
-                   preRenderFirstString={true}
+                  preRenderFirstString={true}
                   sequence={[
-
-                    "  Web Design & Development",
+                    " Web Design & Development",
                     500,
-                    " App Development",
+                    " Mobile App Development",
                     500,
                     " Product Development",
                     500,
@@ -45,11 +45,11 @@ const HeroSection = () => {
                   deletionSpeed={90}
                 />
                 <p className="para-content">
-                  As your digital enablement partner, we apply our talent-first
-                  approach to accelerate your digital journey, helping you
-                  unleash your potential and unlock unseen opportunities.
+                  Unlock Your Potential with Custom Software Solutions, Crafting
+                  Excellence in Web Design, App Design, Product Development, and
+                  Digital Marketing.
                 </p>
-                <button>Approach</button>
+                <button>Get Started</button>
               </div>
             </div>
             <div className="col-md-6 d-flex justify-content-center">

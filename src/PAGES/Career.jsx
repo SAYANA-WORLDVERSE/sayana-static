@@ -120,10 +120,8 @@ const Career = () => {
                 <div className="hero-content">
                   <h3 className="main-title">Career</h3>
                   <p className="para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                  Sayana World Verse is proud to be recognized as one of the most professional workplaces in Hyderabad, 
+                  owing to its foundation of self-improvement and solution-driven mindset. Working alongside a team of young and dynamic professionals, you’ll have ample opportunity to develop your skills and grow both personally and professionally.
                   </p>
                 </div>
               </div>

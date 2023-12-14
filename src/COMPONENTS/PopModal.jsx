@@ -9,15 +9,13 @@ import "../Style/Modal.css";
 import modalimg from "../assets/modal-img.png";
 import like from "../assets/like.png";
 
-
 const style = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   bgcolor: "#082f53",
-  height: 500,
-  width: 650,
+
   px: 4,
   py: 3,
   outline: 0,
@@ -53,9 +51,10 @@ export default function PopModal() {
       setStep((prevStep) => prevStep - 1);
     }
   };
+  
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-  
+
     if (type === "radio" && checked) {
       setFormData((prevData) => ({
         ...prevData,
@@ -103,8 +102,6 @@ export default function PopModal() {
         }
       );
   };
-
-
 
   return (
     <div>
@@ -160,7 +157,6 @@ export default function PopModal() {
                       value="Branding"
                       className="radio-input"
                       onChange={handleChange}
-
                     />
                     <label htmlFor="radio2" className="radio-label">
                       <span className="radio-inner-circle"></span>
@@ -173,7 +169,6 @@ export default function PopModal() {
                       name="service"
                       className="radio-input"
                       onChange={handleChange}
-
                     />
                     <label htmlFor="radio3" className="radio-label">
                       <span className="radio-inner-circle"></span>
@@ -186,7 +181,6 @@ export default function PopModal() {
                       name="service"
                       className="radio-input"
                       onChange={handleChange}
-
                     />
                     <label htmlFor="radio4" className="radio-label">
                       <span className="radio-inner-circle"></span>
@@ -199,7 +193,6 @@ export default function PopModal() {
                       name="service"
                       className="radio-input"
                       onChange={handleChange}
-
                     />
                     <label htmlFor="radio5" className="radio-label">
                       <span className="radio-inner-circle"></span>
@@ -216,7 +209,7 @@ export default function PopModal() {
               )}
 
               {step === 3 && (
-                <div className="step-container d-flex flex-column  align-items-center p-5 ">
+                <div className="step-container d-flex flex-column  align-items-center p-md-5 ">
                   <p>What services would you like to opt?</p>
 
                   <input
@@ -256,8 +249,8 @@ export default function PopModal() {
                 </div>
               )}
               {step === 4 && (
-                <div className="step-container d-flex flex-column  align-items-center p-5 ">
-                    <img src={like} alt="" />
+                <div className="step-container d-flex flex-column  align-items-center p-md-5 ">
+                  <img src={like} alt="" />
                   <p>Thank you! Will catch you back</p>
                 </div>
               )}

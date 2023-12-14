@@ -100,7 +100,7 @@
   .light-theme .client {
     background: linear-gradient(to top, #ffffff, #e9e9e9);
   }
-  .light-theme .client,.light-theme .clients, .light-theme .tools-card, .light-theme .portfolio-card{
+  .light-theme .client,.light-theme .clients,  .light-theme .portfolio-card{
     background: linear-gradient(to left, #ffffff, #e9e9e9);
     box-shadow:1px 1px 19px 3px #e9e7e7d9;
   }

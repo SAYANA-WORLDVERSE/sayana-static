@@ -4,7 +4,6 @@ import logo from "../assets/logo.webp";
 import whitelogo from "../assets/white-logo.png";
 import { useTheme } from "./Context";
 
-
 import {
   BsFacebook,
   BsInstagram,
@@ -12,19 +11,23 @@ import {
   BsYoutube,
   BsLinkedin,
 } from "react-icons/bs";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const {isDark}=useTheme();
+  const { isDark } = useTheme();
   return (
     <Fragment>
       <footer>
         <div className="container h-100 d-flex flex-column align-items-center justify-content-center">
           <div className="footer-top w-100 d-md-flex justify-content-between  ">
             <div className="col-md-2 footer-col">
-              <img src={isDark ? whitelogo:logo} alt="" className="footer-logo" />
+              <img
+                src={isDark ? whitelogo : logo}
+                alt=""
+                className="footer-logo"
+              />
               <p className="footer-para">
                 As your digital enablement partner, we apply our talent-first
                 approach to accelerate your digital journey.
@@ -32,23 +35,31 @@ const Footer = () => {
               <div className="footer-title d-flex flex-column">
                 <ul className="footer-list social-icons m-0 justify-content-start gap-3 p-0">
                   <li>
-                    <Link to="https://www.facebook.com/people/Sayana-Worldverse/61552692923976/">
+                    <Link
+                      to="https://www.facebook.com/people/Sayana-Worldverse/61552692923976/"
+                      target="_blank"
+                    >
                       <BsFacebook />
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://www.instagram.com/sayana_worldverse/">
+                    <Link
+                      to="https://www.instagram.com/sayana_worldverse/"
+                      target="_blank"
+                    >
                       <BsInstagram />
                     </Link>
                   </li>
                   <li>
-                    <Link>
-                    <BsTwitter />
-
+                    <Link target="_blank">
+                      <BsTwitter />
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://www.linkedin.com/company/sayana-worldverse-pvt-ltd/ ">
+                    <Link
+                      to="https://www.linkedin.com/company/sayana-worldverse-pvt-ltd/ "
+                      target="_blank"
+                    >
                       <BsLinkedin />
                     </Link>
                   </li>
@@ -56,7 +67,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-md-9 col-sm-12 d-md-flex flex-wrap justify-content-between mt-sm-2">
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-4 col-sm-6">
                 <div className="footer-title d-flex flex-column">
                   <h4>Company</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
@@ -83,7 +94,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-4 col-sm-6">
                 <div className="footer-title d-flex flex-column">
                   <h4>Services</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
@@ -106,25 +117,30 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-4 col-sm-6">
                 <div className="footer-title d--flex flex-column">
                   <h4>Our Location</h4>
-                  <ul className="footer-list flex-column p-0 mb-0">
-                    <li>
-                      <FaLocationDot />
+                  <ul className="footer-list flex-column p-0 mb-0 location">
+                    <li className=" d-flex align-items-center gap-2">
+                    <FaMapMarkerAlt  className="location-icons"/>
                       <span>
                         C9RM+9HJ Abhi's Ganga, Vittal Rao Nagar, Madhapur,
                         Hyderabad, Telangana 500081
                       </span>
                     </li>
-                    <li>
+                    <li className=" d-flex align-items-center gap-2">
                       <BiSolidPhoneCall /> <span> +91-8096826999</span>
                     </li>
-                    <li className=" d-flex ">
-                      <BiLogoGmail />{" "}
+                    <li className=" d-flex align-items-center gap-2">
+                      <BiLogoGmail />
                       <span>
                         info@sayanaworldverse.com <br />
-                        support@sayanaworldverse.com
+                      </span>
+                    </li>
+                    <li className=" d-flex align-items-center gap-2">
+                      <BiLogoGmail />
+                      <span>
+                        support@sayanaworldverse.com <br />
                       </span>
                     </li>
                   </ul>

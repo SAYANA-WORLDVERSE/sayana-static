@@ -43,9 +43,8 @@ const App = () => {
     <Fragment>
       <div className={isDark ? "dark-theme" : "light-theme"}>
         <Router>
+          {openModal && <PopModal />}
 
-          {openModal &&     <PopModal />}
-      
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

@@ -11,8 +11,26 @@ import ortho from "../assets/ortho.png";
 import haripriya from "../assets/haripriya-project.png";
 import meshler from "../assets/meshler.png";
 import care from "../assets/careofcareers.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import javascript from "../assets/js.png";
+import bootstrap from "../assets/bootstrap.png";
+import mui from "../assets/mui.png";
+import react from "../assets/React.png";
+import node from "../assets/nodejs.png";
+import express from "../assets/expressjs.png";
+import mongo from "../assets/mongo.png";
+import sql from "../assets/sql.png";
+import php from "../assets/php.png";
+import next from "../assets/nexts.webp";
 
-import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -44,10 +62,9 @@ const WebDesign = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">Web Design & Development</h1>
                   <p className="services-para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                    Create a lasting impression with visually stunning and
+                    user-friendly websites and applications. Our design
+                    solutions seamlessly blend aesthetics with functionality.
                   </p>
                 </div>
               </div>
@@ -126,7 +143,7 @@ const WebDesign = () => {
                         aria-expanded="false"
                         aria-controls="collapseOne"
                       >
-                        UI & UX Designer & Developer
+                        Discovery
                       </div>
                     </h2>
                     <div
@@ -136,11 +153,11 @@ const WebDesign = () => {
                       data-bs-parent="#accordianWeb"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid voluptatibus, quasi blanditiis, dolores,
-                        repellat ipsa modi sequi dolorem cupiditate iure nobis
-                        quisquam vel atque vero magni omnis provident
-                        consequuntur corrupti!
+                        <p>
+                          Start by sharing your ideas and goals with us. We'll
+                          listen, understand your needs, and lay the groundwork
+                          for success.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -154,7 +171,7 @@ const WebDesign = () => {
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        PHP Developer
+                        Planning
                       </div>
                     </h2>
                     <div
@@ -164,72 +181,19 @@ const WebDesign = () => {
                       data-bs-parent="#accordianWeb"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                        <p>
+                          Collaborate with our team to create a customized plan.
+                          We'll define milestones, set a timeline, and ensure a
+                          clear path forward.
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <div
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Developer HTML & CSS
-                      </div>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordianWeb"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Distinctio sint mollitia cum, molestiae alias quidem
-                        tenetur commodi voluptate deserunt velit quas culpa
-                        illum quos esse.
-                      </div>
-                    </div>
-                  </div>
+                 
                 </div>
               </div>
               <div className="col-md-6">
                 <div class="accordion" id="accordianWeb2">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <div
-                        class="accordion-button collapsed "
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseweb"
-                        aria-expanded="false"
-                        aria-controls="collapseweb"
-                      >
-                        UI & UX Designer & Developer
-                      </div>
-                    </h2>
-                    <div
-                      id="collapseweb"
-                      class="accordion-collapse collapse "
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordianWeb2"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid voluptatibus, quasi blanditiis, dolores,
-                        repellat ipsa modi sequi dolorem cupiditate iure nobis
-                        quisquam vel atque vero magni omnis provident
-                        consequuntur corrupti!
-                      </div>
-                    </div>
-                  </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <div
@@ -240,7 +204,7 @@ const WebDesign = () => {
                         aria-expanded="false"
                         aria-controls="collapseWebTwo"
                       >
-                        PHP Developer
+                        Development and Design
                       </div>
                     </h2>
                     <div
@@ -250,40 +214,40 @@ const WebDesign = () => {
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                       <p> Watch as we turn your ideas into reality. Whether it's
+                        custom software, web design, app development, or more,
+                        our experts get to work.</p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
+                    <h2 class="accordion-header" id="headingOne">
                       <div
-                        class="accordion-button collapsed"
+                        class="accordion-button collapsed "
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseWebThree"
+                        data-bs-target="#collapseweb"
                         aria-expanded="false"
-                        aria-controls="collapseWebThree"
+                        aria-controls="collapseweb"
                       >
-                        PHP Developer
+                        Receive Ongoing Support
                       </div>
                     </h2>
                     <div
-                      id="collapseWebThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
+                      id="collapseweb"
+                      class="accordion-collapse collapse "
+                      aria-labelledby="headingOne"
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                        Once your project is complete, we're still here for you.
+                        From delivery to ongoing support, we're committed to
+                        your success.
                       </div>
                     </div>
                   </div>
+
+                 
                 </div>
               </div>
             </div>
@@ -291,22 +255,57 @@ const WebDesign = () => {
             <section>
               <div className="container about-us-content  mt-5 p-5">
                 <h1 className="title about">
-                  <span className="color-title">Tools We Use</span>
+                  <span className="color-title">Technologies We Use</span>
                 </h1>
               </div>
             </section>
 
             <div className=" d-flex flex-wrap tools-container">
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={html} alt="" />
+                <p className="ex-para">HTML</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={css} alt="" />
+                <p className="ex-para">CSS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={javascript} alt="" />
+                <p className="ex-para">Java Script</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={bootstrap} alt="" />
+                <p className="ex-para">Bootstrap</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={mui} alt="" />
+                <p className="ex-para">Material UI</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={react} alt="" />
+                <p className="ex-para">React JS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={next} alt="" className="next" />
+                <p className="ex-para">Next JS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={node} alt="" />
+                <p className="ex-para">Node JS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={express} alt="" />
+                <p className="ex-para">Express JS</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={mongo} alt="" />
+                <p className="ex-para">Mongo DB</p>
+              </div>
+
+              <div className=" tools-card d-flex flex-column ">
+                <img src={php} alt="" />
+                <p className="ex-para">PHP</p>
+              </div>
             </div>
 
             <section>
@@ -320,7 +319,7 @@ const WebDesign = () => {
           <section className="our-Project">
             <Swiper
               // install Swiper modules
-              modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
               spaceBetween={10}
               slidesPerView={4}
               breakpoints={breakpoint}
@@ -329,75 +328,58 @@ const WebDesign = () => {
                 delay: 10,
               }}
               speed={2500}
-            onSwiper={(swiper) => console.log(swiper)}
+              onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
-              <div className=" portfolio-card">
-                <div className="portfolio-card-details">
-                  <img src={laptop} alt="" className="port-img" />
+                <div className=" portfolio-card">
+                  <div className="portfolio-card-details">
+                    <img src={laptop} alt="" className="port-img" />
+                  </div>
                 </div>
-             
-           
-           
-            
-            </div>
               </SwiperSlide>
               <SwiperSlide>
-              <div className=" portfolio-card">
-                <div className="portfolio-card-details">
-                  <img src={soudha} alt="" className="port-img" />
+                <div className=" portfolio-card">
+                  <div className="portfolio-card-details">
+                    <img src={soudha} alt="" className="port-img" />
+                  </div>
                 </div>
-               
-               
-              </div>
               </SwiperSlide>
               <SwiperSlide>
-              <div className=" portfolio-card">
-                <div className="portfolio-card-details">
-                  <img src={srinivasa} alt="" className="port-img" />
+                <div className=" portfolio-card">
+                  <div className="portfolio-card-details">
+                    <img src={srinivasa} alt="" className="port-img" />
+                  </div>
                 </div>
-               
-               
-              </div>
               </SwiperSlide>
               <SwiperSlide>
-              <div className=" portfolio-card">
-                <div className="portfolio-card-details">
-                  <img src={ortho} alt="" className="port-img" />
+                <div className=" portfolio-card">
+                  <div className="portfolio-card-details">
+                    <img src={ortho} alt="" className="port-img" />
+                  </div>
                 </div>
-               
-               
-              </div>
               </SwiperSlide>
               <SwiperSlide>
-              <div className=" portfolio-card">
-                <div className="portfolio-card-details">
-                  <img src={haripriya} alt="" className="port-img" />
+                <div className=" portfolio-card">
+                  <div className="portfolio-card-details">
+                    <img src={haripriya} alt="" className="port-img" />
+                  </div>
                 </div>
-               
-               
-              </div>
               </SwiperSlide>
               <SwiperSlide>
-              <div className=" portfolio-card">
-                <div className="portfolio-card-details">
-                  <img src={meshler} alt="" className="port-img" />
+                <div className=" portfolio-card">
+                  <div className="portfolio-card-details">
+                    <img src={meshler} alt="" className="port-img" />
+                  </div>
                 </div>
-               
-               
-              </div>
               </SwiperSlide>
               <SwiperSlide>
-              <div className=" portfolio-card">
-                <div className="portfolio-card-details">
-                  <img src={care} alt="" className="port-img" />
+                <div className=" portfolio-card">
+                  <div className="portfolio-card-details">
+                    <img src={care} alt="" className="port-img" />
+                  </div>
                 </div>
-               
-               
-              </div>
               </SwiperSlide>
-             
             </Swiper>
           </section>
 
@@ -462,26 +444,21 @@ const WebDesign = () => {
             </div>
 
             <section className="">
-          <div className="container mt-5">
-            <div className="news-letter  d-md-flex align-items-center justify-content-between">
-              <div className="col-md-6 news-content">
-              <p className="news-para">
-                Lets Create a Measurable Impact On
-                </p>
-                <h1 className="news-title">Your Bussiness </h1>
-                <button className="subscribe-btn">Design A Quote</button>
-
-
-               
+              <div className="container mt-5">
+                <div className="news-letter  d-md-flex align-items-center justify-content-between">
+                  <div className="col-md-6 news-content">
+                    <p className="news-para">
+                      Lets Create a Measurable Impact On
+                    </p>
+                    <h1 className="news-title">Your Bussiness </h1>
+                    <button className="subscribe-btn">Design A Quote</button>
+                  </div>
+                  <div className="col-md-6 right-col d-flex justify-content-center">
+                    <img src={web1} alt="" className="web1" />
+                  </div>
+                </div>
               </div>
-              <div className="col-md-6 right-col d-flex justify-content-center">
-                <img src={web1} alt="" className="web1"/>
-
-
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
           </div>
         </div>
       </section>
