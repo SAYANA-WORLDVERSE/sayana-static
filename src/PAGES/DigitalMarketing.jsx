@@ -5,6 +5,13 @@ import web4 from "../assets/web4.png";
 import web2 from "../assets/web2.png";
 import web1 from "../assets/web1.png";
 import {photos} from "../COMPONENTS/Photo";
+import meta from "../assets/meta.png";
+import google from "../assets/google-ads.png";
+import analytics from "../assets/google.png";
+import figma from "../assets/figma.png";
+import canva from "../assets/canva.png";
+import procreate from "../assets/procreate.png";
+import sketch from "../assets/sketch.png";
 
 import {
   Navigation,
@@ -294,18 +301,31 @@ const DigitalMarketing = () => {
               </div>
             </section>
 
-            <div className=" d-flex flex-wrap tools-container ">
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-            </div>
+            <div className=" d-flex flex-wrap tools-container">
+              <div className=" tools-card d-flex flex-column ">
+                <img src={meta} alt="" />
+                <p className="ex-para">Facebook Ads</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={google} alt="" />
+                <p className="ex-para">Google Ads</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={analytics} alt="" />
+                <p className="ex-para">Google Analytics</p>
+              </div>
+             
+              <div className=" tools-card d-flex flex-column ">
+                <img src={procreate} alt="" />
+                <p className="ex-para">Procreate</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={canva} alt="" />
+                <p className="ex-para">Canva</p>
+              </div>
+             
+              </div>
+            
 
             <section>
               <div className="container about-us-content  mt-5 p-5">

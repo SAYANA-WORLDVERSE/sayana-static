@@ -5,6 +5,13 @@ import web4 from "../assets/web4.png";
 import web2 from "../assets/web2.png";
 import web1 from "../assets/web1.png";
 import {photos2} from "../COMPONENTS/Photo";
+import ps from "../assets/photoshop.png";
+import ai from "../assets/illustrator.png";
+import ae from "../assets/after-effects.png";
+import figma from "../assets/figma.png";
+import canva from "../assets/canva.png";
+import procreate from "../assets/procreate.png";
+import sketch from "../assets/sketch.png";
 
 
 import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from "swiper/modules";
@@ -289,16 +296,35 @@ const GraphicsDesign = () => {
             </section>
 
             <div className=" d-flex flex-wrap tools-container">
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
-              <div className=" tools-card"></div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={ps} alt="" />
+                <p className="ex-para">Adobe Photoshop</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={ai} alt="" />
+                <p className="ex-para">Adobe Illustrator</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={ae} alt="" />
+                <p className="ex-para">Adobe After Effects</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={figma} alt="" />
+                <p className="ex-para">Figma</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={procreate} alt="" />
+                <p className="ex-para">Procreate</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={canva} alt="" />
+                <p className="ex-para">Canva</p>
+              </div>
+              <div className=" tools-card d-flex flex-column ">
+                <img src={sketch} alt="" />
+                <p className="ex-para">Sketch</p>
+              </div>
+            
             </div>
 
             <section>

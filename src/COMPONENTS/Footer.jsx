@@ -121,28 +121,23 @@ const Footer = () => {
                 <div className="footer-title d--flex flex-column">
                   <h4>Our Location</h4>
                   <ul className="footer-list flex-column p-0 mb-0 location">
-                    <li className=" d-flex align-items-center gap-2">
+                    <li className=" d-flex align-items-start gap-2">
                     <FaMapMarkerAlt  className="location-icons"/>
                       <span>
-                        C9RM+9HJ Abhi's Ganga, Vittal Rao Nagar, Madhapur,
+                         Abhi's Ganga, 1st Floor, Vittal Rao Nagar Rd, Madhapur,
                         Hyderabad, Telangana 500081
                       </span>
                     </li>
                     <li className=" d-flex align-items-center gap-2">
-                      <BiSolidPhoneCall /> <span> +91-8096826999</span>
+                      <BiSolidPhoneCall /> <span> +91-8019242343</span>
                     </li>
-                    <li className=" d-flex align-items-center gap-2">
-                      <BiLogoGmail />
+                    <li className=" d-flex align-items-first gap-2 ">
+                      <BiLogoGmail className="mt-1"/>
                       <span>
-                        info@sayanaworldverse.com <br />
+                        info@sayanaworldverse.com <br /> support@sayanaworldverse.com
                       </span>
                     </li>
-                    <li className=" d-flex align-items-center gap-2">
-                      <BiLogoGmail />
-                      <span>
-                        support@sayanaworldverse.com <br />
-                      </span>
-                    </li>
+                  
                   </ul>
                 </div>
               </div>

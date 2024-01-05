@@ -460,14 +460,14 @@ const Home = () => {
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
                   <p className="text-center">
-                    questions or remarks? Just write us a messagel
+                    questions or remarks? Just write us a message !
                   </p>
                   <div className="list">
                     <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
                         <FiPhoneCall />
                       </div>
-                      <p className="card-number mt-0 ">+91-8096826999</p>
+                      <p className="card-number mt-0 ">+91-8019242343</p>
                     </div>
                     {/* <div className="number d-flex align-items-center gap-2">
                       <div className="icons">
@@ -499,7 +499,7 @@ const Home = () => {
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
                   <p className="text-center">
-                    Our supoort team is spread across the globe to give you
+                    Our support team is spread across the globe to give you
                     answers fast
                   </p>
                   <div className="list">
@@ -541,7 +541,7 @@ const Home = () => {
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
                   <p className="text-center">
-                    Join Our Online community to Learn, Netowrk & Grow your
+                    Join Our Online community to Learn, Network & Grow your
                     online business
                   </p>
                   <div className="list">
@@ -638,11 +638,11 @@ const Home = () => {
 
       <section>
         <div className=" about-us-content  mt-5 py-5">
-          <h4 className=" clients">
+          <h4 className=" clients ">
             <span className="client-title">Reviews</span>
           </h4>
 
-          <p className="main-paracontent ">What Clients Say About Us</p>
+          <p className="main-paracontent mt-2">What Clients Say About Us</p>
         </div>
       </section>
 
@@ -652,138 +652,132 @@ const Home = () => {
             <div className="client-card">
               <div className="client-card-content">
                 <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
+                <p className="client-name"> Aditya Multi Speciality </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
+                  The team at Aditya Multi Speciality Hospital is exceptionally
+                  pleased with Sayana Worldverse's services. From Web
+                  Development that ensures a user-friendly online presence to
+                  SEO and Digital Marketing that boost our visibility, and
+                  outstanding Graphic Designing that reflects our
+                  professionalism.
                 </p>
               </div>
             </div>
             <div className="client-card">
               <div className="client-card-content">
                 <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
+                <p className="client-name"> Ortho 360 </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
+                  Sayana Worldverse has been a reliable partner for Ortho 360,
+                  contributing significantly to our online success. Their Web
+                  Development, SEO, Digital Marketing, and Graphic Designing
+                  services have played a pivotal role in establishing our online
+                  identity, ensuring that our orthopaedic care services reach
+                  those in need.
                 </p>
               </div>
             </div>
             <div className="client-card">
               <div className="client-card-content">
                 <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
+                <p className="client-name">Sri Srinivasa Scan</p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
+                  Sri Srinivasa Scan has benefited immensely from Sayana
+                  Worldverse's expertise. Their Web Development, SEO, Digital
+                  Marketing, and Graphic Designing services have not only
+                  improved our online presence but also conveyed the precision
+                  and excellence of our scan and diagnostic services.
                 </p>
               </div>
             </div>
             <div className="client-card">
               <div className="client-card-content">
                 <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
+                <p className="client-name"> Care of Careers </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
+                  As a client of Sayana Worldverse, Care of Careers has
+                  experienced a seamless integration of Web Development, SEO,
+                  Digital Marketing, Graphic Designing, and Ads services. This
+                  has significantly boosted our online platform for software
+                  courses, attracting a wider audience and enhancing our brand
+                  visibility.
                 </p>
               </div>
             </div>
             <div className="client-card">
               <div className="client-card-content">
                 <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
+                <p className="client-name">Haripriya's Media </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
+                  Haripriya's Media owes much of its success to Sayana
+                  Worldverse's expertise. Their Web Development, SEO, Social
+                  Media Managing, YouTube Growth Managing, and Graphic Designing
+                  services have elevated our YouTube channel, making it a go-to
+                  destination for engaging content.
                 </p>
               </div>
             </div>
             <div className="client-card">
               <div className="client-card-content">
                 <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
+                <p className="client-name">Sri Soudha</p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
+                  The partnership with Sayana Worldverse has been instrumental
+                  in establishing an impressive online presence for Sri Soudha.
+                  Through their Web Development, Digital Marketing, and Graphic
+                  Designing services, we have successfully showcased our
+                  architectural prowess to a global audience.
                 </p>
               </div>
             </div>
             <div className="client-card">
               <div className="client-card-content">
                 <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
+                <p className="client-name">Haripriya's Bhakthi </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
+                  The collaboration with Sayana Worldverse has significantly
+                  contributed to the success of Haripriya's Bhakthi. Their Web
+                  Development, SEO, Social Media Managing, YouTube Growth
+                  Managing, and Graphic Designing services have played a crucial
+                  role in building a dedicated audience for our spiritual
+                  content.
                 </p>
               </div>
             </div>
             <div className="client-card">
               <div className="client-card-content">
                 <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
+                <p className="client-name">Ocean Dental Hospital </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
+                Ocean Dental Hospital has experienced a transformative journey with Sayana Worldverse. Their services in Product Development, SEO, Digital Marketing, and Graphic Designing have not only enhanced our online visibility but have also effectively communicated our commitment to quality dental care.
                 </p>
               </div>
             </div>
-            <div className="client-card">
-              <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
-                <p className="client-name">Bandan</p>
-                <p className="client-company">CEO,AGENCY</p>
-                <p className="rating">
-                  <Rating name="read-only" value={5} readOnly />
-                </p>
-                <p className="client-review">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fugiat neque modi necessitatibus molestiae nesciunt at
-                  asperiores vitae aspernatur rem cum.
-                </p>
-              </div>
-            </div>
+          
           </Slider>
         </div>
       </section>

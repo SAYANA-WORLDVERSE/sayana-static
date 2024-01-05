@@ -17,9 +17,7 @@ const HeroSection = () => {
             <div className="col-md-6 d-flex align-items-center">
               <div className="hero-content" data-aos="fade-right">
                 <h1
-                  className={`main-title ${
-                    isDark ? "dark-theme" : "light-theme"
-                  }`}
+                  className="main-title" 
                 >
                   Welcome to{" "}
                   <span className="linear-text">Sayana Worldverse</span>

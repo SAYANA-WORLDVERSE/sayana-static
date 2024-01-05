@@ -277,14 +277,14 @@
   background: var(--card-gradiant);
   padding: 0.5rem 1rem;
   border-radius: 30px;
-  box-shadow: 1px 1px 19px 3px #3e3e3ed9;
+  /* box-shadow: 1px 1px 19px 3px #3e3e3ed9; */
   font-size: var(--heading);
 }
 .clients {
   background: var(--card-gradiant);
   padding: 8px 20px;
   border-radius: 30px;
-  box-shadow: 1px 1px 19px 3px #3e3e3ed9;
+  /* box-shadow: 1px 1px 19px 3px #3e3e3ed9; */
 }
 .about-us-content {
   position: relative;
@@ -380,7 +380,7 @@
 }
 .client-review {
   color: white;
-  text-align: center;
+  text-align: justify;
   font-size: 0.9rem;
   margin-top: 1rem;
 }

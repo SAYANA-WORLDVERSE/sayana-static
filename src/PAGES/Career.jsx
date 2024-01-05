@@ -64,7 +64,7 @@ const Career = () => {
 
       // Submit the form data
       try {
-        const response = await fetch("http://localhost:3000/submit-form", {
+        const response = await fetch("https://sayana-worldverse.vercel.app/submit-form", {
           method: "POST",
           body: data,
         });

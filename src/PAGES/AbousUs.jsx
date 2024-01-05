@@ -46,7 +46,7 @@ const AboutUs = () => {
       spaceBetween: 30,
     },
     1030: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40,
     },
   };
@@ -498,11 +498,11 @@ const AboutUs = () => {
             <span className="color-title">Our Team</span>
           </h1>
         </div>
-        <div className="container-fluid">
+        <div className="container">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={20}
-            slidesPerView={4}
+            slidesPerView={3}
             breakpoints={breakpoint}
             navigation={true}
           >
@@ -528,12 +528,12 @@ const AboutUs = () => {
               <div className="team-card d-flex justify-content-center">
                 <img src={team} alt="" />
                 <div className="team-content">
-                  <p className="name mb-0">N.Gayathri</p>
+                  <p className="name mb-0">N. Gayathri</p>
                   <p className="designation mb-0">COO</p>
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team-card d-flex justify-content-center">
                 <img src={team} alt="" />
                 <div className="team-content">
@@ -595,7 +595,7 @@ const AboutUs = () => {
                   <p className="designation mb-0">Front-end Developer</p>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </section>
