@@ -181,6 +181,9 @@
 }
 
 @media screen and (max-width: 768px) {
+p{
+  font-size:9px !important;
+}
   .roadmap-box .time{
     left:29%;
   }
@@ -200,7 +203,10 @@
 
     min-width:90% !important;
     min-height:500px;
-    padding:0px !important;
+    padding:10px !important;
+  }
+  .css-144mdce .modal-body{
+    min-height:400px;
   }
 
   .bloglist__main .sidebar .widget-sidebar.tag ul li a{
@@ -229,7 +235,7 @@
     font-size:1.3rem;
   }
   .main-title{
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
 
@@ -346,7 +352,7 @@
     width: 80px;
   }
   .excellence {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero-img {
@@ -492,7 +498,8 @@
 
 
   .services-title{
-    font-size:2rem;
+    font-size:1.5rem;
+    text-align:center;
   }
 
   .services-para-content{
@@ -502,7 +509,6 @@
     width:55%;
   }
   .footer-bottom p {
-    color: var(--text);
     font-size:10px;
 }
 }
@@ -515,7 +521,8 @@
  
 
   .services-title{
-    font-size:1.5rem;
+    font-size:1rem;
+    text-align:center
   }
   .location p{
     font-size:.8rem;

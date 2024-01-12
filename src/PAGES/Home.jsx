@@ -1,7 +1,8 @@
-import React, { Fragment, lazy } from "react";
+import React, { Fragment} from "react";
 
 import HeroSection from "../COMPONENTS/HeroSection";
 import Slider from "react-slick";
+import Tooltip from "@mui/material/Tooltip";
 
 import "../Style/Home.css";
 import gradiant from "../assets/gradiant-1.png";
@@ -113,6 +114,7 @@ const Home = () => {
   };
   return (
     <Fragment>
+      
       <HeroSection />
 
       <section className="about-us">
@@ -141,26 +143,53 @@ const Home = () => {
             <img src={gradiant} alt="" className="gradiant-bg" />
             <div className="bg-inner">
               <img src={computer} alt="" className="computer" />
-              <img
-                src={mobile}
-                alt=""
-                className="mobile"
-                data-aos="fade-right"
-              />
-              <img
-                src={rocket}
-                alt=""
-                className="rocket"
-                data-aos="fade-right"
-              />
-              <img src={dev} alt="" className="setting" data-aos="fade-top" />
-              <img src={pen} alt="" className="pen" data-aos="fade-left" />
-              <img
-                src={laptop}
-                alt=""
-                className="laptop"
-                data-aos="fade-left"
-              />
+
+              <Tooltip title="Application Development" placement="left">
+                <img
+                  src={mobile}
+                  onClick={() => navigate("/applicationdevelopment")}
+                  alt=""
+                  className="mobile"
+                  data-aos="fade-right"
+                />
+              </Tooltip>
+
+              <Tooltip title="Digital Marketing" placement="left">
+                <img
+                  src={rocket}
+                  onClick={() => navigate("/Digitalmarketing")}
+                  alt=""
+                  className="rocket"
+                  data-aos="fade-right"
+                />
+              </Tooltip>
+              <Tooltip title="Product Development" placement="left">
+                <img
+                  src={dev}
+                  alt=""
+                  className="setting"
+                  data-aos="fade-top"
+                  onClick={() => navigate("/productdevelopment")}
+                />
+              </Tooltip>
+              <Tooltip title="Graphics Design" placement="right">
+                <img
+                  src={pen}
+                  alt=""
+                  className="pen"
+                  data-aos="fade-left"
+                  onClick={() => navigate("/graphicsdesign")}
+                />
+              </Tooltip>
+              <Tooltip title="Web Design & Development" placement="right">
+                <img
+                  src={laptop}
+                  onClick={() => navigate("/webdesign")}
+                  alt=""
+                  className="laptop"
+                  data-aos="fade-left"
+                />
+              </Tooltip>
             </div>
             <p className="learn-more mt-5">
               Delivering Unparalleled Services Tailored to Your Unique Need
@@ -318,7 +347,7 @@ const Home = () => {
                 <span>1</span>
               </div>
               <div className="text">
-                <h4 className="mb-0">Discovery</h4>
+                <h4 className="mb-1">Discovery</h4>
                 {/* <p>
                   Start by sharing your ideas and goals with us. We'll listen,
                   understand your needs, and lay the groundwork for success.
@@ -333,7 +362,7 @@ const Home = () => {
                 <span>2</span>
               </div>
               <div className="text">
-                <h4 className="mb-0">Planning</h4>
+                <h4 className="mb-1">Planning</h4>
                 {/* <p>Turn Vidion Into Reality</p> */}
               </div>
             </div>
@@ -345,7 +374,7 @@ const Home = () => {
                 <span>3</span>
               </div>
               <div className="text">
-                <h4 className="mb-0">Development and Design</h4>
+                <h4 className="mb-1">Development and Design</h4>
                 {/* <p>Turn Vidion Into Reality</p> */}
               </div>
             </div>
@@ -357,7 +386,7 @@ const Home = () => {
                 <span>4</span>
               </div>
               <div className="text">
-                <h4 className="mb-0"> Receive Ongoing Support</h4>
+                <h4 className="mb-1"> Receive Ongoing Support</h4>
                 {/* <p>Turn Vidion Into Reality</p> */}
               </div>
             </div>
@@ -578,7 +607,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className=" about-us-content   p-5">
+        <div className=" about-us-content   py-5">
           <h1 className="client">
             <span className="client-title">Clients We Worked With</span>
           </h1>
@@ -773,11 +802,14 @@ const Home = () => {
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
-                Ocean Dental Hospital has experienced a transformative journey with Sayana Worldverse. Their services in Product Development, SEO, Digital Marketing, and Graphic Designing have not only enhanced our online visibility but have also effectively communicated our commitment to quality dental care.
+                  Ocean Dental Hospital has experienced a transformative journey
+                  with Sayana Worldverse. Their services in Product Development,
+                  SEO, Digital Marketing, and Graphic Designing have not only
+                  enhanced our online visibility but have also effectively
+                  communicated our commitment to quality dental care.
                 </p>
               </div>
             </div>
-          
           </Slider>
         </div>
       </section>

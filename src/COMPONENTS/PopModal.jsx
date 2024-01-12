@@ -17,7 +17,7 @@ const style = {
   bgcolor: "#082f53",
 
   px: 4,
-  py: 3,
+  py: 4,
   outline: 0,
 };
 
@@ -117,7 +117,7 @@ export default function PopModal() {
 
             <AiOutlineClose onClick={handleClose} />
           </div>
-          <div className="modal-body p-3 d-flex align-items-center justify-content-center">
+          <div className="modal-body  d-flex align-items-center justify-content-center">
             <form onSubmit={handleSubmit} id="enquireform">
               {step === 1 && (
                 <div className="step-container d-flex flex-column  align-items-center  ">
