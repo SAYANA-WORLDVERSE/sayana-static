@@ -18,6 +18,9 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1170px) {
+  .contact-para{
+    font-size:.9rem;
+  }
   .roadmap-box .title{
     font-size:18px;
 
@@ -194,18 +197,18 @@ p{
 
   
   .step-container p, h4{
-    font-size:15px;
+    font-size:15px !important;
   }
   .step-container p span{
     font-size:25px;
   }
-  .css-144mdce{
+  .css-yccnsq{
 
-    min-width:90% !important;
+    min-width:60% !important;
     min-height:500px;
     padding:10px !important;
   }
-  .css-144mdce .modal-body{
+  .css-yccnsq .modal-body{
     min-height:400px;
   }
 
@@ -516,6 +519,12 @@ p{
 @media screen and (max-width: 510px) {
   .roadmap-box .time{
     left:35%;
+  }
+  .css-yccnsq{
+
+    min-width:90% !important;
+    min-height:500px;
+    padding:10px !important;
   }
 
  

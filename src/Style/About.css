@@ -16,7 +16,7 @@
   color: white;
 }
 .roadmap-box .title {
-  font-size: 25px !important;
+  font-size: 18px !important;
   font-family: "Poppins", sans-serif;
 }
 
@@ -128,9 +128,7 @@
   height: 1px;
   width: 100%;
 }
-.text {
-  font-size: 0.9rem !important;
-}
+
 
 .roadmap__main.s1 .roadmap-box {
   background: linear-gradient(

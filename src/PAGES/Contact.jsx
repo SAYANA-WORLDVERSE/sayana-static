@@ -70,7 +70,7 @@ const Contact = () => {
 
           <div className="row contactus-form py-md-5 p-sm-4">
             <div className="col-md-6 d-flex flex-column justify-content-center">
-              <h1 className="contact-title text-sm-center">
+              <h1 className="contact-title text-center">
                 Contact Information
               </h1>
               <div className="contact-details">

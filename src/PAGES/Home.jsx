@@ -1,16 +1,13 @@
 import React, { Fragment} from "react";
-
 import HeroSection from "../COMPONENTS/HeroSection";
 import Slider from "react-slick";
 import Tooltip from "@mui/material/Tooltip";
-
 import "../Style/Home.css";
 import gradiant from "../assets/gradiant-1.png";
 import computer from "../assets/computer.png";
 import mobile from "../assets/mobile.png";
 import rocket from "../assets/rocket.png";
 import Rating from "@mui/material/Rating";
-
 import pen from "../assets/pen.png";
 import laptop from "../assets/laptop-png.png";
 import web2 from "../assets/web-2.png";
@@ -23,7 +20,6 @@ import note from "../assets/note.png";
 import video from "../assets/video.png";
 import phone from "../assets/phone.png";
 import dev from "../assets/setting-assets.png";
-
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
@@ -42,9 +38,13 @@ import partner5 from "../assets/partner-5.png";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { useNavigate } from "react-router";
-
 import { useTheme } from "../COMPONENTS/Context";
 import { Link } from "react-router-dom";
+
+
+
+
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -680,7 +680,7 @@ const Home = () => {
           <Slider {...setting}>
             <div className="client-card">
               <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
+                <img src="/images/c1.png" alt="" className="test-monial" />
                 <p className="client-name"> Aditya Multi Speciality </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -697,7 +697,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
+                <img src="/images/c8.jpg" alt="" className="test-monial" />
                 <p className="client-name"> Ortho 360 </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -714,7 +714,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
+                <img src="/images/c6.png" alt="" className="test-monial" />
                 <p className="client-name">Sri Srinivasa Scan</p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -730,7 +730,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
+                <img src="/images/c7.jpg" alt="" className="test-monial" />
                 <p className="client-name"> Care of Careers </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -747,7 +747,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
+                <img src="/images/c2.png" alt="" className="test-monial" />
                 <p className="client-name">Haripriya's Media </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -763,7 +763,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
+                <img src="/images/c5.jpg" alt="" className="test-monial" />
                 <p className="client-name">Sri Soudha</p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -779,7 +779,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
+                <img src="/images/c3.jpg" alt="" className="test-monial" />
                 <p className="client-name">Haripriya's Bhakthi </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -796,7 +796,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src={testmonial} alt="" className="test-monial" />
+                <img src="/images/c4.png" alt="" className="test-monial" />
                 <p className="client-name">Ocean Dental Hospital </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />

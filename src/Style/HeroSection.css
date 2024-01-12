@@ -65,7 +65,7 @@ font-size:var(--heading);
 }
 .para-content {
   color: var(--text);
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
 
   font-style: normal;
