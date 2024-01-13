@@ -2,8 +2,7 @@ import React, { Fragment, useState } from "react";
 import heroimg from "../assets/career-hero.png";
 import "../Style/Career.css";
 import Header from "../COMPONENTS/Header";
-import Swal from 'sweetalert2';
-
+import Swal from "sweetalert2";
 
 const Career = () => {
   const [formData, setFormData] = useState({
@@ -17,8 +16,6 @@ const Career = () => {
   const [errors, setErrors] = useState({});
   const [buttonText, setButtonText] = useState("Submit");
 
-
-  
   const validateForm = () => {
     const newErrors = {};
 
@@ -52,52 +49,52 @@ const Career = () => {
     e.preventDefault();
     setButtonText("Submiting...");
 
-   
-      // Prepare form data for submission
-      const data = new FormData();
-      data.append("full_name", formData.full_name);
-      data.append("mobile", formData.mobile);
-      data.append("email", formData.email);
-      data.append("file", formData.file);
-      data.append("position", formData.position);
-      data.append("message", formData.message);
+    // Prepare form data for submission
+    const data = new FormData();
+    data.append("full_name", formData.full_name);
+    data.append("mobile", formData.mobile);
+    data.append("email", formData.email);
+    data.append("file", formData.file);
+    data.append("position", formData.position);
+    data.append("message", formData.message);
 
-      // Submit the form data
-      try {
-        const response = await fetch("https://sayana-worldverse.vercel.app/submit-form", {
+    // Submit the form data
+    try {
+      const response = await fetch(
+        "https://sayana-worldverse.vercel.app/submit-form",
+        {
           method: "POST",
           body: data,
-        });
+        }
+      );
 
-        const result = await response.json();
-        Swal.fire({
-          icon: "success",
-          title: "Form Submitted Successfully!",
-          text: "Thank you for submitting the form.",
-        });
-        console.log(result);
+      const result = await response.json();
+      Swal.fire({
+        icon: "success",
+        title: "Form Submitted Successfully!",
+        text: "Thank you for submitting the form.",
+      });
+      console.log(result);
 
-        setFormData({
-          full_name: "",
-          mobile: "",
-          email: "",
-          file:"",
-          position: "",
-          message: "",
-        });
-       
-    
-        setButtonText("Submit");
-      } catch (error) {
-        console.error("Error submitting form:", error);
-        setButtonText("Submit");
-        Swal.fire({
-          icon: "error",
-          title: "Oops... Something went wrong!",
-          text: "There was an error submitting the form. Please try again.",
-        });
-      }
-    
+      setFormData({
+        full_name: "",
+        mobile: "",
+        email: "",
+        file: "",
+        position: "",
+        message: "",
+      });
+
+      setButtonText("Submit");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setButtonText("Submit");
+      Swal.fire({
+        icon: "error",
+        title: "Oops... Something went wrong!",
+        text: "There was an error submitting the form. Please try again.",
+      });
+    }
   };
 
   const handleChange = (e) => {
@@ -120,8 +117,15 @@ const Career = () => {
                 <div className="hero-content">
                   <h3 className="main-title">Career</h3>
                   <p className="para-content">
-                  Sayana World Verse is proud to be recognized as one of the most professional workplaces in Hyderabad, 
-                  owing to its foundation of self-improvement and solution-driven mindset. Working alongside a team of young and dynamic professionals, you’ll have ample opportunity to develop your skills and grow both personally and professionally.
+                    Join our dynamic team at Sayana Worldverse and embark on a
+                    journey of innovation and growth. We're passionate about
+                    fostering talent, nurturing creativity, and driving digital
+                    transformation. Explore rewarding career opportunities that
+                    align with your skills, aspirations, and ambitions. Be part
+                    of a collaborative environment where your contributions make
+                    a difference, and together, we shape the future of
+                    technology and creativity. Your next career milestone awaits
+                    at Sayana Worldverse.
                   </p>
                 </div>
               </div>
@@ -135,13 +139,30 @@ const Career = () => {
 
       <section className="career-content py-5 m-md-5">
         <div className="container">
-          {/* <p className="career-para">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            nisi iure aut natus quod dolores in est eveniet? Consectetur dolor
-            quam iusto aspernatur nesciunt eveniet delectus asperiores aut quo
-            corporis, cumque incidunt eum, quidem optio illo dolore, ducimus
-            earum tenetur?
-          </p> */}
+          <ul className="career-list">
+            <li className="career-list-item">
+              <b> Innovative Environment:</b> Engage in a collaborative
+              workspace that encourages creativity and innovation.
+            </li>
+            <li className="career-list-item">
+              <b>Professional Growth:</b> Access opportunities for skill development,
+              continuous learning, and career advancement.
+            </li>
+            <li className="career-list-item">
+              <b>Impactful Projects:</b> Contribute to transformative projects that
+              make a significant difference in various industries.
+            </li>
+            <li className="career-list-item">
+              <b>Team Collaboration:</b> Work alongside talented professionals in a
+              supportive and inclusive team environment.
+            </li>
+
+            <li className="career-list-item">
+              <b>Competitive Benefits:</b> Enjoy a comprehensive benefits package,
+              flexible work arrangements, and a rewarding work-life balance.
+            </li>
+          </ul>
+
           <div className="row py-5 career-container mt-5">
             <div className="col-md-7">
               <div className="d-flex justify-content-center">
@@ -312,7 +333,6 @@ const Career = () => {
                     value={formData.mobile}
                     onChange={handleChange}
                   />
-
                 </div>
                 <div class="col-md-12">
                   <input
@@ -324,7 +344,6 @@ const Career = () => {
                     value={formData.email}
                     onChange={handleChange}
                   />
-
                 </div>
                 <div class="col-md-12">
                   <select
@@ -346,7 +365,6 @@ const Career = () => {
                     className="form-control"
                     name="file"
                     accept=".pdf,.doc,.docx"
-                    
                     onChange={handleFileChange}
                   />
                 </div>
@@ -369,7 +387,7 @@ const Career = () => {
                     className="float-end"
                     onClick={handleSubmit}
                   >
-                   {buttonText}
+                    {buttonText}
                   </button>
                 </div>
               </form>

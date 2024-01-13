@@ -106,7 +106,7 @@
 }
 .learn-more {
   color: var(--text);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .digital-excellence {
   position: relative;
@@ -115,6 +115,10 @@
 
 .implements .text h4 {
   font-size: 1rem;
+  
+}
+.implements .text{
+  padding:15px;
 }
 .digital-wave {
   width: 100%;
@@ -128,12 +132,11 @@
 .excellence {
   color: white;
   font-family: var(--font);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .ex-para {
   color: var(--text);
   font-family: "Poppins", sans-serif;
-  margin:10px !important;
   text-align: justify;
 }
 

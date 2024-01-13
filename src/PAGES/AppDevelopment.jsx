@@ -7,8 +7,8 @@ import web1 from "../assets/web1.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/js.png";
-import bootstrap from "../assets/bootstrap.png"
-import mui from "../assets/mui.png"
+import bootstrap from "../assets/bootstrap.png";
+import mui from "../assets/mui.png";
 import react from "../assets/React.png";
 import node from "../assets/nodejs.png";
 import express from "../assets/expressjs.png";
@@ -49,7 +49,15 @@ const AppDevelopment = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">Application Development</h1>
                   <p className="services-para-content">
-                  Harness the power of tailored solutions designed to meet your specific business needs. Our custom software development services ensure optimal performance and efficiency.
+                    Application Development at Sayana Worldverse embodies a
+                    comprehensive approach to crafting bespoke software
+                    solutions. Leveraging cutting-edge technologies and
+                    methodologies like Python, Java, and C#, our expert team
+                    ensures scalability, robustness, and optimal user
+                    experience. Through agile frameworks, DevOps integration,
+                    and continuous delivery, we deliver secure, efficient
+                    applications tailored to align with your business
+                    objectives.
                   </p>
                 </div>
               </div>
@@ -60,23 +68,29 @@ const AppDevelopment = () => {
                 <img src={web3} alt="" className="web-img" />
               </div>
               <div className="col-md-6 mt-3">
-                <h1 className="services-title">Web Design</h1>
+                <h1 className="services-title">Mobile Application</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  Mobile Application Development at Sayana Worldverse employs
+                  native and hybrid frameworks like React Native and Flutter.
+                  Utilizing agile methodologies and API integrations, we
+                  architect scalable, user-centric mobile solutions. Through
+                  meticulous UI/UX design, performance optimization, and cloud
+                  integration, we ensure seamless experiences across iOS,
+                  Android, and cross-platform environments.
                 </p>
               </div>
             </div>
             <div className="row p-md-5  justify-content-center align-items-center">
               <div className="col-md-6">
-                <h1 className="services-title">Web Development</h1>
+                <h1 className="services-title">Web Application</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  In Web Application Development, Sayana Worldverse harnesses
+                  technologies such as Node.js, Angular, and Django. Employing
+                  MVC architectures and RESTful APIs, we craft scalable,
+                  responsive web solutions. Through agile development practices,
+                  database integration, and front-end optimization, we deliver
+                  robust applications tailored for performance, security, and
+                  user engagement across browsers.
                 </p>
               </div>
               <div className="col-md-6  mt-3  d-flex justify-content-center ">
@@ -89,16 +103,34 @@ const AppDevelopment = () => {
                 <img src={web2} alt="" className="web-img" />
               </div>
               <div className="col-md-6 mt-3">
-                <h1 className="services-title">
-                  Software
-                  <br /> Development
-                </h1>
+                <h1 className="services-title">Web Development</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  At Sayana Worldverse, Web Development leverages technologies
+                  like HTML5, CSS3, JavaScript, and frameworks such as React and
+                  Vue.js. Employing RESTful APIs and microservices architecture,
+                  we architect scalable and interactive web solutions. Through
+                  agile methodologies, CI/CD pipelines, and cloud deployments,
+                  we ensure optimized performance, security, and user-centric
+                  experiences
                 </p>
+              </div>
+            </div>
+
+            <div className="row p-md-5  justify-content-center align-items-center">
+              <div className="col-md-6">
+                <h1 className="services-title">E- Commerce Solutions</h1>
+                <p className="ex-para">
+                  At Sayana Worldverse, we specialize in E-Commerce Solutions
+                  leveraging platforms like Magento, WooCommerce, and Shopify.
+                  Employing secure payment gateways, API integrations, and cloud
+                  hosting, we create scalable, user-friendly online storefronts.
+                  Our approach emphasizes UI/UX design, inventory management,
+                  and analytics to optimize sales, customer engagement, and
+                  business growth.
+                </p>
+              </div>
+              <div className="col-md-6  mt-3  d-flex justify-content-center ">
+                <img src={web4} alt="" className="web-img" />
               </div>
             </div>
 
@@ -107,10 +139,15 @@ const AppDevelopment = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">How We Do It ?</h1>
                   <p className="services-para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                    We leverage a blend of expertise and innovation to deliver
+                    exceptional results. By understanding client objectives,
+                    conducting in-depth research, and employing strategic
+                    methodologies, we tailor solutions to meet unique needs. Our
+                    multidisciplinary approach combines creativity, technology,
+                    and analytics to drive efficiency, engagement, and growth.
+                    Through continuous learning and adaptability, we ensure
+                    alignment with industry trends and client goals, fostering
+                    long-term partnerships and success.
                   </p>
                 </div>
               </div>
@@ -128,7 +165,7 @@ const AppDevelopment = () => {
                         aria-expanded="false"
                         aria-controls="collapseOne"
                       >
-                        UI & UX Designer & Developer
+                        Discovery
                       </div>
                     </h2>
                     <div
@@ -138,11 +175,11 @@ const AppDevelopment = () => {
                       data-bs-parent="#accordianWeb"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid voluptatibus, quasi blanditiis, dolores,
-                        repellat ipsa modi sequi dolorem cupiditate iure nobis
-                        quisquam vel atque vero magni omnis provident
-                        consequuntur corrupti!
+                        <p>
+                          Start by sharing your ideas and goals with us. We'll
+                          listen, understand your needs, and lay the groundwork
+                          for success.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -156,7 +193,7 @@ const AppDevelopment = () => {
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        PHP Developer
+                        Planning
                       </div>
                     </h2>
                     <div
@@ -166,37 +203,11 @@ const AppDevelopment = () => {
                       data-bs-parent="#accordianWeb"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <div
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Developer HTML & CSS
-                      </div>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordianWeb"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Distinctio sint mollitia cum, molestiae alias quidem
-                        tenetur commodi voluptate deserunt velit quas culpa
-                        illum quos esse.
+                        <p>
+                          Collaborate with our team to create a customized plan.
+                          We'll define milestones, set a timeline, and ensure a
+                          clear path forward.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -204,34 +215,6 @@ const AppDevelopment = () => {
               </div>
               <div className="col-md-6">
                 <div class="accordion" id="accordianWeb2">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <div
-                        class="accordion-button collapsed "
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseweb"
-                        aria-expanded="false"
-                        aria-controls="collapseweb"
-                      >
-                        UI & UX Designer & Developer
-                      </div>
-                    </h2>
-                    <div
-                      id="collapseweb"
-                      class="accordion-collapse collapse "
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordianWeb2"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid voluptatibus, quasi blanditiis, dolores,
-                        repellat ipsa modi sequi dolorem cupiditate iure nobis
-                        quisquam vel atque vero magni omnis provident
-                        consequuntur corrupti!
-                      </div>
-                    </div>
-                  </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <div
@@ -242,7 +225,7 @@ const AppDevelopment = () => {
                         aria-expanded="false"
                         aria-controls="collapseWebTwo"
                       >
-                        PHP Developer
+                        Development and Design
                       </div>
                     </h2>
                     <div
@@ -252,37 +235,38 @@ const AppDevelopment = () => {
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                        <p>
+                          {" "}
+                          Watch as we turn your ideas into reality. Whether it's
+                          custom software, web design, app development, or more,
+                          our experts get to work.
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
+                    <h2 class="accordion-header" id="headingOne">
                       <div
-                        class="accordion-button collapsed"
+                        class="accordion-button collapsed "
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseWebThree"
+                        data-bs-target="#collapseweb"
                         aria-expanded="false"
-                        aria-controls="collapseWebThree"
+                        aria-controls="collapseweb"
                       >
-                        PHP Developer
+                        Receive Ongoing Support
                       </div>
                     </h2>
                     <div
-                      id="collapseWebThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
+                      id="collapseweb"
+                      class="accordion-collapse collapse "
+                      aria-labelledby="headingOne"
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                        Once your project is complete, we're still here for you.
+                        From delivery to ongoing support, we're committed to
+                        your success.
                       </div>
                     </div>
                   </div>
@@ -324,7 +308,7 @@ const AppDevelopment = () => {
                 <p className="ex-para">React JS</p>
               </div>
               <div className=" tools-card d-flex flex-column ">
-                <img src={next} alt="" className="next"/>
+                <img src={next} alt="" className="next" />
                 <p className="ex-para">Next JS</p>
               </div>
               <div className=" tools-card d-flex flex-column ">
@@ -339,12 +323,11 @@ const AppDevelopment = () => {
                 <img src={mongo} alt="" />
                 <p className="ex-para">Mongo DB</p>
               </div>
-           
+
               <div className=" tools-card d-flex flex-column ">
                 <img src={php} alt="" />
                 <p className="ex-para">PHP</p>
               </div>
-             
             </div>
 
             <section>
@@ -395,86 +378,22 @@ const AppDevelopment = () => {
           </section>
 
           <div className="container mt-5">
-            <div className=" row col-md-12 p-md-5">
-              <div class="accordion row col-md-12" id="accordianServices">
-                <div class="accordion-item col-md-6">
-                  <h2 class="accordion-header" id="headingServicesOne">
-                    <div
-                      class="accordion-button collapsed "
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseServicesOne"
-                      aria-expanded="false"
-                      aria-controls="collapseServicesOne"
-                    >
-                      Services Design
-                    </div>
-                  </h2>
-                  <div
-                    id="collapseServicesOne"
-                    class="accordion-collapse collapse "
-                    aria-labelledby="headingServicesOne"
-                    data-bs-parent="#accordianServices"
-                  >
-                    <div class="accordion-body">
-                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid voluptatibus, quasi blanditiis, dolores, repellat
-                      ipsa modi sequi dolorem cupiditate iure nobis quisquam vel
-                      atque vero magni omnis provident consequuntur corrupti!</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item col-md-6">
-                  <h2 class="accordion-header" id="headingServicesTwo">
-                    <div
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseServicesTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseServicesTwo"
-                    >
-                      Services Design
-                    </div>
-                  </h2>
-                  <div
-                    id="collapseServicesTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingServicesTwo"
-                    data-bs-parent="#accordianServices"
-                  >
-                    <div class="accordion-body">
-                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Enim dolorem numquam dignissimos animi sunt deleniti
-                      dolorum delectus ducimus quis a, dolore, eligendi quod ea
-                      velit?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <section className="">
-          <div className="container mt-5">
-            <div className="news-letter  d-md-flex align-items-center justify-content-between">
-              <div className="col-md-6 news-content">
-              <p className="news-para">
-                Lets Create a Measurable Impact On
-                </p>
-                <h1 className="news-title">Your Bussiness </h1>
-                <button className="subscribe-btn">Design A Quote</button>
-
-
-               
+              <div className="container mt-5">
+                <div className="news-letter  d-md-flex align-items-center justify-content-between">
+                  <div className="col-md-6 news-content">
+                    <p className="news-para">
+                      Lets Create a Measurable Impact On
+                    </p>
+                    <h1 className="news-title">Your Bussiness </h1>
+                    <button className="subscribe-btn">Design A Quote</button>
+                  </div>
+                  <div className="col-md-6 right-col d-flex justify-content-center">
+                    <img src={web1} alt="" className="web1" />
+                  </div>
+                </div>
               </div>
-              <div className="col-md-6 right-col d-flex justify-content-center">
-                <img src={web1} alt="" className="web1"/>
-
-
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
           </div>
         </div>
       </section>

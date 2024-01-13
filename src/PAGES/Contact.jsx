@@ -50,10 +50,11 @@ const Contact = () => {
                 <div className="hero-content">
                   <h3 className="title">Contact Us</h3>
                   <p className="para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                    We appreciate your interest! For inquiries, to know more
+                    information about Sayana Worldverse, please use the contact
+                    details provided or fill out the form below. We're committed
+                    to assisting you and exploring opportunities to achieve your
+                    digital goals together.
                   </p>
                 </div>
               </div>
@@ -70,14 +71,14 @@ const Contact = () => {
 
           <div className="row contactus-form py-md-5 p-sm-4">
             <div className="col-md-6 d-flex flex-column justify-content-center">
-              <h1 className="contact-title text-center">
-                Contact Information
-              </h1>
+              <h1 className="contact-title text-center">Contact Information</h1>
               <div className="contact-details">
                 <div className="location d-flex align-items-center ">
                   <img src={location} alt="" className="contact-icons" />
                   <p className="contact-para">
-                    Abhi's Ganga, 1st Floor,<br/> Vittal Rao Nagar Rd, Madhapur,<br/>
+                    Abhi's Ganga, 1st Floor,
+                    <br /> Vittal Rao Nagar Rd, Madhapur,
+                    <br />
                     Hyderabad, Telangana 500081
                   </p>
                 </div>
@@ -90,7 +91,6 @@ const Contact = () => {
                 <div className="location d-flex align-items-center ">
                   <img src={mail} alt="" className="contact-icons" />
                   <p className="contact-para">
-                    
                     info@sayanaworldverse.com, <br />
                     support@sayanaworldverse.com
                   </p>

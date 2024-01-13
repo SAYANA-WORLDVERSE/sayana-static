@@ -62,9 +62,13 @@ const WebDesign = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">Web Design & Development</h1>
                   <p className="services-para-content">
-                    Create a lasting impression with visually stunning and
-                    user-friendly websites and applications. Our design
-                    solutions seamlessly blend aesthetics with functionality.
+                    Harness our expertise in Web Design & Development to
+                    architect scalable, responsive, and SEO-optimized digital
+                    platforms. Leveraging front-end frameworks, back-end
+                    integrations, and UI/UX principles, we deliver tailored
+                    solutions that prioritize performance, security, and user
+                    engagement. Transform your digital footprint with our
+                    innovative IT-driven strategies and robust web solutions.
                   </p>
                 </div>
               </div>
@@ -77,10 +81,13 @@ const WebDesign = () => {
               <div className="col-md-6 mt-3">
                 <h1 className="services-title">Web Design</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  Our Web Design services prioritize responsive and
+                  user-friendly interfaces. Leveraging modern design frameworks
+                  and intuitive layouts, we ensure seamless navigation and
+                  optimal user experiences across devices. By combining
+                  aesthetics with functionality, we create engaging digital
+                  environments that enhance your brand's online presence and
+                  user engagement.
                 </p>
               </div>
             </div>
@@ -88,10 +95,13 @@ const WebDesign = () => {
               <div className="col-md-6">
                 <h1 className="services-title">Web Development</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  In our Web Development services, we employ agile
+                  methodologies, API integrations, and cloud-based solutions.
+                  Utilizing technologies like Node.js, React, and MongoDB, we
+                  engineer scalable, secure, and efficient web applications.
+                  Through meticulous coding practices and performance
+                  optimization, we deliver robust solutions tailored to meet
+                  your business objectives and user demands.
                 </p>
               </div>
               <div className="col-md-6  mt-3  d-flex justify-content-center ">
@@ -104,15 +114,15 @@ const WebDesign = () => {
                 <img src={web2} alt="" className="web-img" />
               </div>
               <div className="col-md-6 mt-3">
-                <h1 className="services-title">
-                  Software
-                  <br /> Development
-                </h1>
+                <h1 className="services-title">Software Development</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  Our Software Development approach integrates DevOps practices,
+                  microservices architecture, and containerization. Leveraging
+                  languages like Python, Java, and cloud-native solutions, we
+                  craft scalable, secure, and resilient software applications.
+                  Through continuous integration and deployment, we ensure
+                  optimized performance, adaptability, and alignment with
+                  evolving business needs.
                 </p>
               </div>
             </div>
@@ -122,10 +132,15 @@ const WebDesign = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">How We Do It ?</h1>
                   <p className="services-para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                    We leverage a blend of expertise and innovation to deliver
+                    exceptional results. By understanding client objectives,
+                    conducting in-depth research, and employing strategic
+                    methodologies, we tailor solutions to meet unique needs. Our
+                    multidisciplinary approach combines creativity, technology,
+                    and analytics to drive efficiency, engagement, and growth.
+                    Through continuous learning and adaptability, we ensure
+                    alignment with industry trends and client goals, fostering
+                    long-term partnerships and success.
                   </p>
                 </div>
               </div>
@@ -189,7 +204,6 @@ const WebDesign = () => {
                       </div>
                     </div>
                   </div>
-                 
                 </div>
               </div>
               <div className="col-md-6">
@@ -214,9 +228,12 @@ const WebDesign = () => {
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                       <p> Watch as we turn your ideas into reality. Whether it's
-                        custom software, web design, app development, or more,
-                        our experts get to work.</p>
+                        <p>
+                          {" "}
+                          Watch as we turn your ideas into reality. Whether it's
+                          custom software, web design, app development, or more,
+                          our experts get to work.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -246,8 +263,6 @@ const WebDesign = () => {
                       </div>
                     </div>
                   </div>
-
-                 
                 </div>
               </div>
             </div>
@@ -384,67 +399,8 @@ const WebDesign = () => {
           </section>
 
           <div className="container mt-5">
-            <div className=" row col-md-12 p-md-5">
-              <div class="accordion row col-md-12" id="accordianServices">
-                <div class="accordion-item col-md-6">
-                  <h2 class="accordion-header" id="headingServicesOne">
-                    <div
-                      class="accordion-button collapsed "
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseServicesOne"
-                      aria-expanded="false"
-                      aria-controls="collapseServicesOne"
-                    >
-                      Services Design
-                    </div>
-                  </h2>
-                  <div
-                    id="collapseServicesOne"
-                    class="accordion-collapse collapse "
-                    aria-labelledby="headingServicesOne"
-                    data-bs-parent="#accordianServices"
-                  >
-                    <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid voluptatibus, quasi blanditiis, dolores, repellat
-                      ipsa modi sequi dolorem cupiditate iure nobis quisquam vel
-                      atque vero magni omnis provident consequuntur corrupti!
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item col-md-6">
-                  <h2 class="accordion-header" id="headingServicesTwo">
-                    <div
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseServicesTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseServicesTwo"
-                    >
-                      Services Design
-                    </div>
-                  </h2>
-                  <div
-                    id="collapseServicesTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingServicesTwo"
-                    data-bs-parent="#accordianServices"
-                  >
-                    <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Enim dolorem numquam dignissimos animi sunt deleniti
-                      dolorum delectus ducimus quis a, dolore, eligendi quod ea
-                      velit?
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <section className="">
-              <div className="container mt-5">
+            <section className="mt-5">
+              <div className="container ">
                 <div className="news-letter  d-md-flex align-items-center justify-content-between">
                   <div className="col-md-6 news-content">
                     <p className="news-para">

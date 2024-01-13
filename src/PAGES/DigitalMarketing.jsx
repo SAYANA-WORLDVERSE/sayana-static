@@ -4,7 +4,7 @@ import web3 from "../assets/web3.png";
 import web4 from "../assets/web4.png";
 import web2 from "../assets/web2.png";
 import web1 from "../assets/web1.png";
-import {photos} from "../COMPONENTS/Photo";
+import { photos } from "../COMPONENTS/Photo";
 import meta from "../assets/meta.png";
 import google from "../assets/google-ads.png";
 import analytics from "../assets/google.png";
@@ -51,8 +51,14 @@ const DigitalMarketing = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">Digital Marketing</h1>
                   <p className="services-para-content">
-                  Amplify your online presence and reach your target audience with our digital marketing strategies. From SEO to social media, we've got your digital marketing needs covered.
-
+                    Sayana Worldverse employs AI-driven analytics, SEO
+                    algorithms, and programmatic advertising in our Digital
+                    Marketing strategies. Leveraging machine learning,
+                    data-driven insights, and CRM integrations, we optimize
+                    campaigns across platforms. Our approach focuses on
+                    ROI-driven tactics, real-time analytics, and personalized
+                    content delivery to enhance engagement and conversions
+                    effectively.
                   </p>
                 </div>
               </div>
@@ -63,23 +69,29 @@ const DigitalMarketing = () => {
                 <img src={web3} alt="" className="web-img" />
               </div>
               <div className="col-md-6 mt-3">
-                <h1 className="services-title">Web Design</h1>
+                <h1 className="services-title">Social Media Optimization</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  Sayana Worldverse enhances brand visibility through Social
+                  Media Optimization (SMO). Utilizing algorithms, engagement
+                  analytics, and content strategy, we tailor campaigns for
+                  platforms like Facebook, Instagram, and Twitter. By leveraging
+                  user behavior insights, hashtags, and multimedia content, we
+                  amplify reach, foster community engagement, and drive targeted
+                  interactions.
                 </p>
               </div>
             </div>
             <div className="row p-md-5 mt-5 justify-content-center align-items-center">
               <div className="col-md-6">
-                <h1 className="services-title">Web Development</h1>
+                <h1 className="services-title">Social media marketing</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  Sayana Worldverse harnesses social media algorithms,
+                  influencer partnerships, and data analytics in our Social
+                  Media Marketing strategies. Utilizing AI tools, targeted
+                  advertising, and engagement metrics, we amplify brand
+                  visibility and audience engagement across platforms. Our
+                  approach emphasizes content optimization, community building,
+                  and ROI-centric campaigns for impactful digital presence.
                 </p>
               </div>
               <div className="col-md-6  mt-3  d-flex justify-content-center ">
@@ -92,16 +104,106 @@ const DigitalMarketing = () => {
                 <img src={web2} alt="" className="web-img" />
               </div>
               <div className="col-md-6 mt-3">
-                <h1 className="services-title">
-                  Software
-                  <br /> Development
-                </h1>
+                <h1 className="services-title">SEO</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  At Sayana Worldverse, we optimize SEO strategies using
+                  semantic search, SERP analytics, and algorithmic updates.
+                  Employing keyword research, on-page/off-page optimization, and
+                  mobile responsiveness, we enhance organic visibility. Our SEO
+                  approach integrates technical audits, backlink strategies, and
+                  content optimization to drive sustainable rankings and
+                  maximize online presence.
                 </p>
+              </div>
+            </div>
+
+            <div className="row p-md-5 mt-5 justify-content-center align-items-center">
+              <div className="col-md-6">
+                <h1 className="services-title">Search Engine Marketing</h1>
+                <p className="ex-para">
+                  Sayana Worldverse excels in Search Engine Marketing (SEM) by
+                  utilizing PPC algorithms, keyword optimization, and A/B
+                  testing methodologies. Leveraging Google Ads, Bing Ads, and
+                  remarketing strategies, we maximize visibility and
+                  conversions. Our SEM approach emphasizes data analytics, bid
+                  management, and targeted ad placements to drive qualified
+                  traffic and ROI.
+                </p>
+              </div>
+              <div className="col-md-6  mt-3  d-flex justify-content-center ">
+                <img src={web4} alt="" className="web-img" />
+              </div>
+            </div>
+
+            <div className="row p-md-5 mt-5 justify-content-center align-items-center">
+              <div className="col-md-6   d-flex justify-content-center ">
+                <img src={web2} alt="" className="web-img" />
+              </div>
+              <div className="col-md-6 mt-3">
+                <h1 className="services-title"> Pay-Per Click</h1>
+                <p className="ex-para">
+                  Sayana Worldverse excels in Pay-Per-Click strategies,
+                  leveraging platforms like Google Ads and Bing Ads. Utilizing
+                  advanced bidding strategies, keyword optimization, and
+                  conversion tracking, we drive targeted traffic and maximize
+                  ROI. Our data-driven approach and continuous campaign
+                  refinement ensure optimal ad placements and cost-effective
+                  results for your business.
+                </p>
+              </div>
+            </div>
+
+            <div className="row p-md-5 mt-5 justify-content-center align-items-center">
+              <div className="col-md-6">
+                <h1 className="services-title">Branding Services</h1>
+                <p className="ex-para">
+                  Sayana Worldverse crafts compelling Branding Services tailored
+                  to resonate with your target audience. Utilizing market
+                  research, visual identity design, and storytelling, we
+                  establish a distinct brand voice and presence. Our approach
+                  emphasizes consistency, emotional connection, and strategic
+                  positioning to foster brand loyalty and market
+                  differentiation.
+                </p>
+              </div>
+              <div className="col-md-6  mt-3  d-flex justify-content-center ">
+                <img src={web4} alt="" className="web-img" />
+              </div>
+            </div>
+
+            <div className="row p-md-5 mt-5 justify-content-center align-items-center">
+              <div className="col-md-6   d-flex justify-content-center ">
+                <img src={web2} alt="" className="web-img" />
+              </div>
+              <div className="col-md-6 mt-3">
+                <h1 className="services-title"> Content Marketing Services</h1>
+                <p className="ex-para">
+                  Harnessing data-driven insights and innovative storytelling
+                  techniques, our Content Marketing Services prioritize SEO
+                  optimization and multi-channel distribution strategies. By
+                  creating compelling, value-driven content, we aim to enhance
+                  audience engagement, establish brand authority, and foster
+                  lasting customer relationships through authentic narratives
+                  and targeted messaging.
+                </p>
+              </div>
+            </div>
+
+            <div className="row p-md-5 mt-5 justify-content-center align-items-center">
+              <div className="col-md-6">
+                <h1 className="services-title"> Email Marketing Services</h1>
+                <p className="ex-para">
+                  Utilizing targeted segmentation, personalized content, and
+                  automation tools, our Email Marketing Services optimize
+                  engagement and conversion rates. Incorporating A/B testing,
+                  analytics-driven strategies, and GDPR compliance, we craft
+                  impactful campaigns. Our approach focuses on delivering
+                  tailored messages, enhancing brand loyalty, and maximizing ROI
+                  through effective email communication.
+                </p>
+              </div>
+              <div className="col-md-6  mt-3  d-flex justify-content-center ">
+                <img src={web4} alt="" className="web-img" />
               </div>
             </div>
 
@@ -110,10 +212,15 @@ const DigitalMarketing = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">How We Do It ?</h1>
                   <p className="services-para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                    We leverage a blend of expertise and innovation to deliver
+                    exceptional results. By understanding client objectives,
+                    conducting in-depth research, and employing strategic
+                    methodologies, we tailor solutions to meet unique needs. Our
+                    multidisciplinary approach combines creativity, technology,
+                    and analytics to drive efficiency, engagement, and growth.
+                    Through continuous learning and adaptability, we ensure
+                    alignment with industry trends and client goals, fostering
+                    long-term partnerships and success.
                   </p>
                 </div>
               </div>
@@ -314,7 +421,7 @@ const DigitalMarketing = () => {
                 <img src={analytics} alt="" />
                 <p className="ex-para">Google Analytics</p>
               </div>
-             
+
               <div className=" tools-card d-flex flex-column ">
                 <img src={procreate} alt="" />
                 <p className="ex-para">Procreate</p>
@@ -323,9 +430,7 @@ const DigitalMarketing = () => {
                 <img src={canva} alt="" />
                 <p className="ex-para">Canva</p>
               </div>
-             
-              </div>
-            
+            </div>
 
             <section>
               <div className="container about-us-content  mt-5 p-5">
@@ -347,84 +452,22 @@ const DigitalMarketing = () => {
                 delay: 1000,
               }}
               speed={2000}
-           
             >
-
-              {
-                photos.map((photos, index) =>{
-                  return  <SwiperSlide key={index}>
-                  <div className=" portfolio-card">
-                    <div className="portfolio-card-details">
-                      <img src={photos.src} alt="" className="port-img" />
+              {photos.map((photos, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <div className=" portfolio-card">
+                      <div className="portfolio-card-details">
+                        <img src={photos.src} alt="" className="port-img" />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                })
-              }
-             
+                  </SwiperSlide>
+                );
+              })}
             </Swiper>
           </section>
 
           <div className="container mt-5">
-            <div className=" row col-md-12 p-md-5">
-              <div class="accordion row col-md-12" id="accordianServices">
-                <div class="accordion-item col-md-6">
-                  <h2 class="accordion-header" id="headingServicesOne">
-                    <div
-                      class="accordion-button collapsed "
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseServicesOne"
-                      aria-expanded="false"
-                      aria-controls="collapseServicesOne"
-                    >
-                      Services Design
-                    </div>
-                  </h2>
-                  <div
-                    id="collapseServicesOne"
-                    class="accordion-collapse collapse "
-                    aria-labelledby="headingServicesOne"
-                    data-bs-parent="#accordianServices"
-                  >
-                    <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid voluptatibus, quasi blanditiis, dolores, repellat
-                      ipsa modi sequi dolorem cupiditate iure nobis quisquam vel
-                      atque vero magni omnis provident consequuntur corrupti!
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item col-md-6">
-                  <h2 class="accordion-header" id="headingServicesTwo">
-                    <div
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseServicesTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseServicesTwo"
-                    >
-                      Services Design
-                    </div>
-                  </h2>
-                  <div
-                    id="collapseServicesTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingServicesTwo"
-                    data-bs-parent="#accordianServices"
-                  >
-                    <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Enim dolorem numquam dignissimos animi sunt deleniti
-                      dolorum delectus ducimus quis a, dolore, eligendi quod ea
-                      velit?
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <section className="">
               <div className="container mt-5">
                 <div className="news-letter  d-md-flex align-items-center justify-content-between">

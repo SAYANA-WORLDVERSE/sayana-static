@@ -15,8 +15,7 @@ const Blogs = () => {
           <h3 className="main-title">Our Solutions is Blog</h3>
 
           <p className="main-paracontent ">
-            Three Steps to Transform Your Digital Aspirations Into Tragible
-            Outcomes
+          Our #1 resource for marketing tips, trends, and strategy to help you build a successful business.
           </p>
         </div>
 

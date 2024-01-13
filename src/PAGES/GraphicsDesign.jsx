@@ -4,7 +4,7 @@ import web3 from "../assets/web3.png";
 import web4 from "../assets/web4.png";
 import web2 from "../assets/web2.png";
 import web1 from "../assets/web1.png";
-import {photos2} from "../COMPONENTS/Photo";
+import { photos2 } from "../COMPONENTS/Photo";
 import ps from "../assets/photoshop.png";
 import ai from "../assets/illustrator.png";
 import ae from "../assets/after-effects.png";
@@ -13,8 +13,13 @@ import canva from "../assets/canva.png";
 import procreate from "../assets/procreate.png";
 import sketch from "../assets/sketch.png";
 
-
-import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -46,7 +51,13 @@ const GraphicsDesign = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">Graphics Design</h1>
                   <p className="services-para-content">
-                  Capture attention and communicate your brand story effectively with our creative graphic design solutions. We bring your brand to life through captivating visuals.
+                    Our Graphics Design services blend creativity with strategic
+                    thinking, producing visually captivating and brand-aligned
+                    assets. Utilizing industry-leading software and design
+                    principles, we craft compelling logos, visuals, and
+                    marketing collateral. Our approach emphasizes aesthetic
+                    appeal, functionality, and alignment with client objectives
+                    to enhance brand recognition and engagement.
                   </p>
                 </div>
               </div>
@@ -57,23 +68,30 @@ const GraphicsDesign = () => {
                 <img src={web3} alt="" className="web-img" />
               </div>
               <div className="col-md-6 mt-3">
-                <h1 className="services-title">Web Design</h1>
+                <h1 className="services-title"> UI/UX Design</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  Our UI/UX Design services prioritize intuitive interfaces and
+                  user-centric experiences. Leveraging industry best practices,
+                  wireframing, and prototyping tools, we create seamless
+                  interactions. Our approach focuses on balancing aesthetics
+                  with functionality, ensuring optimal user engagement,
+                  accessibility, and satisfaction across digital platforms.
                 </p>
               </div>
             </div>
             <div className="row p-md-5 mt-5 justify-content-center align-items-center">
               <div className="col-md-6">
-                <h1 className="services-title">Web Development</h1>
+                <h1 className="services-title">Logo Design</h1>
                 <p className="ex-para">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  suscipit deleniti ad distinctio nisi non pariatur magnam
-                  labore laudantium vero officia unde, enim ullam nesciunt
-                  consequatur assumenda maiores animi consequuntur.
+                  Craft a distinctive and impactful logo with our expert design
+                  services. Our team meticulously captures your brand's essence,
+                  values, and vision to create a memorable and versatile logo
+                  that resonates with your target audience. By blending
+                  creativity, strategic thinking, and design expertise, we
+                  deliver a logo that not only stands out but also reinforces
+                  brand identity, fosters recognition, and establishes a strong
+                  foundation for cohesive brand communication across various
+                  platforms.
                 </p>
               </div>
               <div className="col-md-6  mt-3  d-flex justify-content-center ">
@@ -86,10 +104,7 @@ const GraphicsDesign = () => {
                 <img src={web2} alt="" className="web-img" />
               </div>
               <div className="col-md-6 mt-3">
-                <h1 className="services-title">
-                  Software
-                  <br /> Development
-                </h1>
+                <h1 className="services-title">Brochure Design</h1>
                 <p className="ex-para">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
                   suscipit deleniti ad distinctio nisi non pariatur magnam
@@ -104,10 +119,14 @@ const GraphicsDesign = () => {
                 <div className="hero-content text-center">
                   <h1 className="services-title">How We Do It ?</h1>
                   <p className="services-para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                    Our expert brochure design services aim to convey your
+                    brand's story and offerings effectively. By combining
+                    compelling visuals with concise content, we create
+                    informative and engaging brochures that resonate with your
+                    target audience. Whether it's promoting products, services,
+                    or events, our designs capture attention, drive engagement,
+                    and encourage readers to take action, enhancing brand
+                    visibility and fostering meaningful connections.
                   </p>
                 </div>
               </div>
@@ -125,7 +144,7 @@ const GraphicsDesign = () => {
                         aria-expanded="false"
                         aria-controls="collapseOne"
                       >
-                        UI & UX Designer & Developer
+                        Discovery
                       </div>
                     </h2>
                     <div
@@ -135,11 +154,11 @@ const GraphicsDesign = () => {
                       data-bs-parent="#accordianWeb"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid voluptatibus, quasi blanditiis, dolores,
-                        repellat ipsa modi sequi dolorem cupiditate iure nobis
-                        quisquam vel atque vero magni omnis provident
-                        consequuntur corrupti!
+                        <p>
+                          Start by sharing your ideas and goals with us. We'll
+                          listen, understand your needs, and lay the groundwork
+                          for success.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -153,7 +172,7 @@ const GraphicsDesign = () => {
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        PHP Developer
+                        Planning
                       </div>
                     </h2>
                     <div
@@ -163,37 +182,11 @@ const GraphicsDesign = () => {
                       data-bs-parent="#accordianWeb"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <div
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Developer HTML & CSS
-                      </div>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordianWeb"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Distinctio sint mollitia cum, molestiae alias quidem
-                        tenetur commodi voluptate deserunt velit quas culpa
-                        illum quos esse.
+                        <p>
+                          Collaborate with our team to create a customized plan.
+                          We'll define milestones, set a timeline, and ensure a
+                          clear path forward.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -201,34 +194,6 @@ const GraphicsDesign = () => {
               </div>
               <div className="col-md-6">
                 <div class="accordion" id="accordianWeb2">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <div
-                        class="accordion-button collapsed "
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseweb"
-                        aria-expanded="false"
-                        aria-controls="collapseweb"
-                      >
-                        UI & UX Designer & Developer
-                      </div>
-                    </h2>
-                    <div
-                      id="collapseweb"
-                      class="accordion-collapse collapse "
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordianWeb2"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid voluptatibus, quasi blanditiis, dolores,
-                        repellat ipsa modi sequi dolorem cupiditate iure nobis
-                        quisquam vel atque vero magni omnis provident
-                        consequuntur corrupti!
-                      </div>
-                    </div>
-                  </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <div
@@ -239,7 +204,7 @@ const GraphicsDesign = () => {
                         aria-expanded="false"
                         aria-controls="collapseWebTwo"
                       >
-                        PHP Developer
+                        Development and Design
                       </div>
                     </h2>
                     <div
@@ -249,37 +214,38 @@ const GraphicsDesign = () => {
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                        <p>
+                          {" "}
+                          Watch as we turn your ideas into reality. Whether it's
+                          custom software, web design, app development, or more,
+                          our experts get to work.
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
+                    <h2 class="accordion-header" id="headingOne">
                       <div
-                        class="accordion-button collapsed"
+                        class="accordion-button collapsed "
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseWebThree"
+                        data-bs-target="#collapseweb"
                         aria-expanded="false"
-                        aria-controls="collapseWebThree"
+                        aria-controls="collapseweb"
                       >
-                        PHP Developer
+                        Receive Ongoing Support
                       </div>
                     </h2>
                     <div
-                      id="collapseWebThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
+                      id="collapseweb"
+                      class="accordion-collapse collapse "
+                      aria-labelledby="headingOne"
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                        Once your project is complete, we're still here for you.
+                        From delivery to ongoing support, we're committed to
+                        your success.
                       </div>
                     </div>
                   </div>
@@ -324,7 +290,6 @@ const GraphicsDesign = () => {
                 <img src={sketch} alt="" />
                 <p className="ex-para">Sketch</p>
               </div>
-            
             </div>
 
             <section>
@@ -336,7 +301,7 @@ const GraphicsDesign = () => {
             </section>
           </div>
           <section className="our-Project">
-          <Swiper
+            <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
               spaceBetween={10}
@@ -347,83 +312,23 @@ const GraphicsDesign = () => {
                 delay: 10,
               }}
               speed={2500}
-           
             >
-
-              {
-                photos2.map((photos, index) =>{
-                  return  <SwiperSlide key={index}>
-                  <div className=" portfolio-card">
-                    <div className="portfolio-card-details">
-                      <img src={photos.src} alt="" className="port-img" />
+              {photos2.map((photos, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <div className=" portfolio-card">
+                      <div className="portfolio-card-details">
+                        <img src={photos.src} alt="" className="port-img" />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                })
-              }
-             
+                  </SwiperSlide>
+                );
+              })}
             </Swiper>
           </section>
 
           <div className="container mt-5">
-            <div className=" row col-md-12 p-md-5">
-              <div class="accordion row col-md-12" id="accordianServices">
-                <div class="accordion-item col-md-6">
-                  <h2 class="accordion-header" id="headingServicesOne">
-                    <div
-                      class="accordion-button collapsed "
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseServicesOne"
-                      aria-expanded="false"
-                      aria-controls="collapseServicesOne"
-                    >
-                      Services Design
-                    </div>
-                  </h2>
-                  <div
-                    id="collapseServicesOne"
-                    class="accordion-collapse collapse "
-                    aria-labelledby="headingServicesOne"
-                    data-bs-parent="#accordianServices"
-                  >
-                    <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid voluptatibus, quasi blanditiis, dolores, repellat
-                      ipsa modi sequi dolorem cupiditate iure nobis quisquam vel
-                      atque vero magni omnis provident consequuntur corrupti!
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item col-md-6">
-                  <h2 class="accordion-header" id="headingServicesTwo">
-                    <div
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseServicesTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseServicesTwo"
-                    >
-                      Services Design
-                    </div>
-                  </h2>
-                  <div
-                    id="collapseServicesTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingServicesTwo"
-                    data-bs-parent="#accordianServices"
-                  >
-                    <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Enim dolorem numquam dignissimos animi sunt deleniti
-                      dolorum delectus ducimus quis a, dolore, eligendi quod ea
-                      velit?
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+           
 
             <section className="">
               <div className="container mt-5">

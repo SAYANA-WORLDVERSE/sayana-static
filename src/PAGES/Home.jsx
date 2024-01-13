@@ -1,4 +1,4 @@
-import React, { Fragment} from "react";
+import React, { Fragment } from "react";
 import HeroSection from "../COMPONENTS/HeroSection";
 import Slider from "react-slick";
 import Tooltip from "@mui/material/Tooltip";
@@ -40,11 +40,6 @@ import VisibilitySensor from "react-visibility-sensor";
 import { useNavigate } from "react-router";
 import { useTheme } from "../COMPONENTS/Context";
 import { Link } from "react-router-dom";
-
-
-
-
-
 
 const Home = () => {
   const navigate = useNavigate();
@@ -114,20 +109,21 @@ const Home = () => {
   };
   return (
     <Fragment>
-      
       <HeroSection />
 
       <section className="about-us">
         <div className="container about-us-content col-md-8 ">
           <h1 className="main-title ">
-            About <span className="linear-text">Sayana Worldverse</span>
+            Explore<span className="linear-text"> Sayana Worldverse</span>
           </h1>
           {/*<p className="main-sub-heading">Software development company</p>*/}
           <p className="main-paracontent ">
-            Sayana Worldverse is not just a software development company; we are
-            architects of digital success stories. With a commitment to
-            excellence, we specialize in providing custom software solutions and
-            creative design services that transcend expectations.
+            Beyond mere coding, Sayana Worldverse is a beacon of innovation and
+            expertise. We don't just develop software; we craft digital
+            masterpieces that resonate. With unwavering commitment to
+            excellence, we redefine success by delivering tailored solutions and
+            visionary design, consistently exceeding expectations and setting
+            industry benchmarks.
           </p>
           <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
@@ -136,7 +132,7 @@ const Home = () => {
       <section>
         <div className="container d-flex flex-column align-items-center justify-content-center">
           <div className="crafted-solution">
-            <p>Our Services</p>
+            <p>Our Solutions and Your Choices</p>
           </div>
 
           <div className="services d-flex justify-content-center flex-column align-items-center">
@@ -192,7 +188,9 @@ const Home = () => {
               </Tooltip>
             </div>
             <p className="learn-more mt-5">
-              Delivering Unparalleled Services Tailored to Your Unique Need
+              Crafting identities, shaping digital realms, optimizing
+              engagement, and producing impactful media—We navigate diverse
+              landscapes to redefine brand success
             </p>
             <button onClick={() => navigate("/contact")}>Learn More</button>
           </div>
@@ -208,13 +206,18 @@ const Home = () => {
           <div className="col-md-4">
             <h1 className="excellence">Our Mission & Vision</h1>
             <p className="ex-para">
-              <b>Our Mission : </b> At Sayana Worldverse, our mission is to
-              empower businesses with cutting-edge custom software solutions.
+              <b>Our Mission : </b> At Sayana Worldverse, our primary mission is
+              to empower businesses by delivering cutting-edge custom software
+              solutions. We are dedicated to understanding the unique needs of
+              each client and providing tailored services that drive efficiency,
+              productivity, and growth.
             </p>
             <p className="ex-para">
-              <b>Our Vision : </b> Our vision is to be a beacon of creativity
-              and technology, providing top-notch custom software development
-              services.
+              <b>Our Vision : </b> Our vision at Sayana Worldverse is to be
+              recognized as a beacon of creativity and technology in the custom
+              software development industry. We aspire to set industry standards
+              for excellence, innovation, and customer satisfaction, continually
+              pushing boundaries and reshaping the future of digital solutions.
             </p>
             <button onClick={() => navigate("/about")}>Read More</button>
           </div>
@@ -223,22 +226,25 @@ const Home = () => {
           <div className="col-md-6">
             <h1 className="excellence">Why Choose Us</h1>
             <p className="ex-para">
-              <b>Expertise:</b> We bring years of expertise in custom software
-              development, web design, app design, product development, digital
-              marketing, and graphic design.
+              <b>Expertise:</b> Benefit from our extensive experience and
+              specialized knowledge in custom software development, web design,
+              app design, product development, digital marketing, and graphic
+              design.
             </p>
             <p className="ex-para">
-              <b> Innovation: </b>Our team thrives on innovation, crafting
-              unique solutions that cater to the distinct needs of each client.
+              <b> Innovation: </b>Our team thrives on innovation, consistently
+              delivering unique and cutting-edge solutions tailored to your
+              specific needs and challenges.
             </p>
             <p className="ex-para">
               <b>Client-Centric Approach:</b> We prioritize understanding your
-              vision and goals, ensuring every solution aligns perfectly with
-              your business objectives.
+              vision, goals, and objectives, ensuring that every solution is
+              meticulously crafted to align with your business strategy.
             </p>
             <p className="ex-para">
-              <b>Reliability:</b> Sayana Worldverse is your reliable partner on
-              the journey to digital transformation.
+              <b>Reliability:</b> As your trusted partner, Sayana Worldverse is
+              committed to reliability, consistency, and transparency, ensuring
+              timely delivery and exceeding expectations.
             </p>
             <button onClick={() => navigate("/about")}>Read More</button>
           </div>
@@ -321,15 +327,10 @@ const Home = () => {
 
       <section className="about-us mt-5">
         <div className="container about-us-content col-md-8 ">
-          <h1 className="main-title">
-            <span className="linear-text">Streamedlined Processes</span>
-          </h1>
           <h1 className="title">
-            <span className="color-title">Maximum Impact</span>
+            <span className="color-title"> Efficient Workflow</span>
           </h1>
-          <p className="main-paracontent ">
-            Approach Your Project in 4 Simple Steps
-          </p>
+          <p className="main-paracontent ">for Optimal Results</p>
         </div>
       </section>
 
@@ -338,56 +339,72 @@ const Home = () => {
           <div className="col-md-6  ">
             <img src={designComputer} alt="" className="boy-setting" />
           </div>
-          <div className="col-md-4 d-flex flex-column gap-3 ">
+          <div className="col-md-6 d-flex flex-column gap-3 ">
             <div
               className="implements d-flex  align-items-center gap-3"
               data-aos="fade-left"
             >
-              <div className="num">
+              {/* <div className="num">
                 <span>1</span>
-              </div>
+              </div> */}
               <div className="text">
-                <h4 className="mb-1">Discovery</h4>
-                {/* <p>
+                <h4 className="mb-1">1. Initial Consultation:</h4>
+                <p>
                   Start by sharing your ideas and goals with us. We'll listen,
                   understand your needs, and lay the groundwork for success.
-                </p> */}
+                </p>
               </div>
             </div>
             <div
               className="implements d-flex  align-items-center gap-3"
               data-aos="fade-left"
             >
-              <div className="num">
+              {/* <div className="num">
                 <span>2</span>
-              </div>
+              </div> */}
               <div className="text">
-                <h4 className="mb-1">Planning</h4>
-                {/* <p>Turn Vidion Into Reality</p> */}
+                <h4 className="mb-1">2. Strategic Blueprint:</h4>
+                <p>
+                  Utilizing our expertise across various domains—ranging from
+                  branding and digital solutions to product development and
+                  marketing—we craft a strategic blueprint. This serves as our
+                  roadmap, aligning with your goals and industry nuances.
+                </p>
               </div>
             </div>
             <div
               className="implements d-flex  align-items-center gap-3"
               data-aos="fade-left"
             >
-              <div className="num">
+              {/* <div className="num">
                 <span>3</span>
-              </div>
+              </div> */}
               <div className="text">
-                <h4 className="mb-1">Development and Design</h4>
-                {/* <p>Turn Vidion Into Reality</p> */}
+                <h4 className="mb-1">3. Execution & Development</h4>
+                <p>
+                  Moving forward, our seasoned team swings into action,
+                  implementing the devised strategy with precision and
+                  creativity. Using state-of-the-art technologies and
+                  methodologies, we bring your vision to fruition while adhering
+                  to timelines and quality benchmarks.
+                </p>
               </div>
             </div>
             <div
               className="implements d-flex  align-items-center gap-3"
               data-aos="fade-left"
             >
-              <div className="num">
+              {/* <div className="num">
                 <span>4</span>
-              </div>
+              </div> */}
               <div className="text">
-                <h4 className="mb-1"> Receive Ongoing Support</h4>
-                {/* <p>Turn Vidion Into Reality</p> */}
+                <h4 className="mb-1"> 4. Evaluation & Refinement:</h4>
+                <p>
+                  Our commitment to excellence extends beyond execution. We
+                  consistently evaluate outcomes, gather feedback, and refine
+                  strategies to ensure optimal results, adaptability, and
+                  sustainable growth for your project.
+                </p>
               </div>
             </div>
           </div>
@@ -397,13 +414,15 @@ const Home = () => {
       <section className="about-us mt-5 py-md-5">
         <div className="container about-us-content col-md-8 ">
           <h1 className="main-title">
-            <span className="linear-text">Explore Our Insights</span>
+            <span className="linear-text">
+              Exploring Trends & Our Perspectives
+            </span>
           </h1>
 
           <p className="main-paracontent ">
-            Dive into the world of technology, creativity, and industry trends
-            through our blog. Stay updated with the latest articles, insights,
-            and tips that can propel your business forward.
+            Journey with us through the intersections of innovation, design, and
+            market dynamics. Access timely articles, expert insights, and
+            actionable strategies to drive your business aspirations.
           </p>
         </div>
 

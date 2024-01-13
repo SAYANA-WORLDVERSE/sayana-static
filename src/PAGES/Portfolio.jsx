@@ -14,10 +14,10 @@ import care from "../assets/careofcareers.png";
 import { Link } from "react-router-dom";
 import hpe from "../assets/hpe.png";
 import ImageCarousel from "../COMPONENTS/ImageCarousel";
-import {frame} from "../COMPONENTS/Logo";
-import {frame2} from "../COMPONENTS/Logo";
-import {frame3} from "../COMPONENTS/Logo";
-import {photos} from "../COMPONENTS/Photo"
+import { frame } from "../COMPONENTS/Logo";
+import { frame2 } from "../COMPONENTS/Logo";
+import { frame3 } from "../COMPONENTS/Logo";
+import { photos } from "../COMPONENTS/Photo";
 import LogoCarousel from "../COMPONENTS/LogoCarousel";
 import MobileFrameCarousel from "../COMPONENTS/MobileFrameCarousel";
 const Portfolio = () => {
@@ -55,14 +55,17 @@ const Portfolio = () => {
 
       <section className="contact-content">
         <div className="container py-5">
-          {/* <p className=" career-para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-            dolorem perspiciatis numquam, voluptatum blanditiis pariatur ipsa
-            dolore sed dolor facilis similique, obcaecati impedit saepe
-            aspernatur. Nemo esse tempore pariatur vero culpa eos nam, expedita
-            aliquam nesciunt beatae quaerat, quod enim reprehenderit tempora
-            placeat ad perspiciatis, error similique dolor soluta ipsam!
-          </p> */}
+          <p className=" career-para">
+            “Discover our diverse portfolio showcasing our expertise and
+            commitment to excellence across various domains. Each project
+            exemplifies our innovative approach, meticulous attention to detail,
+            and dedication to delivering exceptional results. From branding
+            solutions and website design to application development and digital
+            marketing campaigns, explore our showcase to witness the
+            transformative impact of our services. This will reflect our passion
+            for creativity, technology, and collaboration, demonstrating how we
+            help businesses thrive in today's competitive landscape.”
+          </p>
         </div>
 
         <div className="container">
@@ -157,7 +160,11 @@ const Portfolio = () => {
                   <img src={hpe} alt="" className="port-img" />
                   <p>HPE SOLUTION</p>
                 </div>
-                <Link className="card-button" to="https://hpesolutions.in/" target="_blank">
+                <Link
+                  className="card-button"
+                  to="https://hpesolutions.in/"
+                  target="_blank"
+                >
                   <FaLink />
                 </Link>
               </div>
@@ -166,7 +173,11 @@ const Portfolio = () => {
                   <img src={ortho} alt="" className="port-img" />
                   <p>Ortho360</p>
                 </div>
-                <Link className="card-button" to="https://ortho360.in/" target="_blank">
+                <Link
+                  className="card-button"
+                  to="https://ortho360.in/"
+                  target="_blank"
+                >
                   <FaLink />
                 </Link>
               </div>
@@ -174,39 +185,25 @@ const Portfolio = () => {
           </div>
           <div hidden={value !== 1}>
             <div className="row col-md-12 portfolio-container py-5">
-              <ImageCarousel photos={photos}/>
-           
+              <ImageCarousel photos={photos} />
             </div>
           </div>
           <div hidden={value !== 2}>
             <div className=" col-md-12 portfolio-container py-5 logo-slide">
-          
-
-          <LogoCarousel/>
-             
+              <LogoCarousel />
             </div>
           </div>
           <div hidden={value !== 3}>
             <div className="  d-flex col-md-12 portfolio-container flex-wrap py-5">
-            <div className="">
-              <MobileFrameCarousel images={frame}/>
-           
-
+              <div className="">
+                <MobileFrameCarousel images={frame} />
               </div>
               <div className="">
-              <MobileFrameCarousel images={frame2}/>
-
-                              
-                         
-
+                <MobileFrameCarousel images={frame2} />
               </div>
               <div className="">
-              <MobileFrameCarousel images={frame3}/>
-
-           
-
+                <MobileFrameCarousel images={frame3} />
               </div>
-              
             </div>
           </div>
         </div>

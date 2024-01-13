@@ -86,7 +86,8 @@
       color:var(--light-theme-title)
   }
   .light-theme p{
-    color:var(--light-theme-title)
+    color:var(--light-theme-title);
+    text-align:justify
   }
   .light-theme .footer-list li{
     color:var(--light-theme-title)
@@ -113,7 +114,7 @@
   }
   
   .light-theme .implements {
-    background: linear-gradient(to right, #bba5ff, #ffffff);
+    background: linear-gradient(to left, #f7f4f4, #e9e9e9)
   }
   
   .light-theme .nav-list.open{

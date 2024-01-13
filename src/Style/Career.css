@@ -60,3 +60,11 @@
   border-radius: 20px;
 }
 
+.career-list{
+  color:var(--light-theme-title);
+  flex-direction:column;
+}
+.career-list-item{
+  margin:.5rem;
+}
+
