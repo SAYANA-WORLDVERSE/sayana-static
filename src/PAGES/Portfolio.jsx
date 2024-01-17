@@ -82,7 +82,7 @@ const Portfolio = () => {
               <div className="col-md-3 portfolio-card">
                 <div className="portfolio-card-details">
                   <img src={laptop} alt="" className="port-img" />
-                  <p>aditya multispeciality hospital</p>
+                  <p className="text-center">aditya multispeciality hospital</p>
                 </div>
                 <Link
                   className="card-button"

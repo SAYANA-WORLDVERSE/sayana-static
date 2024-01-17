@@ -117,7 +117,7 @@ const Home = () => {
             Explore<span className="linear-text"> Sayana Worldverse</span>
           </h1>
           {/*<p className="main-sub-heading">Software development company</p>*/}
-          <p className="main-paracontent ">
+          <p className="main-paracontent text-center">
             Beyond mere coding, Sayana Worldverse is a beacon of innovation and
             expertise. We don't just develop software; we craft digital
             masterpieces that resonate. With unwavering commitment to
@@ -419,7 +419,7 @@ const Home = () => {
             </span>
           </h1>
 
-          <p className="main-paracontent ">
+          <p className="main-paracontent text-center">
             Journey with us through the intersections of innovation, design, and
             market dynamics. Access timely articles, expert insights, and
             actionable strategies to drive your business aspirations.
@@ -631,7 +631,7 @@ const Home = () => {
             <span className="client-title">Clients We Worked With</span>
           </h1>
 
-          <p className="main-paracontent ">
+          <p className="main-paracontent text-center ">
             These are a few of our clients that we've been fortunable to work
             with, Come be victorious with us.
             <br />

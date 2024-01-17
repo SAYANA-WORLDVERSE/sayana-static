@@ -61,7 +61,7 @@ const Career = () => {
     // Submit the form data
     try {
       const response = await fetch(
-        "https://sayana-worldverse.vercel.app/submit-form",
+        "https://sayana.onrender.com/candidate/applycandidates",
         {
           method: "POST",
           body: data,
@@ -322,6 +322,7 @@ const Career = () => {
                     name="full_name"
                     value={formData.full_name}
                     onChange={handleChange}
+                    required
                   />
                 </div>
                 <div class="col-md-12">
@@ -332,6 +333,8 @@ const Career = () => {
                     name="mobile"
                     value={formData.mobile}
                     onChange={handleChange}
+                    required
+
                   />
                 </div>
                 <div class="col-md-12">
@@ -343,6 +346,8 @@ const Career = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    required
+
                   />
                 </div>
                 <div class="col-md-12">
@@ -352,6 +357,8 @@ const Career = () => {
                     name="position"
                     value={formData.position}
                     onChange={handleChange}
+                    required
+
                   >
                     <option selected>Choose Position</option>
                     <option value="Frontend Developer">

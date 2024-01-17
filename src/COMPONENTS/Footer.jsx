@@ -29,8 +29,9 @@ const Footer = () => {
                 className="footer-logo"
               />
               <p className="footer-para">
-                As your digital enablement partner, we apply our talent-first
-                approach to accelerate your digital journey.
+                Unlock Your Potential with Custom Software Solutions, Crafting
+                Excellence in Web Design, App Design, Product Development, and
+                Digital Marketing
               </p>
               <div className="footer-title d-flex flex-column">
                 <ul className="footer-list social-icons m-0 justify-content-start gap-3 p-0">
@@ -122,9 +123,9 @@ const Footer = () => {
                   <h4>Our Location</h4>
                   <ul className="footer-list flex-column p-0 mb-0 location">
                     <li className=" d-flex align-items-start gap-2">
-                    <FaMapMarkerAlt  className="location-icons"/>
+                      <FaMapMarkerAlt className="location-icons" />
                       <span>
-                         Abhi's Ganga, 1st Floor, Vittal Rao Nagar Rd, Madhapur,
+                        Abhi's Ganga, 1st Floor, Vittal Rao Nagar Rd, Madhapur,
                         Hyderabad, Telangana 500081
                       </span>
                     </li>
@@ -132,12 +133,12 @@ const Footer = () => {
                       <BiSolidPhoneCall /> <span> +91-8019242343</span>
                     </li>
                     <li className=" d-flex align-items-first gap-2 ">
-                      <BiLogoGmail className="mt-1"/>
+                      <BiLogoGmail className="mt-1" />
                       <span>
-                        info@sayanaworldverse.com <br /> support@sayanaworldverse.com
+                        info@sayanaworldverse.com <br />{" "}
+                        support@sayanaworldverse.com
                       </span>
                     </li>
-                  
                   </ul>
                 </div>
               </div>

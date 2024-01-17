@@ -144,23 +144,7 @@ const AboutUs = () => {
               practices, and continuous improvement processes to ensure optimal
               performance and reliability.
             </p>
-            <p className="ex-para">
-              <b> Collaborative Partnership: </b> Foster a collaborative and
-              mutually beneficial partnership with our dedicated team,
-              emphasizing open communication, flexibility, and responsiveness to
-              meet evolving needs.
-            </p>
-            <p className="ex-para">
-              <b>Customized Solutions:</b> We understand that every business is
-              unique. Our tailored solutions are designed to address your
-              specific industry challenges, audience preferences, and growth
-              objectives .
-            </p>
-            <p className="ex-para">
-              <b>Strategic Insights:</b> Benefit from our strategic insights and
-              industry expertise, enabling you to make informed decisions, stay
-              ahead of competitors, and capitalize on emerging opportunities..
-            </p>
+        
           </div>
         </div>
 
@@ -184,7 +168,7 @@ const AboutUs = () => {
               <span className="color-title">Our History</span>
             </h1>
 
-            <p className="main-paracontent ">
+            <p className="main-paracontent text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
               adipisci quisquam nam ullam, cupiditate eum voluptatum deleniti
               dignissimos doloribus culpa repellendus, obcaecati architecto
