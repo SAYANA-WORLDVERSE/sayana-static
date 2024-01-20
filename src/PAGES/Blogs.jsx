@@ -1,11 +1,14 @@
-import React, { Fragment } from "react";
-import seo from "../assets/seo.png";
-import rocket2 from "../assets/kite.png";
+import React, { Fragment, } from "react";
+
 import Header from "../COMPONENTS/Header";
 import { useNavigate } from "react-router";
+import { data } from "../data/blog";
 
 const Blogs = () => {
   const Navigate = useNavigate();
+  console.log(data)
+
+  
   return (
     <Fragment>
       <Header title="Blogs" link="Blog" />
@@ -15,136 +18,51 @@ const Blogs = () => {
           <h3 className="main-title">Our Solutions is Blog</h3>
 
           <p className="main-paracontent ">
-          Our #1 resource for marketing tips, trends, and strategy to help you build a successful business.
+            Our #1 resource for marketing tips, trends, and strategy to help you
+            build a successful business.
           </p>
         </div>
-
-        
 
         <div className="container">
           <div className="row">
             <div className="bloglist__main row">
               <div className="list col-md-8">
-                <div
-                  className="blog-box-2 row"
-                  onClick={() => Navigate("/blogdetails")}
-                >
-                  <div className="image col-md-4 ">
-                    <a href="blog-details.html">
-                      <img
-                        src="https://cyfoniireact-eb8gshhgc-themesflat.vercel.app/static/media/blog-detail.9df446ba0172b70b0ad4.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-
-                  <div className="content p-3 col-md-8 ">
-                    
-                    <p className="color-title">
-                      What is the difference between Traditional marketing and
-                      Digital marketing
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis eaque libero cupiditate magnam, at, ducimus quia
-                      perferendis, voluptatem dicta harum obcaecati esse neque?
-                      Deserunt sint reiciendis eum et aspernatur. Commodi!
-                    </p>
-                    <div className="meta ">
-                      <p>February 18, 2022</p>
+                {data.map((item)=>{
+                  return (
+                    <div
+                    className="blog-box-2 row"
+                    key={item.id}
+                    onClick={() => Navigate(`/blogdetails/${item.id}`)}
+                  >
+                    <div className="image col-md-4 ">
+                 
+                        <img
+                          src={item.image}
+                          alt="bg-img"
+                        />
+                      
+                    </div>
+  
+                    <div className="content p-3 col-md-8 ">
+                      <p className="color-title">
+                    {item.title}
+                      </p>
+                      <p>
+                      {item.description.slice(0,144)+"..."}
+                      </p>
+                      <div className="meta ">
+                        <p>February 18, 2022</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  className="blog-box-2 row"
-                  onClick={() => Navigate("/blogdetails")}
-                >
-                  <div className="image col-md-4 ">
-                    <a href="blog-details.html">
-                      <img
-                        src="https://cyfoniireact-eb8gshhgc-themesflat.vercel.app/static/media/blog-detail.9df446ba0172b70b0ad4.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
 
-                  <div className="content p-3 col-md-8 ">
-                  
-                    <p className="color-title">
-                      What are the core elements in digital marketing Online
-                      marketing
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis eaque libero cupiditate magnam, at, ducimus quia
-                      perferendis, voluptatem dicta harum obcaecati esse neque?
-                      Deserunt sint reiciendis eum et aspernatur. Commodi!
-                    </p>
-                    <div className="meta ">
-                      <p>February 18, 2022</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="blog-box-2 row"
-                  onClick={() => Navigate("/blogdetails")}
-                >
-                  <div className="image col-md-4 ">
-                    <a href="blog-details.html">
-                      <img
-                        src="https://cyfoniireact-eb8gshhgc-themesflat.vercel.app/static/media/blog-detail.9df446ba0172b70b0ad4.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-
-                  <div className="content p-3 col-md-8 ">
-                   
-                    <p className="color-title">
-                      Why does your brand require a strong social media presence
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis eaque libero cupiditate magnam, at, ducimus quia
-                      perferendis, voluptatem dicta harum obcaecati esse neque?
-                      Deserunt sint reiciendis eum et aspernatur. Commodi!
-                    </p>
-                    <div className="meta ">
-                      <p>February 18, 2022</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="blog-box-2 row"
-                  onClick={() => Navigate("/blogdetails")}
-                >
-                  <div className="image col-md-4 ">
-                    <a href="blog-details.html">
-                      <img
-                        src="https://cyfoniireact-eb8gshhgc-themesflat.vercel.app/static/media/blog-detail.9df446ba0172b70b0ad4.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-
-                  <div className="content p-3 col-md-8 ">
-                  
-                    <p className="color-title">
-                      Driving customer engagement with personalized online
-                      marketing strategies In the
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis eaque libero cupiditate magnam, at, ducimus quia
-                      perferendis, voluptatem dicta harum obcaecati esse neque?
-                      Deserunt sint reiciendis eum et aspernatur. Commodi!
-                    </p>
-                    <div className="meta ">
-                      <p>February 18, 2022</p>
-                    </div>
-                  </div>
-                </div>
+                  )
+                })}
+               
+              
               </div>
+
+
               <div className="sidebar col-md-4">
                 <form action="#" className="widget-search">
                   <input
@@ -176,7 +94,7 @@ const Blogs = () => {
                       <a href="">Online Trading (81)</a>
                     </li>
                     <li>
-                      <a href="">Crypto Trade (42)</a>  
+                      <a href="">Crypto Trade (42)</a>
                     </li>
                   </ul>
                 </div>

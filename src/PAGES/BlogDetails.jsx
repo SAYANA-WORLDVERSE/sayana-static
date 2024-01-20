@@ -1,8 +1,12 @@
 import React, { Fragment } from "react";
+import { useParams } from "react-router";
 import "../Style/BlogDetails.css";
 import Header from "../COMPONENTS/Header";
+import { data } from "../data/blog";
 
 const BlogDetails = () => {
+  const { id } = useParams();
+  const blog = data.find((data) => data.id == id);
   return (
     <Fragment>
       <Header title="Blogs Details" link="Blogdetails" />
@@ -10,116 +14,25 @@ const BlogDetails = () => {
         <div className="container">
           <div className="row bloglist__main">
             <div className=" col-md-8 list details">
-              <h4 className="color-title ">
-                What is the difference between Traditional marketing and Digital
-                marketing
-              </h4>
+              <h4 className="color-title ">{blog.title}</h4>
               <p>March 15, 2023</p>
 
-              <div className="line"></div>
 
               <div className="content-d">
                 <div className="main">
-                  <p className="boild">
-                    In the current, growing world, marketing has been a crucial
-                    component for the success of any business. It plays an
-                    important role in reaching customers and boosting sales. In
-                    the past, traditional marketing was employed by businesses
-                    to reach their target audience. Some of the traditional
-                    marketing methods are billboards,printed ads, radio ads, TV
-                    ads, direct mail, telemarketing, etc. As the technology gave
-                    path to various options to market the business , digital
-                    marketing has gained more attention through its advanced
-                    technology and innovative strategies. It uses various social
-                    media networks, search engines, websites , emails etc to
-                    reach target audience and gain brand visibility. Although
-                    these two types of marketing are used for the same purposes
-                    yet they differ in several aspects. In this blog let’s look
-                    into some differentiation factors between traditional and
-                    digital marketing.
-                  </p>
+                  <p className="boild">{blog.description}</p>
                   <div className="image">
-                    <img
-                      src="https://cyfoniireact-eb8gshhgc-themesflat.vercel.app/static/media/blog-detail.9df446ba0172b70b0ad4.png"
-                      alt=""
-                    />
+                    <img src={blog.image} alt="" />
                   </div>
+                  {blog.blogdetails.map((data, index) => {
+                    return (
+                      <div key={index}>
+                        <h4 className="mt-3 color-title">{data.sub_title}</h4>
 
-                  <h4 className="mt-3 color-title">Target audience</h4>
-
-                  <p className="mb-15">
-                    Traditional marketing focuses on a large audience, whereas
-                    digital marketing helps businesses target a specific
-                    audience based on their location,interests, age, etc. by
-                    targeting specific audiences in digital marketing business
-                    can reach the right audience and can get better ROI.
-                  </p>
-
-                  <h4 className="mt-3 color-title">Cost</h4>
-
-                  <p className="mb-15">
-                    Traditional marketing is so expensive when compared to
-                    digital marketing. Traditional advertising involves TV ads
-                    and billboards which are of high cost. But contrary to this
-                    digital marketing helps all scales of business to engage and
-                    reach their target audience in a cost effective way by just
-                    utilizing social platforms and other digital ways.
-                  </p>
-                  <h4 className="mt-3 color-title">Analytics</h4>
-
-                  <p className="mb-15">
-                    Measuring the analytics in traditional marketing is so
-                    difficult. It consumes time and effort to know how many
-                    people have seen your ads and sometimes it seems hard to
-                    know even that. But in digital marketing it is so easy to
-                    measure the analytics and also the count of conversion
-                    aiding the business to customize their strategies according
-                    to these analytical reports.
-                  </p>
-                  <h4 className="mt-3 color-title">
-                    Engagement or interaction
-                  </h4>
-
-                  <p className="mb-15">
-                    We see one way communication in traditional marketing where
-                    the businesses send a text to customers without any
-                    interactions and feedback. Whereas digital marketing gives
-                    various options to interact with the audience and also keep
-                    them engaging at all times with frequent feedback and
-                    opinions.
-                  </p>
-                  <h4 className="mt-3 color-title">Reach</h4>
-
-                  <p className="mb-15">
-                    Traditional marketing has low reach where the TV ads and
-                    billboards are only seen by the audience in certain specific
-                    locations. But through digital marketing ads businesses can
-                    reach a global audience and increase their brand awareness
-                    across the world.
-                  </p>
-                  <h4 className="mt-3 color-title">Personalization</h4>
-                  <p className="mb-15">
-                    Digital marketing enables businesses to customize their
-                    marketing content based on the interest,location etc of the
-                    target audience. This can help to keep the audience engaging
-                    and retain them back which may lead to increased conversion
-                    rate and boost sales and brand loyalty.
-                  </p>
-                  <p className="mb-15">
-                    So now , Have you heard of the best digital marketing agency
-                    in Hyderabad ? Our HPE Solutions is an advertising agency
-                    which aims to assist brands to ascend to the digital throne
-                    with our digital marketing services. Here we offer various
-                    services like social media marketing, SEO,email marketing,
-                    content writing,graphic designing, logo designing, branding,
-                    web designing, promotions,campaigns, brand revitalization
-                    etc. Our team stays up to date and studies the competitors
-                    to offer the best services to our clients. With our
-                    narrowcasting strategies we focus on taking the businesses
-                    to the next level and boost sales and brand visibility.
-                    Pause and perceive that we offer all digital marketing
-                    services at HPE Solutions.
-                  </p>
+                        <p className="mb-15">{data.sub_description}</p>
+                      </div>
+                    );
+                  })}
 
                   <div className="line"></div>
 

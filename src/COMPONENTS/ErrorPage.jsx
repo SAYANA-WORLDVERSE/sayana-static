@@ -87,7 +87,7 @@ const ErrorPage = () => {
         </div>
 
         <div className="message">
-          <p className="text-justify">
+          <p className="text-center">
      
             Unfortunately the page you are looking for has been moved or deleted
           </p>

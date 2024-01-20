@@ -90,13 +90,13 @@ const Navbar = () => {
                       </span>
                     </Link>
 
-                    <ul class="sub-menu p-0">
-                      <li class="menu-item">
+                    <ul className="sub-menu p-0">
+                      <li className="menu-item">
                         <Link to="/webdesign" onClick={toggleMobileMenu}>
                           Web Design & Development
                         </Link>
                       </li>
-                      <li class="menu-item">
+                      <li className="menu-item">
                         <Link
                           to="/applicationdevelopment"
                           onClick={toggleMobileMenu}
@@ -104,7 +104,7 @@ const Navbar = () => {
                           Application Development
                         </Link>
                       </li>
-                      <li class="menu-item">
+                      <li className="menu-item">
                         <Link
                           to="/productdevelopment"
                           onClick={toggleMobileMenu}
@@ -112,12 +112,12 @@ const Navbar = () => {
                           Product Development
                         </Link>
                       </li>
-                      <li class="menu-item">
+                      <li className="menu-item">
                         <Link to="/Digitalmarketing" onClick={toggleMobileMenu}>
                           Digital Marketing
                         </Link>
                       </li>
-                      <li class="menu-item">
+                      <li className="menu-item">
                         <Link to="/graphicsdesign" onClick={toggleMobileMenu}>
                           Graphics Design
                         </Link>

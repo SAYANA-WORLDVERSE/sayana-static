@@ -64,7 +64,7 @@ const App = () => {
             />
             <Route path="/Digitalmarketing" element={<DigitalMarketing />} />
             <Route path="/graphicsdesign" element={<GraphicsDesign />} />
-            <Route path="/blogdetails" element={<BlogDetails />} />
+            <Route path="/blogdetails/:id" element={<BlogDetails />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />
