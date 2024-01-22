@@ -15,8 +15,7 @@ const BlogDetails = () => {
           <div className="row bloglist__main">
             <div className=" col-md-8 list details">
               <h4 className="color-title ">{blog.title}</h4>
-              <p>March 15, 2023</p>
-
+              <p>{blog.date}</p>
 
               <div className="content-d">
                 <div className="main">
@@ -30,28 +29,14 @@ const BlogDetails = () => {
                         <h4 className="mt-3 color-title">{data.sub_title}</h4>
 
                         <p className="mb-15">{data.sub_description}</p>
+                      
                       </div>
                     );
                   })}
 
-                  <div className="line"></div>
-
-                  <div className="bottom">
-                    <p className="mb-0">Tags:</p>
-                    <ul className="list-tag mb-0">
-                      <li>
-                        <p className="m-0">Digital Marketing</p>
-                      </li>
-                      <li>
-                        <p>Cost</p>
-                      </li>
-                      <li>
-                        <p>Analytics</p>
-                      </li>
-                      <li>
-                        <p>Personalization</p>
-                      </li>
-                    </ul>
+                  <div className="bottom ">
+                  
+                    <p>by :{blog.author}</p>
                   </div>
                 </div>
               </div>
@@ -179,23 +164,21 @@ const BlogDetails = () => {
                 <h5 className="color-title mb-3">Popular Tags</h5>
                 <ul>
                   <li>
-                    <a href="#">NFTs</a>
+                    <a href="#">Digital Marketing</a>
                   </li>
                   <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">Social Media</a>
                   </li>
                   <li>
-                    <a href="#">Coin</a>
+                    <a href="#">Tech</a>
                   </li>
                   <li>
-                    <a href="#">ICO</a>
+                    <a href="#">Development</a>
                   </li>
                   <li>
-                    <a href="#">cryptocurrency</a>
+                    <a href="#">TikTok</a>
                   </li>
-                  <li>
-                    <a href="#">Token</a>
-                  </li>
+              
                 </ul>
               </div>
             </div>

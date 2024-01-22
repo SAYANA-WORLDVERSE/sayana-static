@@ -51,7 +51,7 @@ const Blogs = () => {
                       {item.description.slice(0,144)+"..."}
                       </p>
                       <div className="meta ">
-                        <p>February 18, 2022</p>
+                        <p>{item.date}</p>
                       </div>
                     </div>
                   </div>
