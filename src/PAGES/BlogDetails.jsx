@@ -52,32 +52,21 @@ const BlogDetails = () => {
               </form>
 
               <div className="widget-sidebar category">
-                <h5 className="color-title mb-3">Categories</h5>
-                <ul className="flex-column">
-                  <li>
-                    <a href="">Cryptocurrency (18)</a>
-                  </li>
-                  <li>
-                    <a href="">Block Chain (57)</a>
-                  </li>
-                  <li>
-                    <a href="">Bit Coin (5)</a>
-                  </li>
-                  <li>
-                    <a href="">Eatherium (9)</a>
-                  </li>
-                  <li>
-                    <a href="">Buy Sale (3)</a>
-                  </li>
-                  <li>
-                    <a href="">Online Trading (81)</a>
-                  </li>
-                  <li>
-                    <a href="">Crypto Trade (42)</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="widget-sidebar recent">
+                  <h5 className="color-title mb-3">Categories</h5>
+                  <ul className="flex-column">
+                    <li>
+                <a href="#"> Secrets of tiktok Marketing</a>
+                    </li>
+                    <li>
+                  <a href="#">Strategies for tiktok Marketing</a> 
+                    </li>
+                    <li>
+                      <a href="#">Why tiktok isn't safe</a>
+                    </li>
+                
+                  </ul>
+                </div>
+              {/* <div className="widget-sidebar recent">
                 <h5 className="color-title mb-3">Related Posts</h5>
                 <ul className="flex-column">
                   <li>
@@ -158,7 +147,7 @@ const BlogDetails = () => {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
               <div className="widget-sidebar tag">
                 <h5 className="color-title mb-3">Popular Tags</h5>

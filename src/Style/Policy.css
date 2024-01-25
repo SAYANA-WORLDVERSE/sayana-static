@@ -1,0 +1,7 @@
+#contant h5,h3{
+    color:#602bfe !important;
+}
+.policy-list{
+    color:var(--text-color);
+    display: block;
+}

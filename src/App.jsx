@@ -20,6 +20,8 @@ import "./index.css";
 import ErrorPage from "./COMPONENTS/ErrorPage";
 import BlogDetails from "./PAGES/BlogDetails";
 import PopModal from "./COMPONENTS/PopModal";
+import Privacy from "./PAGES/Privacy-policy";
+import TermandCondition from "./PAGES/Term-and-Condition";
 
 const App = () => {
   const { isDark } = useTheme();
@@ -65,6 +67,8 @@ const App = () => {
             <Route path="/Digitalmarketing" element={<DigitalMarketing />} />
             <Route path="/graphicsdesign" element={<GraphicsDesign />} />
             <Route path="/blogdetails/:id" element={<BlogDetails />} />
+            <Route path="/privacy-policy" element={<Privacy/>}/>
+            <Route path="/term-and-condition" element={<TermandCondition/>}/>
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />

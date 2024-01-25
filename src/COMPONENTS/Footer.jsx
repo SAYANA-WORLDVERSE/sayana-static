@@ -4,14 +4,10 @@ import logo from "../assets/logo.webp";
 import whitelogo from "../assets/white-logo.png";
 import { useTheme } from "./Context";
 
-import {
-  BsFacebook,
-  BsInstagram,
-  BsTwitter,
-  BsYoutube,
-  BsLinkedin,
-} from "react-icons/bs";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { FaMapMarkerAlt, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
+
 import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
@@ -40,7 +36,7 @@ const Footer = () => {
                       to="https://www.facebook.com/people/Sayana-Worldverse/61552692923976/"
                       target="_blank"
                     >
-                      <BsFacebook />
+                      <FaFacebookF />
                     </Link>
                   </li>
                   <li>
@@ -61,7 +57,15 @@ const Footer = () => {
                       to="https://www.linkedin.com/company/sayana-worldverse-pvt-ltd/ "
                       target="_blank"
                     >
-                      <BsLinkedin />
+                      <FaLinkedinIn />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="https://medium.com/@sayanaworldverse "
+                      target="_blank"
+                    >
+                      <FaMedium />
                     </Link>
                   </li>
                 </ul>
@@ -146,7 +150,11 @@ const Footer = () => {
           </div>
           <div className="footer-bottom w-100 d-flex justify-content-between">
             <p className="mb-0"> &#169; 2023 SAYANA | All Rights Reserved</p>
-            <p className="mb-0"> Privacy Policy | Term & Condition</p>
+            <p className="mb-0">
+              {" "}
+              <Link to="/privacy-policy">Privacy Policy</Link> |{" "}
+              <Link to="/term-and-condition">Term & Condition</Link>
+            </p>
           </div>
         </div>
       </footer>

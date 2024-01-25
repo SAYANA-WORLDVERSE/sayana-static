@@ -91,7 +91,7 @@ const Contact = () => {
                 <div className="location d-flex align-items-center ">
                   <img src={mail} alt="" className="contact-icons" />
                   <p className="contact-para">
-                    info@sayanaworldverse.com, <br />
+                    info@sayanaworldverse.com, <br/>
                     support@sayanaworldverse.com
                   </p>
                 </div>
