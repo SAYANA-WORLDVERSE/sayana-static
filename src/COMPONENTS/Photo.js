@@ -49,4 +49,7 @@ export const photos2 = [
   {
     src: "/images/ocen-logo.png",
   },
+  {
+    src: "/images/forest-edge.png",
+  },
 ];

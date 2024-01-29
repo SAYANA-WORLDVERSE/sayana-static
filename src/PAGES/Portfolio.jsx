@@ -11,6 +11,8 @@ import ortho from "../assets/ortho.png";
 import haripriya from "../assets/haripriya-project.png";
 import meshler from "../assets/meshler.png";
 import care from "../assets/careofcareers.png";
+import srivani from "../assets/srivani.png";
+import forestedge from "../assets/forestedge.png";
 import { Link } from "react-router-dom";
 import hpe from "../assets/hpe.png";
 import ImageCarousel from "../COMPONENTS/ImageCarousel";
@@ -81,6 +83,32 @@ const Portfolio = () => {
             <div className="row col-md-12 portfolio-container py-5">
               <div className="col-md-3 portfolio-card">
                 <div className="portfolio-card-details">
+                  <img src={forestedge} alt="" className="port-img" />
+                  <p className="text-center">Forest Edge</p>
+                </div>
+                <Link
+                  className="card-button"
+                  to="#"
+                  target="_blank"
+                >
+                  <FaLink />
+                </Link>
+              </div>
+              <div className="col-md-3 portfolio-card">
+                <div className="portfolio-card-details">
+                  <img src={srivani} alt="" className="port-img" />
+                  <p className="text-center">Sri Vani</p>
+                </div>
+                <Link
+                  className="card-button"
+                  to=""
+                  target="_blank"
+                >
+                  <FaLink />
+                </Link>
+              </div>
+              <div className="col-md-3 portfolio-card">
+                <div className="portfolio-card-details">
                   <img src={laptop} alt="" className="port-img" />
                   <p className="text-center">aditya multispeciality hospital</p>
                 </div>
@@ -107,7 +135,7 @@ const Portfolio = () => {
               <div className="col-md-3 portfolio-card">
                 <div className="portfolio-card-details">
                   <img src={srinivasa} alt="" className="port-img" />
-                  <p>Sri Srinivassa Diognostics</p>
+                  <p>Sri Srinivasa Diagnostics</p>
                 </div>
                 <Link
                   className="card-button"
@@ -119,7 +147,7 @@ const Portfolio = () => {
               <div className="col-md-3 portfolio-card">
                 <div className="portfolio-card-details">
                   <img src={haripriya} alt="" className="port-img" />
-                  <p>Hari Priya Pojects</p>
+                  <p>Hari Priya Projects</p>
                 </div>
                 <Link
                   className="card-button"
