@@ -1,14 +1,13 @@
 export const data = [
   {
     id: 1,
-    date:"January-12-2024",
+    date: "January-12-2024",
     title: "10 Secrets of TikTok Marketing - You Must Know",
     description:
       "In the vast realm of digital marketing, TikTok has emerged as a powerhouse, reshaping the dynamics of content creation and audience engagement. The platform's meteoric rise since 2020 has not only provided an outlet for creative expression but has also become a fertile ground for businesses seeking innovative marketing strategies. If you're contemplating delving into the world of TikTok or looking to elevate your existing presence, here's a comprehensive guide to unlocking the power of TikTok marketing in 2024.",
-      author: "Bimal Kanta Moharana",
+    author: "Bimal Kanta Moharana",
 
-    image:
-      "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg",
+    image: "/images/blog2.jpg",
     blogdetails: [
       {
         sub_title: "1. The Untapped Potential of TikTok:",
@@ -66,14 +65,13 @@ export const data = [
   {
     id: 2,
     title: "Strategies for Success in TikTok Marketing in 2024",
-    date:"January-17-2024",
+    date: "January-17-2024",
 
     author: "Bimal Kanta Moharana",
 
     description:
       "In the ever-evolving landscape of social media, TikTok stands out as a dynamic platform that continues to captivate users worldwide. As we step into 2024, the relevance of TikTok for marketing has only intensified. To make the most of this exciting platform, it's essential to stay ahead of the curve with effective strategies tailored to the latest trends. Here are some key TikTok marketing strategies to propel your success in 2024.",
-    image:
-      "https://img.freepik.com/free-vector/digital-global-connection-network-technology-background_1017-23324.jpg",
+    image: "/images/blog3.jpg",
     blogdetails: [
       {
         sub_title: "1. Embrace Micro-Learning Content:",
@@ -120,15 +118,14 @@ export const data = [
 
   {
     id: 3,
-    date:"January-22-2024",
+    date: "January-22-2024",
 
     title:
       " Why TikTok isn't safe? - Consider a Ban for Everyone's Well-being ",
     description:
       "The addictive nature of TikTok has become a subject of increasing concern, prompting discussions on its impact on mental health and well-being. In a world where short-form videos dominate, the platform's popularity raises questions about the neurological effects it may have on users. This article explores recent scientific studies and their findings on the neuroscience of TikTok, shedding light on potential brain damage and the growing call for a ban.",
     author: "Bimal Kanta Moharana",
-    image:
-      "https://img.freepik.com/free-photo/cardano-blockchain-platform_23-2150411956.jpg",
+    image: "/images/blog1.jpg",
     blogdetails: [
       {
         sub_title: "The Addiction Puzzle:",
@@ -178,5 +175,57 @@ export const data = [
       },
     ],
   },
- 
+
+  {
+    id: 4,
+    date: "February-02-2024",
+
+    title: " A GOOD ONLINE MARKETING STRATEGY IN 7 STEPS! ",
+    description:
+      "Nowadays, if you have a business, online marketing is inevitable. Online marketing is the way to reach your (potential) customers. Are you looking for tools (or would you rather have tools?) to determine the right online marketing strategy for your company? Then read on! If you follow the steps below you will create a strong online marketing strategy!",
+    author: "Bimal Kanta Moharana",
+    image: "/images/blog4.jpg",
+    blogdetails: [
+      {
+        sub_title: "MAKE A SWOT ANALYSIS:",
+        sub_description:
+          "Maybe you haven't made a SWOT analysis since your college days, or maybe you've never made a SWOT analysis at all. In any case, this analysis can very well support and provide direction to your online marketing strategy. A SWOT analysis is also called a strength-weakness analysis. This allows you to map out where the opportunities and risks lie for your company. This analysis looks at both internal factors over which you as an entrepreneur often have influence, but also at external factors over which you often have virtually no influence.",
+      },
+      {
+        sub_title: "SET OBJECTIVES        ",
+        sub_description:
+          " It seems so obvious, setting goals. But many entrepreneurs start working on their business or marketing without specifically putting down on paper what they want to achieve. Determine what your ultimate (long-term) goal is. What do you ultimately want to achieve with your company? Make this as concrete and measurable as possible! Use values ​​such as turnover in euros, growth percentages, number of customers, etc. And place these concrete goals on a timeline. So that it is clear within which period you want to achieve the goals and what you are working towards with the marketing strategy.",
+      },
+      {
+        sub_title: "MAP YOUR   TARGET GROUP        ",
+        sub_description:
+          "There are many entrepreneurs who want to reach “as many people as possible” or “anyone who wants to buy my product”. So try to make it clear who really needs or really wants to buy your product or service! Please put the following points on paper",
+      },
+      {
+        sub_title: "DEFINE YOUR BRAND        ",
+        sub_description:
+          " Okay, you now know where the opportunities and risks lie within your organization and in your industry. You have determined what you would like to achieve and which (potential) customers you need to reach to achieve these goals. Then we move on to the part where you determine HOW you are going to achieve this. How do you want your customers to see your company? What do you stand for? What sets you apart? What makes you better than the competition? What do you want to radiate? How should customers and competitors feel about your company? ",
+      },
+      {
+        sub_title: "The Perfect Storm of Addiction:",
+        sub_description:
+          "TikTok's design plays a crucial role in fostering addiction. Limited decision points and immediate access to entertaining content with minimal effort make it psychologically easy to engage with the platform repeatedly. The platform's reward system offers instant gratification, contrasting with real-world activities that require patience and investment. This combination creates a potent recipe for addiction, as users find themselves caught in a loop of seeking immediate rewards with minimal effort.",
+      },
+      {
+        sub_title: "CHOOSE YOUR ONLINE MARKETING CHANNELS ",
+        sub_description:
+          " There are now a large number of online marketing channels and developments in the field of online marketing are continuing rapidly! Below you will find an overview of the most common and effective online marketing channels:",
+      },
+      {
+        sub_title: "SUITABLE BUDGET FOR YOUR MARKETING STRATEGY        ",
+        sub_description:
+          "The exact budget you want to spend on marketing depends on your starting point. You can use the following principles to determine your marketing budget:",
+      },
+      {
+        sub_title: "MEASURE AND OPTIMIZE        ",
+        sub_description:
+          "Keep in mind that in online marketing it is often a matter of 'trial and error'. In other words, trying things out, adjusting them and constantly adjusting and optimizing them. The market generally does not stand still and therefore your marketing activities are constantly evolving.",
+      },
+    ],
+  },
 ];

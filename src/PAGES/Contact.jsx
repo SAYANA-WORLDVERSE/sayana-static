@@ -8,9 +8,12 @@ import Header from "../COMPONENTS/Header";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
+
+
 const Contact = () => {
   const [buttonText, setButtonText] = useState("Submit");
   const form = useRef();
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -91,7 +94,7 @@ const Contact = () => {
                 <div className="location d-flex align-items-center ">
                   <img src={mail} alt="" className="contact-icons" />
                   <p className="contact-para">
-                    info@sayanaworldverse.com, <br/>
+                    info@sayanaworldverse.com, <br />
                     support@sayanaworldverse.com
                   </p>
                 </div>
@@ -206,6 +209,8 @@ const Contact = () => {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+
+        
         </div>
       </section>
     </Fragment>

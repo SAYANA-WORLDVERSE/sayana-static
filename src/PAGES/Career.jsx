@@ -145,21 +145,22 @@ const Career = () => {
               workspace that encourages creativity and innovation.
             </li>
             <li className="career-list-item">
-              <b>Professional Growth:</b> Access opportunities for skill development,
-              continuous learning, and career advancement.
+              <b>Professional Growth:</b> Access opportunities for skill
+              development, continuous learning, and career advancement.
             </li>
             <li className="career-list-item">
-              <b>Impactful Projects:</b> Contribute to transformative projects that
-              make a significant difference in various industries.
+              <b>Impactful Projects:</b> Contribute to transformative projects
+              that make a significant difference in various industries.
             </li>
             <li className="career-list-item">
-              <b>Team Collaboration:</b> Work alongside talented professionals in a
-              supportive and inclusive team environment.
+              <b>Team Collaboration:</b> Work alongside talented professionals
+              in a supportive and inclusive team environment.
             </li>
 
             <li className="career-list-item">
-              <b>Competitive Benefits:</b> Enjoy a comprehensive benefits package,
-              flexible work arrangements, and a rewarding work-life balance.
+              <b>Competitive Benefits:</b> Enjoy a comprehensive benefits
+              package, flexible work arrangements, and a rewarding work-life
+              balance.
             </li>
           </ul>
 
@@ -190,10 +191,13 @@ const Career = () => {
                     data-bs-parent="#accordianCareer"
                   >
                     <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid voluptatibus, quasi blanditiis, dolores, repellat
-                      ipsa modi sequi dolorem cupiditate iure nobis quisquam vel
-                      atque vero magni omnis provident consequuntur corrupti!
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid voluptatibus, quasi blanditiis, dolores,
+                        repellat ipsa modi sequi dolorem cupiditate iure nobis
+                        quisquam vel atque vero magni omnis provident
+                        consequuntur corrupti!
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -217,10 +221,12 @@ const Career = () => {
                     data-bs-parent="#accordianCareer"
                   >
                     <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Enim dolorem numquam dignissimos animi sunt deleniti
-                      dolorum delectus ducimus quis a, dolore, eligendi quod ea
-                      velit?
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Enim dolorem numquam dignissimos animi sunt deleniti
+                        dolorum delectus ducimus quis a, dolore, eligendi quod
+                        ea velit?
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -244,10 +250,13 @@ const Career = () => {
                     data-bs-parent="#accordianCareer"
                   >
                     <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Distinctio sint mollitia cum, molestiae alias quidem
-                      tenetur commodi voluptate deserunt velit quas culpa illum
-                      quos esse.
+                      <p>
+                     
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Distinctio sint mollitia cum, molestiae alias quidem
+                        tenetur commodi voluptate deserunt velit quas culpa
+                        illum quos esse.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -271,10 +280,10 @@ const Career = () => {
                     data-bs-parent="#accordianCareer"
                   >
                     <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Distinctio sint mollitia cum, molestiae alias quidem
                       tenetur commodi voluptate deserunt velit quas culpa illum
-                      quos esse.
+                      quos esse.</p>
                     </div>
                   </div>
                 </div>
@@ -299,10 +308,10 @@ const Career = () => {
                     data-bs-parent="#accordianCareer"
                   >
                     <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Distinctio sint mollitia cum, molestiae alias quidem
                       tenetur commodi voluptate deserunt velit quas culpa illum
-                      quos esse.
+                      quos esse.</p>
                     </div>
                   </div>
                 </div>
@@ -334,7 +343,6 @@ const Career = () => {
                     value={formData.mobile}
                     onChange={handleChange}
                     required
-
                   />
                 </div>
                 <div class="col-md-12">
@@ -347,7 +355,6 @@ const Career = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-
                   />
                 </div>
                 <div class="col-md-12">
@@ -358,7 +365,6 @@ const Career = () => {
                     value={formData.position}
                     onChange={handleChange}
                     required
-
                   >
                     <option selected>Choose Position</option>
                     <option value="Frontend Developer">

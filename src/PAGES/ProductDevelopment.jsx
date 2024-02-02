@@ -245,9 +245,11 @@ const Productdevelopment = () => {
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Once your project is complete, we're still here for you.
-                        From delivery to ongoing support, we're committed to
-                        your success.
+                        <p>
+                          Once your project is complete, we're still here for
+                          you. From delivery to ongoing support, we're committed
+                          to your success.
+                        </p>
                       </div>
                     </div>
                   </div>

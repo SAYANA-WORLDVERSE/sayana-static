@@ -236,7 +236,7 @@ const AppDevelopment = () => {
                     >
                       <div class="accordion-body">
                         <p>
-                          {" "}
+                       
                           Watch as we turn your ideas into reality. Whether it's
                           custom software, web design, app development, or more,
                           our experts get to work.
@@ -264,9 +264,9 @@ const AppDevelopment = () => {
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Once your project is complete, we're still here for you.
+                   <p>     Once your project is complete, we're still here for you.
                         From delivery to ongoing support, we're committed to
-                        your success.
+                        your success.</p>
                       </div>
                     </div>
                   </div>
