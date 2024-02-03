@@ -434,12 +434,13 @@ const Home = () => {
                   <img src={seo} alt="" />
 
                   <div className="blog-cards_content">
-                    <p className="blog-cards__title">Card Title</p>
+                    <p className="blog-cards__title">
+                      10 Secrets of TikTok Marketing - You Must Know
+                    </p>
                     <p className="blog-cards__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
+                      In the vast realm of digital marketing, TikTok has emerged
+                      as a powerhouse, reshaping the dynamics of content
+                      creation and audience engagement.
                     </p>
                   </div>
                 </div>
@@ -449,12 +450,13 @@ const Home = () => {
                   <img src={rocket2} alt="" />
 
                   <div className="blog-cards_content">
-                    <p className="blog-cards__title">Card Title</p>
+                    <p className="blog-cards__title">
+                      Strategies for Success in TikTok Marketing in 2024
+                    </p>
                     <p className="blog-cards__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
+                      In the ever-evolving landscape of social media, TikTok
+                      stands out as a dynamic platform that continues to
+                      captivate users worldwide.
                     </p>
                   </div>
                 </div>
@@ -464,12 +466,13 @@ const Home = () => {
                   <img src={rocket2} alt="" />
 
                   <div className="blog-cards_content">
-                    <p className="blog-cards__title">Card Title</p>
+                    <p className="blog-cards__title">
+                      A Good Online Marketing Strategy in 7 Steps
+                    </p>
                     <p className="blog-cards__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
+                      Nowadays, if you have a business, online marketing is
+                      inevitable. Online marketing is the way to reach your
+                      (potential) customers.
                     </p>
                   </div>
                 </div>

@@ -222,7 +222,7 @@ export const data = [
           "The exact budget you want to spend on marketing depends on your starting point. You can use the following principles to determine your marketing budget:",
       },
       {
-        sub_title: "MEASURE AND OPTIMIZE        ",
+        sub_title: "MEASURE AND OPTIMIZE",
         sub_description:
           "Keep in mind that in online marketing it is often a matter of 'trial and error'. In other words, trying things out, adjusting them and constantly adjusting and optimizing them. The market generally does not stand still and therefore your marketing activities are constantly evolving.",
       },
