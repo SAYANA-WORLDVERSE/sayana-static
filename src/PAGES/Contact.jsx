@@ -7,6 +7,7 @@ import call from "../assets/call.png";
 import Header from "../COMPONENTS/Header";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 
@@ -43,6 +44,9 @@ const Contact = () => {
   };
   return (
     <Fragment>
+       <Helmet>
+        <link rel="canonical" href="/contact" />
+      </Helmet>
       <Header title="Contact Us" link="Contact Us" />
 
       <section className="contact-hero">

@@ -10,6 +10,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ThemeProvider from "./COMPONENTS/Context.jsx";
 import "./Style/LightTheme.css";
+import { HelmetProvider } from "react-helmet-async";
 
-
-ReactDOM.createRoot(document.getElementById("root")).render(<ThemeProvider><App /></ThemeProvider>);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <HelmetProvider>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </HelmetProvider>
+);

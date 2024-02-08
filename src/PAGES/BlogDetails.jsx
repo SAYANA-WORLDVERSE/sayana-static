@@ -3,12 +3,16 @@ import { useParams } from "react-router";
 import "../Style/BlogDetails.css";
 import Header from "../COMPONENTS/Header";
 import { data } from "../data/blog";
+import { Helmet } from "react-helmet-async";
 
 const BlogDetails = () => {
   const { id } = useParams();
   const blog = data.find((data) => data.id == id);
   return (
     <Fragment>
+        <Helmet>
+        <link rel="canonical" href="/blogdetails" />
+      </Helmet>
       <Header title="Blogs Details" link="Blogdetails" />
       <section className="bloglist mt-4">
         <div className="container">

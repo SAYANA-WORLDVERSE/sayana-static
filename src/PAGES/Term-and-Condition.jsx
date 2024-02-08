@@ -1,8 +1,12 @@
 import React, { Fragment } from "react";
 import "../Style/Policy.css";
+import { Helmet } from "react-helmet-async";
 const TermandCondition = () => {
   return (
     <Fragment>
+        <Helmet>
+        <link rel="canonical" href="/term-and-condition" />
+      </Helmet>
       <div className="container">
         <div id="contant">
           <h1>Terms and Conditions</h1>

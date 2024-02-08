@@ -113,7 +113,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="menu-item">
-                        <Link to="/Digitalmarketing" onClick={toggleMobileMenu}>
+                        <Link to="/digitalmarketing" onClick={toggleMobileMenu}>
                           Digital Marketing
                         </Link>
                       </li>

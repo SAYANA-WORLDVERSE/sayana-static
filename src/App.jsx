@@ -22,13 +22,20 @@ import BlogDetails from "./PAGES/BlogDetails";
 import PopModal from "./COMPONENTS/PopModal";
 import Privacy from "./PAGES/Privacy-policy";
 import TermandCondition from "./PAGES/Term-and-Condition";
+import Loader from "./COMPONENTS/Loader";
 
 const App = () => {
   const { isDark } = useTheme();
   const [openModal, setOpenModal] = useState(false);
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     AOS.init();
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
 
     const handleLoad = () => {
       setOpenModal(true);
@@ -44,35 +51,42 @@ const App = () => {
   return (
     <Fragment>
       <div className={isDark ? "dark-theme" : "light-theme"}>
-        <Router>
-          {openModal && <PopModal />}
+        {loading ? (
+          <Loader />
+        ) : (
+          <Router>
+            {openModal && <PopModal />}
 
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<Blogs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/career" element={<Career />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/webdesign" element={<WebDesign />} />
-            <Route
-              path="/applicationdevelopment"
-              element={<AppDevelopment />}
-            />
-            <Route
-              path="/productdevelopment"
-              element={<Productdevelopment />}
-            />
-            <Route path="/Digitalmarketing" element={<DigitalMarketing />} />
-            <Route path="/graphicsdesign" element={<GraphicsDesign />} />
-            <Route path="/blogdetails/:id" element={<BlogDetails />} />
-            <Route path="/privacy-policy" element={<Privacy/>}/>
-            <Route path="/term-and-condition" element={<TermandCondition/>}/>
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
-          <Footer />
-        </Router>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/blog" element={<Blogs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/career" element={<Career />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/webdesign" element={<WebDesign />} />
+              <Route
+                path="/applicationdevelopment"
+                element={<AppDevelopment />}
+              />
+              <Route
+                path="/productdevelopment"
+                element={<Productdevelopment />}
+              />
+              <Route path="/digitalmarketing" element={<DigitalMarketing />} />
+              <Route path="/graphicsdesign" element={<GraphicsDesign />} />
+              <Route path="/blogdetails/:id" element={<BlogDetails />} />
+              <Route path="/privacy-policy" element={<Privacy />} />
+              <Route
+                path="/term-and-condition"
+                element={<TermandCondition />}
+              />
+              <Route path="*" element={<ErrorPage />} />
+            </Routes>
+            <Footer />
+          </Router>
+        )}
       </div>
     </Fragment>
   );

@@ -22,6 +22,7 @@ import { frame3 } from "../COMPONENTS/Logo";
 import { photos } from "../COMPONENTS/Photo";
 import LogoCarousel from "../COMPONENTS/LogoCarousel";
 import MobileFrameCarousel from "../COMPONENTS/MobileFrameCarousel";
+import { Helmet } from "react-helmet-async";
 const Portfolio = () => {
   const [value, setValue] = useState(0);
 
@@ -30,6 +31,10 @@ const Portfolio = () => {
   };
   return (
     <Fragment>
+
+<Helmet>
+        <link rel="canonical" href="/portfolio" />
+      </Helmet>
       <Header title="Portfolio" link="Portfolio" />
 
       <section className="contact-hero">
@@ -232,6 +237,12 @@ const Portfolio = () => {
               <div className="">
                 <MobileFrameCarousel images={frame3} />
               </div>
+            </div>
+          </div>
+          <div hidden={value !== 4}>
+            <div className="  d-flex col-md-12 portfolio-container flex-wrap py-5">
+            <ImageCarousel photos={photos} />
+
             </div>
           </div>
         </div>

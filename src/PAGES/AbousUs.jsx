@@ -4,7 +4,7 @@ import heroimg from "../assets/hero-image.png";
 import question from "../assets/question.png";
 import "../style/About.css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
+import { Helmet } from "react-helmet-async";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -53,6 +53,9 @@ const AboutUs = () => {
 
   return (
     <Fragment>
+      <Helmet>
+        <link rel="canonical" href="/about" />
+      </Helmet>
       <Header title="About Us" link="About Us" />
       <section className="contact-hero">
         <div className="container-fluid hero-section">
@@ -144,7 +147,6 @@ const AboutUs = () => {
               practices, and continuous improvement processes to ensure optimal
               performance and reliability.
             </p>
-        
           </div>
         </div>
 

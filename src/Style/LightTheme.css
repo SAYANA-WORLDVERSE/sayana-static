@@ -111,7 +111,9 @@
   .light-theme {
     background-color: var(--light-theme) !important;
     color: var(--light-theme-title);
-  }
+   
+}
+  
   
   .light-theme .implements {
     background: linear-gradient(to left, #f7f4f4, #e9e9e9)

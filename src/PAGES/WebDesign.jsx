@@ -23,6 +23,7 @@ import mongo from "../assets/mongo.png";
 import sql from "../assets/sql.png";
 import php from "../assets/php.png";
 import next from "../assets/nexts.webp";
+import { Helmet } from "react-helmet-async";
 
 import {
   Navigation,
@@ -54,6 +55,9 @@ const WebDesign = () => {
   };
   return (
     <Fragment>
+       <Helmet>
+        <link rel="canonical" href="/webdesign" />
+      </Helmet>
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">

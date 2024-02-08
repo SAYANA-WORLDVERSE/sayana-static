@@ -13,9 +13,9 @@ import react from "../assets/React.png";
 import node from "../assets/nodejs.png";
 import express from "../assets/expressjs.png";
 import mongo from "../assets/mongo.png";
-import sql from "../assets/sql.png";
 import php from "../assets/php.png";
 import next from "../assets/nexts.webp";
+import { Helmet } from "react-helmet-async";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -41,6 +41,9 @@ const AppDevelopment = () => {
   };
   return (
     <Fragment>
+    <Helmet>
+        <link rel="canonical" href="/applicationdevelopment" />
+      </Helmet>
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">

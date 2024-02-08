@@ -1,9 +1,13 @@
 import React, { Fragment } from "react";
 import "../Style/Policy.css";
+import { Helmet } from "react-helmet-async";
 
 const Privacy = () => {
   return (
     <Fragment>
+      <Helmet>
+        <link rel="canonical" href="/privacy-policy" />
+      </Helmet>
       <div className="container">
         <div id="contant">
           <h2>Privacy Policy</h2>
@@ -14,19 +18,7 @@ const Privacy = () => {
             Service and tells You about Your privacy rights and how the law
             protects You.
           </p>
-          <p>
-            We use Your Personal data to provide and improve the Service. By
-            using the Service, You agree to the collection and use of
-            information in accordance with this Privacy Policy. This Privacy
-            Policy has been created with the help of the
-            <a
-              href="https://www.termsfeed.com/privacy-policy-generator/"
-              target="_blank"
-            >
-              Privacy Policy Generator
-            </a>
-            .
-          </p>
+         
           <h5>Interpretation and Definitions</h5>
           <h5>Interpretation</h5>
           <p>

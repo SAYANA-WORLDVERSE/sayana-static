@@ -3,6 +3,7 @@ import heroimg from "../assets/career-hero.png";
 import "../Style/Career.css";
 import Header from "../COMPONENTS/Header";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const Career = () => {
   const [formData, setFormData] = useState({
@@ -107,6 +108,9 @@ const Career = () => {
 
   return (
     <Fragment>
+       <Helmet>
+        <link rel="canonical" href="/career" />
+      </Helmet>
       <Header title="Career" link="Career " />
 
       <section className="career-hero">

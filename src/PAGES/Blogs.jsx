@@ -3,6 +3,7 @@ import React, { Fragment, } from "react";
 import Header from "../COMPONENTS/Header";
 import { useNavigate } from "react-router";
 import { data } from "../data/blog";
+import { Helmet } from "react-helmet-async";
 
 const Blogs = () => {
   const Navigate = useNavigate();
@@ -11,6 +12,10 @@ const Blogs = () => {
   
   return (
     <Fragment>
+       <Helmet>
+        <link rel="canonical" href="/blog" />
+      </Helmet>
+      
       <Header title="Blogs" link="Blog" />
 
       <section className="about-us mt-1">

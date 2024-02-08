@@ -236,4 +236,71 @@ button {
   transform: translateX(30px);
 }
 
-/* code for Toggle theme button start */
+/* code for loader */
+.main-loading{
+  display:flex ;
+  height:100vh;
+  align-items:center;
+  justify-content: center;
+}
+
+
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  animation: rotate_3922 1.2s linear infinite;
+  background-color: #183153;
+  background-image: linear-gradient(#183153, #84cdfa, #5ad1cd);
+}
+
+.loader span {
+  position: absolute;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #9b59b6;
+  background-image: linear-gradient(#602bfeb5, #84cdfa, #602bfeb5);
+}
+
+.loader span:nth-of-type(1) {
+  filter: blur(5px);
+}
+
+.loader span:nth-of-type(2) {
+  filter: blur(10px);
+}
+
+.loader span:nth-of-type(3) {
+  filter: blur(25px);
+}
+
+.loader span:nth-of-type(4) {
+  filter: blur(50px);
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #fff;
+  border: solid 5px #ffffff;
+  border-radius: 50%;
+}
+
+@keyframes rotate_3922 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+

@@ -12,6 +12,7 @@ import figma from "../assets/figma.png";
 import canva from "../assets/canva.png";
 import procreate from "../assets/procreate.png";
 import sketch from "../assets/sketch.png";
+import { Helmet } from "react-helmet-async";
 
 import {
   Navigation,
@@ -43,6 +44,9 @@ const GraphicsDesign = () => {
   };
   return (
     <Fragment>
+         <Helmet>
+        <link rel="canonical" href="/graphicsdesign" />
+      </Helmet>
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">

@@ -24,6 +24,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import team from "../assets/team.jpg";
+import { Helmet } from "react-helmet-async";
 
 const Productdevelopment = () => {
   const breakpoint = {
@@ -42,6 +43,9 @@ const Productdevelopment = () => {
   };
   return (
     <Fragment>
+        <Helmet>
+        <link rel="canonical" href="/productdevelopment" />
+      </Helmet>
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">

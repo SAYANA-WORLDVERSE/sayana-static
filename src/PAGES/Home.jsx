@@ -14,21 +14,17 @@ import web2 from "../assets/web-2.png";
 import boy from "../assets/boy-setting.png";
 import question from "../assets/question.png";
 import designComputer from "../assets/design-computer.png";
-import seo from "../assets/seo.png";
-import rocket2 from "../assets/kite.png";
 import note from "../assets/note.png";
 import video from "../assets/video.png";
 import phone from "../assets/phone.png";
 import dev from "../assets/setting-assets.png";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
-import { CiLocationOn } from "react-icons/ci";
 import client1 from "../assets/Layer01.png";
 import client2 from "../assets/Layer02.png";
 import client3 from "../assets/Layer03.png";
 import client4 from "../assets/Layer04.png";
 import client5 from "../assets/Layer05.png";
-import testmonial from "../assets/testmonial.jpg";
 import newsRocket from "../assets/new-rocket.png";
 import partner1 from "../assets/partner-1.png";
 import partner2 from "../assets/partner-2.png";
@@ -136,15 +132,16 @@ const Home = () => {
           </div>
 
           <div className="services d-flex justify-content-center flex-column align-items-center">
-            <img src={gradiant} alt="" className="gradiant-bg" />
+            <img src={gradiant} alt="gradiant" loading="lazy" className="gradiant-bg" />
             <div className="bg-inner">
-              <img src={computer} alt="" className="computer" />
+              <img src={computer} alt="cmp" loading="lazy" className="computer" />
 
               <Tooltip title="Application Development" placement="left">
                 <img
                   src={mobile}
                   onClick={() => navigate("/applicationdevelopment")}
-                  alt=""
+                  alt=" mob"
+                  loading="lazy"
                   className="mobile"
                   data-aos="fade-right"
                 />
@@ -154,7 +151,8 @@ const Home = () => {
                 <img
                   src={rocket}
                   onClick={() => navigate("/Digitalmarketing")}
-                  alt=""
+                  alt="roc"
+                  loading="lazy"
                   className="rocket"
                   data-aos="fade-right"
                 />
@@ -162,7 +160,8 @@ const Home = () => {
               <Tooltip title="Product Development" placement="left">
                 <img
                   src={dev}
-                  alt=""
+                  alt="dev"
+                  loading="lazy"
                   className="setting"
                   data-aos="fade-top"
                   onClick={() => navigate("/productdevelopment")}
@@ -171,7 +170,8 @@ const Home = () => {
               <Tooltip title="Graphics Design" placement="right">
                 <img
                   src={pen}
-                  alt=""
+                  alt="pen"
+                  loading="lazy"
                   className="pen"
                   data-aos="fade-left"
                   onClick={() => navigate("/graphicsdesign")}
@@ -180,8 +180,9 @@ const Home = () => {
               <Tooltip title="Web Design & Development" placement="right">
                 <img
                   src={laptop}
+                  alt="laptop"
+                  loading="lazy"
                   onClick={() => navigate("/webdesign")}
-                  alt=""
                   className="laptop"
                   data-aos="fade-left"
                 />
@@ -198,10 +199,10 @@ const Home = () => {
       </section>
 
       <section className="digital-excellence d-flex align-items-center flex-column">
-        <img src={web2} alt="" className="digital-wave" />
+        <img src={web2} alt="web2" loading="lazy" className="digital-wave" />
         <div className="container mt-1 d-md-flex  align-items-center justify-content-between">
           <div className="col-md-6  ">
-            <img src={boy} alt="" className="boy-setting" />
+            <img src={boy} alt="boy" loading="lazy" className="boy-setting" />
           </div>
           <div className="col-md-4">
             <h1 className="excellence">Our Mission & Vision</h1>
@@ -250,7 +251,7 @@ const Home = () => {
           </div>
 
           <div className="col-md-6  ">
-            <img src={question} alt="" className="boy-setting" />
+            <img src={question} alt="que" loading="lazy" className="boy-setting" />
           </div>
         </div>
 
@@ -337,7 +338,7 @@ const Home = () => {
       <section className="mt-5">
         <div className="container d-md-flex  align-items-center justify-content-between">
           <div className="col-md-6  ">
-            <img src={designComputer} alt="" className="boy-setting" />
+            <img src={designComputer} alt="de" className="boy-setting" />
           </div>
           <div className="col-md-6 d-flex flex-column gap-3 ">
             <div
@@ -431,7 +432,7 @@ const Home = () => {
             <div className="col-md-12  d-md-flex justify-content-center blog-container">
               <div className="col-md-3 col-sm-12 ">
                 <div className="blog-cards">
-                  <img src={seo} alt="" />
+                  <img src="/images/blog2.jpg" alt="blog1" loading="lazy"/>
 
                   <div className="blog-cards_content">
                     <p className="blog-cards__title">
@@ -447,7 +448,7 @@ const Home = () => {
               </div>
               <div className="col-md-3 d-flex justify-content-center">
                 <div className="blog-cards">
-                  <img src={rocket2} alt="" />
+                  <img src="/images/blog3.jpg" alt="blog3" loading="lazy"/>
 
                   <div className="blog-cards_content">
                     <p className="blog-cards__title">
@@ -463,7 +464,7 @@ const Home = () => {
               </div>
               <div className="col-md-3 d-flex justify-content-center">
                 <div className="blog-cards">
-                  <img src={rocket2} alt="" />
+                  <img src="/images/blog4.jpg" alt="blog4" loading="lazy" />
 
                   <div className="blog-cards_content">
                     <p className="blog-cards__title">
@@ -506,7 +507,7 @@ const Home = () => {
             <div className="col-md-4">
               <div className="contact-card">
                 <div className="ring-icon">
-                  <img src={phone} alt="" className="ring" />
+                  <img src={phone} alt="photo" loading="lazy" className="ring" />
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
@@ -545,7 +546,7 @@ const Home = () => {
             <div className="col-md-4">
               <div className="contact-card">
                 <div className="ring-icon">
-                  <img src={note} alt="" className="ring" />
+                  <img src={note} alt="note" loading="lazy" className="ring" />
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
@@ -587,7 +588,7 @@ const Home = () => {
             <div className="col-md-4">
               <div className="contact-card">
                 <div className="ring-icon">
-                  <img src={video} alt="" className="ring" />
+                  <img src={video} alt="video" loading="lazy" className="ring" />
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
@@ -650,35 +651,35 @@ const Home = () => {
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client1 : partner1} alt="" />
+                    <img src={isDark ? client1 : partner1} alt="partner1" loading="lazy" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client2 : partner2} alt="" />
+                    <img src={isDark ? client2 : partner2} alt="partner2" loading="lazy" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client3 : partner3} alt="" />
+                    <img src={isDark ? client3 : partner3} alt="partner3" loading="lazy" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client4 : partner4} alt="" />
+                    <img src={isDark ? client4 : partner4} alt="partner4" loading="lazy" />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client5 : partner5} alt="" />
+                    <img src={isDark ? client5 : partner5} alt="partner5" loading="lazy" />
                   </div>
                 </div>
               </div>
@@ -702,14 +703,14 @@ const Home = () => {
           <Slider {...setting}>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c1.png" alt="" className="test-monial" />
+                <img src="/images/c1.png" alt="c1" loading="lazy" className="test-monial" />
                 <p className="client-name"> Aditya Multi Speciality </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
                   The team at Aditya Multi Speciality Hospital is exceptionally
-                  pleased with Sayana Worldverse's services. From Web
+                  pleased with Sayana Worldverses services. From Web
                   Development that ensures a user-friendly online presence to
                   SEO and Digital Marketing that boost our visibility, and
                   outstanding Graphic Designing that reflects our
@@ -719,7 +720,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c8.jpg" alt="" className="test-monial" />
+                <img src="/images/c8.jpg" alt="c8" loading="lazy" className="test-monial" />
                 <p className="client-name"> Ortho 360 </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -736,7 +737,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c6.png" alt="" className="test-monial" />
+                <img src="/images/c6.png" alt="c6" loading="lazy" className="test-monial" />
                 <p className="client-name">Sri Srinivasa Scan</p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -752,7 +753,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c7.jpg" alt="" className="test-monial" />
+                <img src="/images/c7.jpg" alt="c7" loading="lazy" className="test-monial" />
                 <p className="client-name"> Care of Careers </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -769,7 +770,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c2.png" alt="" className="test-monial" />
+                <img src="/images/c2.png" alt="c2" loading="lazy" className="test-monial" />
                 <p className="client-name">Haripriya's Media </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -785,7 +786,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c5.jpg" alt="" className="test-monial" />
+                <img src="/images/c5.jpg" alt="c5" loading="lazy" className="test-monial" />
                 <p className="client-name">Sri Soudha</p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -801,7 +802,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c3.jpg" alt="" className="test-monial" />
+                <img src="/images/c3.jpg" alt="c3" loading="lazy" className="test-monial" />
                 <p className="client-name">Haripriya's Bhakthi </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -818,7 +819,7 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c4.png" alt="" className="test-monial" />
+                <img src="/images/c4.png" alt="c4" loading="lazy" className="test-monial" />
                 <p className="client-name">Ocean Dental Hospital </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -855,7 +856,7 @@ const Home = () => {
               </div>
             </div>
             <div className="col-md-6 right-col">
-              <img src={newsRocket} alt="" className="news-rocket" />
+              <img src={newsRocket} alt="rocket" loading="lazy" className="news-rocket" />
             </div>
           </div>
         </div>

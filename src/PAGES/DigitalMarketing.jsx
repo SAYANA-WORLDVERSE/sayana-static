@@ -12,6 +12,7 @@ import figma from "../assets/figma.png";
 import canva from "../assets/canva.png";
 import procreate from "../assets/procreate.png";
 import sketch from "../assets/sketch.png";
+import { Helmet } from "react-helmet-async";
 
 import {
   Navigation,
@@ -43,6 +44,9 @@ const DigitalMarketing = () => {
   };
   return (
     <Fragment>
+         <Helmet>
+        <link rel="canonical" href="/digitalmarketing" />
+      </Helmet>
       <section className="contact-hero">
         <div className="container-fluid hero-section">
           <div className="container">
@@ -238,7 +242,7 @@ const DigitalMarketing = () => {
                         aria-expanded="false"
                         aria-controls="collapseOne"
                       >
-                        UI & UX Designer & Developer
+                        Discovery
                       </div>
                     </h2>
                     <div
@@ -248,11 +252,11 @@ const DigitalMarketing = () => {
                       data-bs-parent="#accordianWeb"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid voluptatibus, quasi blanditiis, dolores,
-                        repellat ipsa modi sequi dolorem cupiditate iure nobis
-                        quisquam vel atque vero magni omnis provident
-                        consequuntur corrupti!
+                        <p>
+                          Start by sharing your ideas and goals with us. We'll
+                          listen, understand your needs, and lay the groundwork
+                          for success.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -266,7 +270,7 @@ const DigitalMarketing = () => {
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        PHP Developer
+                        Planning
                       </div>
                     </h2>
                     <div
@@ -276,37 +280,11 @@ const DigitalMarketing = () => {
                       data-bs-parent="#accordianWeb"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <div
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Developer HTML & CSS
-                      </div>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordianWeb"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Distinctio sint mollitia cum, molestiae alias quidem
-                        tenetur commodi voluptate deserunt velit quas culpa
-                        illum quos esse.
+                        <p>
+                          Collaborate with our team to create a customized plan.
+                          We'll define milestones, set a timeline, and ensure a
+                          clear path forward.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -314,34 +292,6 @@ const DigitalMarketing = () => {
               </div>
               <div className="col-md-6">
                 <div class="accordion" id="accordianWeb2">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <div
-                        class="accordion-button collapsed "
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseweb"
-                        aria-expanded="false"
-                        aria-controls="collapseweb"
-                      >
-                        UI & UX Designer & Developer
-                      </div>
-                    </h2>
-                    <div
-                      id="collapseweb"
-                      class="accordion-collapse collapse "
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordianWeb2"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid voluptatibus, quasi blanditiis, dolores,
-                        repellat ipsa modi sequi dolorem cupiditate iure nobis
-                        quisquam vel atque vero magni omnis provident
-                        consequuntur corrupti!
-                      </div>
-                    </div>
-                  </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <div
@@ -352,7 +302,7 @@ const DigitalMarketing = () => {
                         aria-expanded="false"
                         aria-controls="collapseWebTwo"
                       >
-                        PHP Developer
+                        Development and Design
                       </div>
                     </h2>
                     <div
@@ -362,37 +312,40 @@ const DigitalMarketing = () => {
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                        <p>
+                          {" "}
+                          Watch as we turn your ideas into reality. Whether it's
+                          custom software, web design, app development, or more,
+                          our experts get to work.
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
+                    <h2 class="accordion-header" id="headingOne">
                       <div
-                        class="accordion-button collapsed"
+                        class="accordion-button collapsed "
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseWebThree"
+                        data-bs-target="#collapseweb"
                         aria-expanded="false"
-                        aria-controls="collapseWebThree"
+                        aria-controls="collapseweb"
                       >
-                        PHP Developer
+                        Receive Ongoing Support
                       </div>
                     </h2>
                     <div
-                      id="collapseWebThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
+                      id="collapseweb"
+                      class="accordion-collapse collapse "
+                      aria-labelledby="headingOne"
                       data-bs-parent="#accordianWeb2"
                     >
                       <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim dolorem numquam dignissimos animi sunt deleniti
-                        dolorum delectus ducimus quis a, dolore, eligendi quod
-                        ea velit?
+                        <p>
+                          Once your project is complete, we're still here for
+                          you. From delivery to ongoing support, we're committed
+                          to your success.
+                        </p>
                       </div>
                     </div>
                   </div>

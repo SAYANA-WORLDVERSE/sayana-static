@@ -172,8 +172,13 @@
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .blog-cards:hover img {
-  transform: translateY(-100px);
+  transform: translateY(-87px);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.blog-cards img{
+  width:100%;
+  border-radius:10px;
 }
 .blog-cards_content {
   position: absolute;
@@ -311,7 +316,7 @@
   width: 357px !important;
 }
 .partner-header img {
-  width: 150px;
+  width: 250px;
 }
 
 .slider-inner h5 {
