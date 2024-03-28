@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Inter&family=Poppins&display=swap");
+
 :root {
   --background: #070a29;
   --title: #082f53;
@@ -304,3 +305,6 @@ button {
   }
 }
 
+.MuiTabs-indicator{
+  display:none !important;
+}

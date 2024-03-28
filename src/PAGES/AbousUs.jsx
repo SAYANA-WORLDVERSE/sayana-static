@@ -65,33 +65,38 @@ const AboutUs = () => {
                 <div className="hero-content">
                   <h3 className="main-title">About Us</h3>
                   <p className="para-content">
-                    At Sayana Worldverse, our mission is intricately woven
-                    around empowering businesses with state-of-the-art custom
-                    software solutions. We are steadfastly committed to
-                    delivering excellence, innovation, and value to our clients.
-                    Concurrently, our vision aspires to establish Sayana
-                    Worldverse as a paramount entity in the realm of custom
-                    software development, epitomizing creativity, technological
-                    prowess, and unwavering dedication to client success.
-                    Through strategic foresight and operational excellence, we
-                    aim to set industry benchmarks, foster enduring
-                    relationships, and contribute meaningfully to the digital
-                    evolution of businesses worldwide.
+                    Sayana Worldverse is a leading digital transformation
+                    consultant based in Hyderabad, India. Our team comprises
+                    professionals from diverse disciplines who specialize in the
+                    latest web and mobile app development, e-commerce,
+                    full-service software, and comprehensive digital marketing
+                    strategies. Our experts leverage cutting-edge technologies,
+                    such as artificial intelligence and machine learning, data
+                    analysis, to create innovative, user-focused apps and
+                    solutions that empower businesses in the digital landscape.
+                    At Sayana Worldverse, we are committed to delivering
+                    high-quality solutions, excellent customer service, and
+                    ongoing development. Our dedicated team aims to provide
+                    consumers with exceptional digital experiences that aid them
+                    in developing their skills online.
                   </p>
                   <p className="para-content">
-                    <b>Our Mission : </b> At Sayana Worldverse, our primary
-                    mission is to empower businesses by delivering cutting-edge
-                    custom software solutions. We are dedicated to understanding
-                    the unique needs of each client and providing tailored
-                    services that drive efficiency, productivity, and growth.
+                    <b>Our Mission : </b>Our mission is to be the most flexible,
+                    innovative, creative, and cooperative digital and software
+                    development services provider, offering flexible and
+                    affordable solutions while simultaneously being the most
+                    recognized creativity and technology leader in the custom
+                    software development sector. We are dedicated to delivering
+                    a diverse range of exceptional & groundbreaking results.
                   </p>
                   <p className="para-content">
-                    <b>Our Vision : </b> Our vision at Sayana Worldverse is to
-                    be recognized as a beacon of creativity and technology in
-                    the custom software development industry. We aspire to set
-                    industry standards for excellence, innovation, and customer
-                    satisfaction, continually pushing boundaries and reshaping
-                    the future of digital solutions.
+                    <b>Our Vision : </b> We envision Sayana Worldverse as the
+                    world’s preeminent digital transformation partner, leading
+                    the future of design and experiment development by
+                    developing a Learning-lot culture across the organization.
+                    Our goal is to make a strong change in services and
+                    experience growth with our clients, with a guaranteed future
+                    of their competitiveness in a competitive market.
                   </p>
                 </div>
               </div>
@@ -120,32 +125,33 @@ const AboutUs = () => {
           <div className="col-md-6">
             <h1 className="excellence">Why Choose SayanaWorldVerse ?</h1>
             <p className="ex-para">
-              <b>Expertise:</b> Benefit from our extensive experience and
-              specialized knowledge in custom software development, web design,
-              app design, product development, digital marketing, and graphic
-              design.
+              <b>Expertise:</b> Our extensive experience and specialized
+              knowledge in custom software development, web and app design ,
+              product development, digital marketing, graphic design, among
+              other key areas.
             </p>
             <p className="ex-para">
-              <b> Innovation: </b>Our team thrives on innovation, consistently
-              delivering unique and cutting-edge solutions tailored to your
-              specific needs and challenges.
+              <b> Innovation: </b>The process is well-researched, knowing what
+              innovative methodologies to rely on in order to offer you a unique
+              solution and so forth.
             </p>
             <p className="ex-para">
-              <b>Client-Centric Approach:</b> We prioritize understanding your
-              vision, goals, and objectives, ensuring that every solution is
-              meticulously crafted to align with your business strategy.
+              <b>Client-Centric Approach:</b> We always focus on understanding
+              what your needs are, what your vision, goals, and objectives are,
+              so that each solution is designed with accuracy for your business
+              strategy.
             </p>
             <p className="ex-para">
-              <b>Reliability:</b> As your trusted partner, Sayana Worldverse is
-              committed to reliability, consistency, and transparency, ensuring
-              timely delivery and exceeding expectations.
+              <b>Reliability:</b> We ensure reliability, transparency, and
+              consistency and timeliness of delivery, amongst other things of
+              course.
             </p>
 
             <p className="ex-para">
-              <b>Quality Assurance:</b> Our commitment to excellence is
-              unwavering. We adhere to stringent quality standards, best
-              practices, and continuous improvement processes to ensure optimal
-              performance and reliability.
+              <b>Quality Assurance:</b> Our commitment to quality assurance,
+              always ensuring that our solutions adhere to the highest quality
+              standards, continuous monitoring, and improvement to achieve
+              optimal performance in terms of reliability.
             </p>
           </div>
         </div>
@@ -193,7 +199,7 @@ const AboutUs = () => {
                     spaceBetween={30}
                     breakpoints={breakpoints}
                     slidesPerView={5}
-                    Autoplay={true}
+                    autoPlay={true}
                     scrollbar={{ draggable: true }}
                   >
                     <SwiperSlide>

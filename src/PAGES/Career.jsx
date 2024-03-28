@@ -108,7 +108,7 @@ const Career = () => {
 
   return (
     <Fragment>
-       <Helmet>
+      <Helmet>
         <link rel="canonical" href="/career" />
       </Helmet>
       <Header title="Career" link="Career " />
@@ -121,15 +121,17 @@ const Career = () => {
                 <div className="hero-content">
                   <h3 className="main-title">Career</h3>
                   <p className="para-content">
-                    Join our dynamic team at Sayana Worldverse and embark on a
-                    journey of innovation and growth. We're passionate about
-                    fostering talent, nurturing creativity, and driving digital
-                    transformation. Explore rewarding career opportunities that
-                    align with your skills, aspirations, and ambitions. Be part
-                    of a collaborative environment where your contributions make
-                    a difference, and together, we shape the future of
-                    technology and creativity. Your next career milestone awaits
-                    at Sayana Worldverse.
+                    Welcome to your Sayana Worldverse Career! We are an
+                    ambitious, pioneering team of experts with a dream to create
+                    a revolution in digital innovation. We are a united team
+                    committed to nurture talents, encouraging creativity, and
+                    making a difference that can last a lifetime through
+                    digital. Whether you want to take your first full step into
+                    your career, or continue to chase a lifelong goal where it
+                    can take you, we at Sayana Worldverse will show you the way.
+                    It’s where it’s exciting to go to work every day, and where
+                    your efforts actually make a difference. Sayana Worldverse
+                    is where your future career is headed.
                   </p>
                 </div>
               </div>
@@ -255,7 +257,6 @@ const Career = () => {
                   >
                     <div class="accordion-body">
                       <p>
-                     
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Distinctio sint mollitia cum, molestiae alias quidem
                         tenetur commodi voluptate deserunt velit quas culpa
@@ -284,10 +285,13 @@ const Career = () => {
                     data-bs-parent="#accordianCareer"
                   >
                     <div class="accordion-body">
-                    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Distinctio sint mollitia cum, molestiae alias quidem
-                      tenetur commodi voluptate deserunt velit quas culpa illum
-                      quos esse.</p>
+                      <p>
+                        {" "}
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Distinctio sint mollitia cum, molestiae alias quidem
+                        tenetur commodi voluptate deserunt velit quas culpa
+                        illum quos esse.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -312,10 +316,13 @@ const Career = () => {
                     data-bs-parent="#accordianCareer"
                   >
                     <div class="accordion-body">
-                  <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Distinctio sint mollitia cum, molestiae alias quidem
-                      tenetur commodi voluptate deserunt velit quas culpa illum
-                      quos esse.</p>
+                      <p>
+                        {" "}
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Distinctio sint mollitia cum, molestiae alias quidem
+                        tenetur commodi voluptate deserunt velit quas culpa
+                        illum quos esse.
+                      </p>
                     </div>
                   </div>
                 </div>

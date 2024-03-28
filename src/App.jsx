@@ -23,6 +23,8 @@ import PopModal from "./COMPONENTS/PopModal";
 import Privacy from "./PAGES/Privacy-policy";
 import TermandCondition from "./PAGES/Term-and-Condition";
 import Loader from "./COMPONENTS/Loader";
+import Corporate from "./PAGES/CorporateAddFilm";
+import PrServices from "./PAGES/PrServices";
 
 const App = () => {
   const { isDark } = useTheme();
@@ -82,6 +84,8 @@ const App = () => {
                 path="/term-and-condition"
                 element={<TermandCondition />}
               />
+              <Route path="/corporateaddfilms" element={<Corporate />} />
+              <Route path="/prservices" element={<PrServices />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>
             <Footer />

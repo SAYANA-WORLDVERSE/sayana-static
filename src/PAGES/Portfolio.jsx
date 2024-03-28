@@ -31,8 +31,7 @@ const Portfolio = () => {
   };
   return (
     <Fragment>
-
-<Helmet>
+      <Helmet>
         <link rel="canonical" href="/portfolio" />
       </Helmet>
       <Header title="Portfolio" link="Portfolio" />
@@ -45,10 +44,17 @@ const Portfolio = () => {
                 <div className="hero-content">
                   <h3 className="main-title">Portfolio </h3>
                   <p className="para-content">
-                    As your digital enablement partner, we apply our
-                    talent-first approach to accelerate your digital journey,
-                    helping you unleash your potential and unlock unseen
-                    opportunities.
+                    Explore our our extensive portfolio of work, reflecting our
+                    expertise and passion in a variety of fields. These works
+                    represent the embodiment of our creativity, painstaking
+                    attention to every detail, and our aspiration to achieve
+                    excellent results every time. Take a tour of our booth and
+                    be amazed at the transformative power of our services in the
+                    sphere of digital marketing, application creation, branding,
+                    and website design. Look and learn what innovation,
+                    collaboration, and digital technology implementation mean to
+                    us and learn how we assist businesses in surviving today’s
+                    competitive market.
                   </p>
                 </div>
               </div>
@@ -61,20 +67,6 @@ const Portfolio = () => {
       </section>
 
       <section className="contact-content">
-        <div className="container py-5">
-          <p className=" career-para">
-            “Discover our diverse portfolio showcasing our expertise and
-            commitment to excellence across various domains. Each project
-            exemplifies our innovative approach, meticulous attention to detail,
-            and dedication to delivering exceptional results. From branding
-            solutions and website design to application development and digital
-            marketing campaigns, explore our showcase to witness the
-            transformative impact of our services. This will reflect our passion
-            for creativity, technology, and collaboration, demonstrating how we
-            help businesses thrive in today's competitive landscape.”
-          </p>
-        </div>
-
         <div className="container">
           <Tabs value={value} onChange={handleChange} className="tabs">
             <Tab label="Website" className="tab" />
@@ -91,11 +83,7 @@ const Portfolio = () => {
                   <img src={forestedge} alt="" className="port-img" />
                   <p className="text-center">Forest Edge</p>
                 </div>
-                <Link
-                  className="card-button"
-                  to="#"
-                  target="_blank"
-                >
+                <Link className="card-button" to="#" target="_blank">
                   <FaLink />
                 </Link>
               </div>
@@ -104,11 +92,7 @@ const Portfolio = () => {
                   <img src={srivani} alt="" className="port-img" />
                   <p className="text-center">Sri Vani</p>
                 </div>
-                <Link
-                  className="card-button"
-                  to=""
-                  target="_blank"
-                >
+                <Link className="card-button" to="" target="_blank">
                   <FaLink />
                 </Link>
               </div>
@@ -241,8 +225,7 @@ const Portfolio = () => {
           </div>
           <div hidden={value !== 4}>
             <div className="  d-flex col-md-12 portfolio-container flex-wrap py-5">
-            <ImageCarousel photos={photos} />
-
+              <ImageCarousel photos={photos} />
             </div>
           </div>
         </div>

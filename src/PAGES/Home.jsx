@@ -114,12 +114,12 @@ const Home = () => {
           </h1>
           {/*<p className="main-sub-heading">Software development company</p>*/}
           <p className="main-paracontent text-center">
-            Beyond mere coding, Sayana Worldverse is a beacon of innovation and
-            expertise. We don't just develop software; we craft digital
-            masterpieces that resonate. With unwavering commitment to
-            excellence, we redefine success by delivering tailored solutions and
-            visionary design, consistently exceeding expectations and setting
-            industry benchmarks.
+            At Sayana Worldverse, we break down barriers using captivating,
+            modern and innovative software. We are passionate about creating
+            inspiring digital experiences, not just about coding. As innovators
+            driven by superior design, we enable companies to achieve
+            unprecedented success. Come along on a creative adventure as we
+            redefine what's possible using our knowledge and creative solutions.
           </p>
           <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
@@ -132,9 +132,19 @@ const Home = () => {
           </div>
 
           <div className="services d-flex justify-content-center flex-column align-items-center">
-            <img src={gradiant} alt="gradiant" loading="lazy" className="gradiant-bg" />
+            <img
+              src={gradiant}
+              alt="gradiant"
+              loading="lazy"
+              className="gradiant-bg"
+            />
             <div className="bg-inner">
-              <img src={computer} alt="cmp" loading="lazy" className="computer" />
+              <img
+                src={computer}
+                alt="cmp"
+                loading="lazy"
+                className="computer"
+              />
 
               <Tooltip title="Application Development" placement="left">
                 <img
@@ -188,10 +198,13 @@ const Home = () => {
                 />
               </Tooltip>
             </div>
-            <p className="learn-more mt-5">
-              Crafting identities, shaping digital realms, optimizing
-              engagement, and producing impactful media—We navigate diverse
-              landscapes to redefine brand success
+            <p className="learn-more mt-5 fw-bold text-center">
+              Infinite potential | Unlocked through vision | Skill meets
+              imagination | Custom digital masterpieces | Captivate | Inspire |
+              Innovate | Break boundaries
+            </p>
+            <p className="text-center ">
+              Together we build it At Sayana Worldverse
             </p>
             <button onClick={() => navigate("/contact")}>Learn More</button>
           </div>
@@ -251,7 +264,12 @@ const Home = () => {
           </div>
 
           <div className="col-md-6  ">
-            <img src={question} alt="que" loading="lazy" className="boy-setting" />
+            <img
+              src={question}
+              alt="que"
+              loading="lazy"
+              className="boy-setting"
+            />
           </div>
         </div>
 
@@ -351,8 +369,9 @@ const Home = () => {
               <div className="text">
                 <h4 className="mb-1">1. Initial Consultation:</h4>
                 <p>
-                  Start by sharing your ideas and goals with us. We'll listen,
-                  understand your needs, and lay the groundwork for success.
+                  Please share your mind and thoughts with our team, and we will
+                  carefully listen to your needs while building the foundation
+                  of our cooperation .
                 </p>
               </div>
             </div>
@@ -366,10 +385,11 @@ const Home = () => {
               <div className="text">
                 <h4 className="mb-1">2. Strategic Blueprint:</h4>
                 <p>
-                  Utilizing our expertise across various domains—ranging from
-                  branding and digital solutions to product development and
-                  marketing—we craft a strategic blueprint. This serves as our
-                  roadmap, aligning with your goals and industry nuances.
+                  At Sayana Worldverse, we use our expertise in branding,
+                  digital solutions, product development, and marketing, among
+                  other outstanding domains, to create a strategic blueprint. At
+                  the same time, it becomes the way we will accommodate your
+                  desire with your particular industry.
                 </p>
               </div>
             </div>
@@ -383,11 +403,12 @@ const Home = () => {
               <div className="text">
                 <h4 className="mb-1">3. Execution & Development</h4>
                 <p>
-                  Moving forward, our seasoned team swings into action,
-                  implementing the devised strategy with precision and
-                  creativity. Using state-of-the-art technologies and
-                  methodologies, we bring your vision to fruition while adhering
-                  to timelines and quality benchmarks.
+                  From here onwards, our team puts the plan into action
+                  executing with accuracy and creativity. Utilizing the latest
+                  technologies and methodologies, we bring your fresh ideas to
+                  life as we work within the target timelines and quality
+                  perimeters. undertaking this process with accuracy ensures a
+                  steadfast projection and development process.
                 </p>
               </div>
             </div>
@@ -401,10 +422,10 @@ const Home = () => {
               <div className="text">
                 <h4 className="mb-1"> 4. Evaluation & Refinement:</h4>
                 <p>
-                  Our commitment to excellence extends beyond execution. We
-                  consistently evaluate outcomes, gather feedback, and refine
-                  strategies to ensure optimal results, adaptability, and
-                  sustainable growth for your project.
+                  Always committed to higher standards post-execution, we
+                  continually evaluate results to refine strategies ensuring the
+                  best outcome, project adaptability as well as sustainable
+                  growth.
                 </p>
               </div>
             </div>
@@ -430,38 +451,6 @@ const Home = () => {
         <div className="container">
           <section className="d-flex  flex-column justify-content-center align-items-center mt-5 ">
             <div className="col-md-12  d-md-flex justify-content-center blog-container">
-              <div className="col-md-3 col-sm-12 ">
-                <div className="blog-cards">
-                  <img src="/images/blog2.jpg" alt="blog1" loading="lazy"/>
-
-                  <div className="blog-cards_content">
-                    <p className="blog-cards__title">
-                      10 Secrets of TikTok Marketing - You Must Know
-                    </p>
-                    <p className="blog-cards__description">
-                      In the vast realm of digital marketing, TikTok has emerged
-                      as a powerhouse, reshaping the dynamics of content
-                      creation and audience engagement.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 d-flex justify-content-center">
-                <div className="blog-cards">
-                  <img src="/images/blog3.jpg" alt="blog3" loading="lazy"/>
-
-                  <div className="blog-cards_content">
-                    <p className="blog-cards__title">
-                      Strategies for Success in TikTok Marketing in 2024
-                    </p>
-                    <p className="blog-cards__description">
-                      In the ever-evolving landscape of social media, TikTok
-                      stands out as a dynamic platform that continues to
-                      captivate users worldwide.
-                    </p>
-                  </div>
-                </div>
-              </div>
               <div className="col-md-3 d-flex justify-content-center">
                 <div className="blog-cards">
                   <img src="/images/blog4.jpg" alt="blog4" loading="lazy" />
@@ -474,6 +463,27 @@ const Home = () => {
                       Nowadays, if you have a business, online marketing is
                       inevitable. Online marketing is the way to reach your
                       (potential) customers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 d-flex justify-content-center">
+                <div className="blog-cards">
+                  <img
+                    src="/images/blog5.png"
+                    alt="blog5"
+                    loading="lazy"
+                    style={{ height: "235px" }}
+                  />
+
+                  <div className="blog-cards_content">
+                    <p className="blog-cards__title">
+                      Don't Let These 5 Conversion Killers Ruin Your Website's
+                      Potential
+                    </p>
+                    <p className="blog-cards__description">
+                      If you build a website as an entrepreneur, it is of course
+                      your goal that it will also convert.
                     </p>
                   </div>
                 </div>
@@ -507,7 +517,12 @@ const Home = () => {
             <div className="col-md-4">
               <div className="contact-card">
                 <div className="ring-icon">
-                  <img src={phone} alt="photo" loading="lazy" className="ring" />
+                  <img
+                    src={phone}
+                    alt="photo"
+                    loading="lazy"
+                    className="ring"
+                  />
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
@@ -588,7 +603,12 @@ const Home = () => {
             <div className="col-md-4">
               <div className="contact-card">
                 <div className="ring-icon">
-                  <img src={video} alt="video" loading="lazy" className="ring" />
+                  <img
+                    src={video}
+                    alt="video"
+                    loading="lazy"
+                    className="ring"
+                  />
                 </div>
 
                 <div className="card-content d-flex flex-column justify-items-center align-items-center gap-3">
@@ -651,35 +671,55 @@ const Home = () => {
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client1 : partner1} alt="partner1" loading="lazy" />
+                    <img
+                      src={isDark ? client1 : partner1}
+                      alt="partner1"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client2 : partner2} alt="partner2" loading="lazy" />
+                    <img
+                      src={isDark ? client2 : partner2}
+                      alt="partner2"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client3 : partner3} alt="partner3" loading="lazy" />
+                    <img
+                      src={isDark ? client3 : partner3}
+                      alt="partner3"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client4 : partner4} alt="partner4" loading="lazy" />
+                    <img
+                      src={isDark ? client4 : partner4}
+                      alt="partner4"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
               <div className="slider-items p-4">
                 <div className="slider-inner">
                   <div className="partner-header">
-                    <img src={isDark ? client5 : partner5} alt="partner5" loading="lazy" />
+                    <img
+                      src={isDark ? client5 : partner5}
+                      alt="partner5"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -703,24 +743,33 @@ const Home = () => {
           <Slider {...setting}>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c1.png" alt="c1" loading="lazy" className="test-monial" />
+                <img
+                  src="/images/c1.png"
+                  alt="c1"
+                  loading="lazy"
+                  className="test-monial"
+                />
                 <p className="client-name"> Aditya Multi Speciality </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
                 </p>
                 <p className="client-review">
                   The team at Aditya Multi Speciality Hospital is exceptionally
-                  pleased with Sayana Worldverses services. From Web
-                  Development that ensures a user-friendly online presence to
-                  SEO and Digital Marketing that boost our visibility, and
-                  outstanding Graphic Designing that reflects our
-                  professionalism.
+                  pleased with Sayana Worldverses services. From Web Development
+                  that ensures a user-friendly online presence to SEO and
+                  Digital Marketing that boost our visibility, and outstanding
+                  Graphic Designing that reflects our professionalism.
                 </p>
               </div>
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c8.jpg" alt="c8" loading="lazy" className="test-monial" />
+                <img
+                  src="/images/c8.jpg"
+                  alt="c8"
+                  loading="lazy"
+                  className="test-monial"
+                />
                 <p className="client-name"> Ortho 360 </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -737,7 +786,12 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c6.png" alt="c6" loading="lazy" className="test-monial" />
+                <img
+                  src="/images/c6.png"
+                  alt="c6"
+                  loading="lazy"
+                  className="test-monial"
+                />
                 <p className="client-name">Sri Srinivasa Scan</p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -753,7 +807,12 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c7.jpg" alt="c7" loading="lazy" className="test-monial" />
+                <img
+                  src="/images/c7.jpg"
+                  alt="c7"
+                  loading="lazy"
+                  className="test-monial"
+                />
                 <p className="client-name"> Care of Careers </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -770,7 +829,12 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c2.png" alt="c2" loading="lazy" className="test-monial" />
+                <img
+                  src="/images/c2.png"
+                  alt="c2"
+                  loading="lazy"
+                  className="test-monial"
+                />
                 <p className="client-name">Haripriya's Media </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -786,7 +850,12 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c5.jpg" alt="c5" loading="lazy" className="test-monial" />
+                <img
+                  src="/images/c5.jpg"
+                  alt="c5"
+                  loading="lazy"
+                  className="test-monial"
+                />
                 <p className="client-name">Sri Soudha</p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -802,7 +871,12 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c3.jpg" alt="c3" loading="lazy" className="test-monial" />
+                <img
+                  src="/images/c3.jpg"
+                  alt="c3"
+                  loading="lazy"
+                  className="test-monial"
+                />
                 <p className="client-name">Haripriya's Bhakthi </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -819,7 +893,12 @@ const Home = () => {
             </div>
             <div className="client-card">
               <div className="client-card-content">
-                <img src="/images/c4.png" alt="c4" loading="lazy" className="test-monial" />
+                <img
+                  src="/images/c4.png"
+                  alt="c4"
+                  loading="lazy"
+                  className="test-monial"
+                />
                 <p className="client-name">Ocean Dental Hospital </p>
                 <p className="rating">
                   <Rating name="read-only" value={5} readOnly />
@@ -856,7 +935,12 @@ const Home = () => {
               </div>
             </div>
             <div className="col-md-6 right-col">
-              <img src={newsRocket} alt="rocket" loading="lazy" className="news-rocket" />
+              <img
+                src={newsRocket}
+                alt="rocket"
+                loading="lazy"
+                className="news-rocket"
+              />
             </div>
           </div>
         </div>

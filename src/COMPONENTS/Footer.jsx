@@ -149,11 +149,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-bottom w-100 d-flex justify-content-between">
-            <p className="mb-0"> &#169; 2024 SAYANA | All Rights Reserved</p>
+            <p className="mb-0 text-black"> &#169; 2024 SAYANA | All Rights Reserved</p>
             <p className="mb-0">
               {" "}
-              <Link to="/privacy-policy" className="text-white">Privacy Policy</Link> |{" "}
-              <Link to="/term-and-condition" className="text-white">Term & Condition</Link>
+              <Link to="/privacy-policy" className="text-black">Privacy Policy</Link> |{" "}
+              <Link to="/term-and-condition" className="text-black">Term & Condition</Link>
             </p>
           </div>
         </div>

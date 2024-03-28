@@ -6,12 +6,13 @@ import { Link } from "react-router-dom";
 import { BsChevronDown } from "react-icons/bs";
 import ToggleButton from "./ToggleButton";
 import { useTheme } from "./Context";
+import { useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-
+const navigate=useNavigate();
   const { isDark } = useTheme();
 
   const handleScroll = () => {
@@ -45,7 +46,7 @@ const Navbar = () => {
       >
         <div className="container h-sm-100 nav-container">
           <div className="d-flex w-100 justify-content-md-between justify-content-sm-between align-items-center nav-bar-inner">
-            <div className="logo ">
+            <div className="logo " onClick={()=>navigate("/")}>
               <img src={isDark ? whitelogo:logo} alt="logo" />
             </div>
             <div className="d-flex col-10  ">
@@ -120,6 +121,16 @@ const Navbar = () => {
                       <li className="menu-item">
                         <Link to="/graphicsdesign" onClick={toggleMobileMenu}>
                           Graphics Design
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/corporateaddfilms" onClick={toggleMobileMenu}>
+                         Corporate Ads Film
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/prservices" onClick={toggleMobileMenu}>
+                          PR Services
                         </Link>
                       </li>
                     </ul>

@@ -18,23 +18,22 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1170px) {
-  .contact-para{
-    font-size:.9rem;
+  .contact-para {
+    font-size: 0.9rem;
   }
-  .roadmap-box .title{
-    font-size:18px;
-
-  }
-
-  .cards .number span{
-    font-size:2rem;
-  }
-  .text h4{
-    font-size:1.3rem
+  .roadmap-box .title {
+    font-size: 18px;
   }
 
-  .roadmap-box .time{
-    left:26%;
+  .cards .number span {
+    font-size: 2rem;
+  }
+  .text h4 {
+    font-size: 1.3rem;
+  }
+
+  .roadmap-box .time {
+    left: 26%;
   }
 
   .num {
@@ -45,7 +44,7 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
-}
+  }
   .partner-header img {
     width: 130px;
   }
@@ -184,70 +183,66 @@
 }
 
 @media screen and (max-width: 768px) {
-p{
-  font-size:9px !important;
-}
-  .roadmap-box .time{
-    left:29%;
+  .MuiBox-root{
+    width:90% !important;
   }
-  .roadmap-box .title{
-    font-size:18px;
-
+  .roadmap-box .time {
+    left: 29%;
   }
-
-  
-  .step-container p, h4{
-    font-size:15px !important;
-  }
-  .step-container p span{
-    font-size:25px;
-  }
-  .css-yccnsq{
-
-    min-width:60% !important;
-    min-height:500px;
-    padding:10px !important;
-  }
-  .css-yccnsq .modal-body{
-    min-height:400px;
+  .roadmap-box .title {
+    font-size: 18px;
   }
 
-  .bloglist__main .sidebar .widget-sidebar.tag ul li a{
-    padding:7px 10px;
+  .step-container p,
+  h4 {
+    font-size: 15px !important;
+  }
+  .step-container p span {
+    font-size: 25px;
+  }
+  .css-yccnsq {
+    min-width: 60% !important;
+    min-height: 500px;
+    padding: 10px !important;
+  }
+  .css-yccnsq .modal-body {
+    min-height: 400px;
   }
 
-  #container svg{
-    width:200px;
-    height:200px;
-  }
-  .msg-name h1{
-    font-size:2rem !important;
-  }
-  .message p{
-    font-size:.9rem;
+  .bloglist__main .sidebar .widget-sidebar.tag ul li a {
+    padding: 7px 10px;
   }
 
-  .client-title{
-    font-size:.9rem;
+  #container svg {
+    width: 200px;
+    height: 200px;
+  }
+  .msg-name h1 {
+    font-size: 2rem !important;
+  }
+  .message p {
+    font-size: 0.9rem;
+  }
 
+  .client-title {
+    font-size: 0.9rem;
   }
-  .linear-text{
-    font-size:.9rem ;
+  .linear-text {
+    font-size: 0.9rem;
   }
-  .hero-content span{
-    font-size:1.3rem;
+  .hero-content span {
+    font-size: 1.3rem;
   }
-  .main-title{
+  .main-title {
     font-size: 1rem;
   }
 
-
-  .switch{
-    margin-left:-7rem;
+  .switch {
+    margin-left: -7rem;
   }
   .career-form form {
     padding: 1rem 0rem;
-}
+  }
   .partner-header img {
     width: 130px;
   }
@@ -282,7 +277,7 @@ p{
     position: absolute;
     left: 54px;
     bottom: 216px;
-}
+  }
   .news-rocket {
     position: absolute;
     right: 25px;
@@ -428,8 +423,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: end;
-    width:95% !important;
-    padding:0px 17px;
+    width: 95% !important;
+    padding: 0px 17px;
   }
   .nav-list.open {
     display: flex;
@@ -464,7 +459,6 @@ p{
   .footer-list li {
     font-size: 10px;
   }
-  
 
   .computer {
     width: 200px;
@@ -499,55 +493,48 @@ p{
     width: 300px;
   }
 
-
-  .services-title{
-    font-size:1.5rem;
-    text-align:center;
+  .services-title {
+    font-size: 1.5rem;
+    text-align: center;
   }
 
-  .services-para-content{
-    font-size:1rem;
+  .services-para-content {
+    font-size: 1rem;
   }
-  .web-img{
-    width:55%;
+  .web-img {
+    width: 55%;
   }
   .footer-bottom p {
-    font-size:10px;
-}
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 510px) {
-  .roadmap-box .time{
-    left:35%;
+  .roadmap-box .time {
+    left: 35%;
   }
-  .css-yccnsq{
-
-    min-width:90% !important;
-    min-height:500px;
-    padding:10px !important;
-  }
-
- 
-
-  .services-title{
-    font-size:1rem;
-    text-align:center
-  }
-  .location p{
-    font-size:.8rem;
-
+  .css-yccnsq {
+    min-width: 90% !important;
+    min-height: 500px;
+    padding: 10px !important;
   }
 
-  .contact-title{
+  .services-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .location p {
+    font-size: 0.8rem;
+  }
+
+  .contact-title {
     font-size: 1.1rem;
     text-align: center;
   }
 
-  
-  .contactus-form{
-    padding:20px;
+  .contactus-form {
+    padding: 20px;
   }
-
 
   footer {
     padding: 1rem;
@@ -595,7 +582,7 @@ p{
   }
 
   .crafted-solution p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .main-heading {
     font-size: 1.5rem;
